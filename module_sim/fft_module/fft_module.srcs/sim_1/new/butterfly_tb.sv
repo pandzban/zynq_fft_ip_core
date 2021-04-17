@@ -20,7 +20,44 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module butterfly_tb(
+class Input_vector;
+	rand bit [15:0] random_input [5];
+endclass : Input_vector
 
-    );
+module butterfly_tb;
+	logic clk;
+	logic reset;
+	logic [15:0] Input [5];
+	logic [15:0] Output [8];
+	Input_vector input_rand;
+
+	butterfly_beh uut(
+	   .clk,
+	   .reset,
+	   .Input,
+	   .Output
+	);
+
+	initial begin
+		clk = 0;
+		reset = 0;
+		input_rand = new();
+		input_rand.randomize();
+		foreach(Input[i]) begin
+			Input[i] = input_rand.random_input[i];
+		end
+		clk = 0;
+		#5;
+		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
+		$finish;
+	end
+
 endmodule
