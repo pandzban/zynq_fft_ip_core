@@ -21,8 +21,10 @@
 
 
 class Input_vector;
-	rand bit [15:0] random_input [5];
+	rand bit [15:0] x_input [5];
 endclass : Input_vector
+
+import fft_package::*;
 
 module butterfly_tb;
 	logic clk;
@@ -44,7 +46,7 @@ module butterfly_tb;
 		input_rand = new();
 		input_rand.randomize();
 		foreach(Input[i]) begin
-			Input[i] = input_rand.random_input[i];
+			Input[i] = input_rand.x_input[i];
 		end
 		clk = 0;
 		#5;
