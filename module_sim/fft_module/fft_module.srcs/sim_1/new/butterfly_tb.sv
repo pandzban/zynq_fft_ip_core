@@ -59,6 +59,22 @@ module butterfly_tb;
 		clk = 0;
 		#5;
 		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
+		#5;
+		clk = 0;
+		#5;
+		clk = 1;
 		$finish;
 	end
 

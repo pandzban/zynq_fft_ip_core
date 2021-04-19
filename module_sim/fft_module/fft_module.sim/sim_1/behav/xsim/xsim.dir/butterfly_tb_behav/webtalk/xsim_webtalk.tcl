@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Apr 18 02:15:49 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Apr 19 02:27:00 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "5e5ef54c96415649931c384dbbd0d609" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "2ce66c6aef364950b00b24e9ac48c0c3" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "17" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "37" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 7 2700X Eight-Core Processor         " -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "34.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "25 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "65 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7360_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3818324131 -regid "" -xml D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7444_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3565124443 -regid "" -xml D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
