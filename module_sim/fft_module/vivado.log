@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr 18 21:56:51 2021
-# Process ID: 14172
+# Start of session at: Mon Apr 19 02:29:55 2021
+# Process ID: 5816
 # Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22600 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23912 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
 # Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/vivado.log
 # Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,6 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 675.121 ; gain = 68.789
 update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
@@ -28,274 +27,7 @@ INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:68]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:70]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:72]
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-2989] 'cos' is not declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:55]
-ERROR: [VRFC 10-2989] 'sin' is not declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:56]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:30]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:32]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:34]
-WARNING: [VRFC 10-2221] DPI is deprecated in import/export declarations, use DPI-C instead [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:36]
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-ERROR: [XSIM 43-4219] Only DPI-C is supported
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
-
-****** Webtalk v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
-source D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/butterfly_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 00:45:05 2021...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 742.043 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "butterfly_tb_behav -key {Behavioral:sim_1:Functional:butterfly_tb} -tclbatch {butterfly_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source butterfly_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: Simulation object /butterfly_tb/input_rand was not traceable in the design for the following reason:
-Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
-# run 1000ns
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 788.133 ; gain = 46.090
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 788.133 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_block
 INFO: [VRFC 10-311] analyzing module butterfly_beh
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module butterfly_tb
@@ -313,6 +45,7 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_butterfly_beh_sv
 Compiling package xil_defaultlib.fft_package
+Compiling module xil_defaultlib.fft_block_default
 Compiling module xil_defaultlib.butterfly_beh_default
 Compiling module xil_defaultlib.butterfly_tb
 Compiling module xil_defaultlib.glbl
@@ -338,9 +71,10 @@ source butterfly_tb.tcl
 WARNING: Simulation object /butterfly_tb/input_rand was not traceable in the design for the following reason:
 Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
 # run 1000ns
-temp = -0.785398
-Re = 0.707107
-Im = -0.707107
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 POWER = 8
 x_input[0] = xxxxxxxx
 x_input[0] = xxxxxxxx
@@ -366,22 +100,22 @@ input_reg[6] = xxxxxxxx
 x_input[7] = xxxxxxxx
 x_input[7] = xxxxxxxx
 input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
+x_input[0] = 8f0a0000
+x_input[0] = 8f0a0000
+input_reg[0] = 8f0a0000
+x_input[1] = 54460000
+x_input[1] = 668d0000
+input_reg[1] = 668d0000
+x_input[2] = 29280000
+x_input[2] = 54460000
+input_reg[2] = 54460000
 x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
+x_input[3] = cf080000
+input_reg[3] = cf080000
+x_input[4] = 668d0000
+x_input[4] = 29280000
+input_reg[4] = 29280000
+x_input[5] = cf080000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -390,9 +124,131 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
+x_input[0] = 8f0a0000
+x_input[0] = 8f0a0000
+input_reg[0] = 8f0a0000
+x_input[1] = 54460000
+x_input[1] = 668d0000
+input_reg[1] = 668d0000
+x_input[2] = 29280000
+x_input[2] = 54460000
+input_reg[2] = 54460000
+x_input[3] = 0
+x_input[3] = cf080000
+input_reg[3] = cf080000
+x_input[4] = 668d0000
+x_input[4] = 29280000
+input_reg[4] = 29280000
+x_input[5] = cf080000
+x_input[5] = 0
+input_reg[5] = 0
+x_input[6] = 0
+x_input[6] = 0
+input_reg[6] = 0
+x_input[7] = 0
+x_input[7] = 0
+input_reg[7] = 0
+x_input[0] = 8f0a0000
+x_input[0] = 8f0a0000
+input_reg[0] = 8f0a0000
+x_input[1] = 54460000
+x_input[1] = 668d0000
+input_reg[1] = 668d0000
+x_input[2] = 29280000
+x_input[2] = 54460000
+input_reg[2] = 54460000
+x_input[3] = 0
+x_input[3] = cf080000
+input_reg[3] = cf080000
+x_input[4] = 668d0000
+x_input[4] = 29280000
+input_reg[4] = 29280000
+x_input[5] = cf080000
+x_input[5] = 0
+input_reg[5] = 0
+x_input[6] = 0
+x_input[6] = 0
+input_reg[6] = 0
+x_input[7] = 0
+x_input[7] = 0
+input_reg[7] = 0
+x_input[0] = 8f0a0000
+x_input[0] = 8f0a0000
+input_reg[0] = 8f0a0000
+x_input[1] = 54460000
+x_input[1] = 668d0000
+input_reg[1] = 668d0000
+x_input[2] = 29280000
+x_input[2] = 54460000
+input_reg[2] = 54460000
+x_input[3] = 0
+x_input[3] = cf080000
+input_reg[3] = cf080000
+x_input[4] = 668d0000
+x_input[4] = 29280000
+input_reg[4] = 29280000
+x_input[5] = cf080000
+x_input[5] = 0
+input_reg[5] = 0
+x_input[6] = 0
+x_input[6] = 0
+input_reg[6] = 0
+x_input[7] = 0
+x_input[7] = 0
+input_reg[7] = 0
+x_input[0] = 8f0a0000
+x_input[0] = 8f0a0000
+input_reg[0] = 8f0a0000
+x_input[1] = 54460000
+x_input[1] = 668d0000
+input_reg[1] = 668d0000
+x_input[2] = 29280000
+x_input[2] = 54460000
+input_reg[2] = 54460000
+x_input[3] = 0
+x_input[3] = cf080000
+input_reg[3] = cf080000
+x_input[4] = 668d0000
+x_input[4] = 29280000
+input_reg[4] = 29280000
+x_input[5] = cf080000
+x_input[5] = 0
+input_reg[5] = 0
+x_input[6] = 0
+x_input[6] = 0
+input_reg[6] = 0
+x_input[7] = 0
+x_input[7] = 0
+input_reg[7] = 0
+$finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 804.953 ; gain = 62.039
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: butterfly_beh
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 838.062 ; gain = 33.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'butterfly_beh' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:110]
+	Parameter NUM_OF_WORDS bound to: 5 - type: integer 
+	Parameter POWER bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+	Parameter STAGE bound to: 0 - type: integer 
+	Parameter INPUT_NUM bound to: 2 - type: integer 
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
+ERROR: [Synth 8-196] conditional expression could not be resolved to a constant [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:93]
+ERROR: [Synth 8-6156] failed synthesizing module 'fft_block' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+ERROR: [Synth 8-6156] failed synthesizing module 'butterfly_beh' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:110]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.543 ; gain = 81.590
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -405,155 +261,14 @@ INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:67]
+ERROR: [VRFC 10-2934] 'calc_weight' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-3516] mismatch in closing label 'calc_weight'; expected '<unnamed>' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-128] return statement is illegal here [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+ERROR: [VRFC 10-2865] package 'fft_package' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:22]
+INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
 INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-ERROR: [XSIM 43-3185] "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" Line 67. Number of arguments are less than format specifiers. 
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "butterfly_tb_behav -key {Behavioral:sim_1:Functional:butterfly_tb} -tclbatch {butterfly_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source butterfly_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: Simulation object /butterfly_tb/input_rand was not traceable in the design for the following reason:
-Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
-# run 1000ns
-For n = 1, N = 8 : temp = -0.785398, Re = 0.707107, Im = -0.707107
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-WARNING: [VRFC 10-3248] data object 'cont' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:97]
-ERROR: [VRFC 10-3703] second declaration of 'cont' ignored [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:97]
-WARNING: [VRFC 10-3248] data object 'cont' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:98]
-ERROR: [VRFC 10-3703] second declaration of 'cont' ignored [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:98]
-WARNING: [VRFC 10-3248] data object 'cont' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:99]
-ERROR: [VRFC 10-3703] second declaration of 'cont' ignored [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:99]
-ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:80]
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:119]
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
 ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
@@ -569,295 +284,28 @@ INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "butterfly_tb_behav -key {Behavioral:sim_1:Functional:butterfly_tb} -tclbatch {butterfly_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source butterfly_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: Simulation object /butterfly_tb/input_rand was not traceable in the design for the following reason:
-Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
-# run 1000ns
-For n = 0, N = 8 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 1, N = 8 : temp = -0.785398, Re = 0.707107, Im = -0.707107
-For n = 2, N = 8 : temp = -1.570796, Re = 0.000000, Im = -1.000000
-For n = 3, N = 8 : temp = -2.356194, Re = -0.707107, Im = -0.707107
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-For n = 0, N = 8 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 1, N = 8 : temp = -0.785398, Re = 0.707107, Im = -0.707107
-For n = 2, N = 8 : temp = -1.570796, Re = 0.000000, Im = -1.000000
-For n = 3, N = 8 : temp = -2.356194, Re = -0.707107, Im = -0.707107
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+ERROR: [VRFC 10-2934] 'calc_weight' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-3516] mismatch in closing label 'calc_weight'; expected '<unnamed>' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-128] return statement is illegal here [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+ERROR: [VRFC 10-2865] package 'fft_package' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:22]
 INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-3127] assignment to const variable 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
 INFO: [VRFC 10-311] analyzing module butterfly_beh
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module butterfly_tb
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:119]
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_butterfly_beh_sv
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.fft_block_default
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "butterfly_tb_behav -key {Behavioral:sim_1:Functional:butterfly_tb} -tclbatch {butterfly_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source butterfly_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: Simulation object /butterfly_tb/input_rand was not traceable in the design for the following reason:
-Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
-# run 1000ns
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 25 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 62
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+open_project D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
@@ -868,6 +316,99 @@ INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+ERROR: [VRFC 10-2934] 'calc_weight' is already declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-3516] mismatch in closing label 'calc_weight'; expected '<unnamed>' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:73]
+ERROR: [VRFC 10-128] return statement is illegal here [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+ERROR: [VRFC 10-2865] package 'fft_package' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:22]
+INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-3127] assignment to const variable 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:119]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
+INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-3127] assignment to const variable 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:119]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
+INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-3127] assignment to const variable 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:119]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
+INFO: [VRFC 10-311] analyzing module fft_block
+ERROR: [VRFC 10-1412] syntax error near genvar [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2790] SystemVerilog keyword genvar used in incorrect context [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-2989] 'j' is not declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:103]
+ERROR: [VRFC 10-3127] assignment to const variable 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:104]
+ERROR: [VRFC 10-2989] 'j' is not declared [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:104]
+ERROR: [VRFC 10-3149] bit-select or part-select is not allowed in a assign statement for non-net 'weights' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:104]
+ERROR: [VRFC 10-2865] module 'fft_block' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:88]
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+ERROR: [VRFC 10-2865] module 'butterfly_beh' ignored due to previous errors [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:121]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
 INFO: [VRFC 10-311] analyzing module fft_block
 INFO: [VRFC 10-311] analyzing module butterfly_beh
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
@@ -941,22 +482,22 @@ input_reg[6] = xxxxxxxx
 x_input[7] = xxxxxxxx
 x_input[7] = xxxxxxxx
 input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -965,22 +506,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -989,22 +530,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1013,22 +554,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1037,22 +578,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1073,6 +614,12 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
+INFO: [VRFC 10-311] analyzing module fft_block
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_tb
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-3] XSim::Elaborate design
@@ -1083,7 +630,16 @@ Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6ae
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_butterfly_beh_sv
+Compiling package xil_defaultlib.fft_package
+Compiling module xil_defaultlib.fft_block_default
+Compiling module xil_defaultlib.butterfly_beh_default
+Compiling module xil_defaultlib.butterfly_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot butterfly_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 Vivado Simulator 2018.3
 Time resolution is 1 ps
@@ -1116,22 +672,22 @@ input_reg[6] = xxxxxxxx
 x_input[7] = xxxxxxxx
 x_input[7] = xxxxxxxx
 input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1140,22 +696,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1164,22 +720,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1188,22 +744,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1212,195 +768,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1410,6 +793,77 @@ x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
 $finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 970.957 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: butterfly_beh
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 970.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'butterfly_beh' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:130]
+	Parameter NUM_OF_WORDS bound to: 5 - type: integer 
+	Parameter POWER bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:90]
+	Parameter STAGE bound to: 0 - type: integer 
+	Parameter INPUT_NUM bound to: 2 - type: integer 
+WARNING: [Synth 8-5858] RAM buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fft_block' (1#1) [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:90]
+WARNING: [Synth 8-5858] RAM input_reg_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-4471] merging register 'input_reg_reg[1][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[2][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[3][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[4][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[5][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[6][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[7][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[1][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[2][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[3][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[4][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[5][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[6][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[7][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:190]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly_beh' (2#1) [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:130]
+WARNING: [Synth 8-3331] design fft_block has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 985.195 ; gain = 14.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 985.195 ; gain = 14.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 985.195 ; gain = 14.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1432.176 ; gain = 461.219
+15 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1432.176 ; gain = 461.219
+close_design
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -1422,6 +876,7 @@ INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj butterfly_tb_vlog.prj"
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:66]
 INFO: [VRFC 10-311] analyzing module fft_block
 INFO: [VRFC 10-311] analyzing module butterfly_beh
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
@@ -1495,22 +950,22 @@ input_reg[6] = xxxxxxxx
 x_input[7] = xxxxxxxx
 x_input[7] = xxxxxxxx
 input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1519,22 +974,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1543,22 +998,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1567,22 +1022,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1591,22 +1046,22 @@ input_reg[6] = 0
 x_input[7] = 0
 x_input[7] = 0
 input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
+x_input[0] = c9cb0000
+x_input[0] = c9cb0000
+input_reg[0] = c9cb0000
+x_input[1] = 42cf0000
+x_input[1] = d8a70000
+input_reg[1] = d8a70000
+x_input[2] = 781a0000
+x_input[2] = 42cf0000
+input_reg[2] = 42cf0000
 x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
+x_input[3] = d010000
+input_reg[3] = d010000
+x_input[4] = d8a70000
+x_input[4] = 781a0000
+input_reg[4] = 781a0000
+x_input[5] = d010000
 x_input[5] = 0
 input_reg[5] = 0
 x_input[6] = 0
@@ -1618,181 +1073,76 @@ input_reg[7] = 0
 $finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'butterfly_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = 8f0a0000
-x_input[0] = 8f0a0000
-input_reg[0] = 8f0a0000
-x_input[1] = 54460000
-x_input[1] = 668d0000
-input_reg[1] = 668d0000
-x_input[2] = 29280000
-x_input[2] = 54460000
-input_reg[2] = 54460000
-x_input[3] = 0
-x_input[3] = cf080000
-input_reg[3] = cf080000
-x_input[4] = 668d0000
-x_input[4] = 29280000
-input_reg[4] = 29280000
-x_input[5] = cf080000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
-save_wave_config {D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_block_test_01.wcfg}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: butterfly_beh
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1438.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'butterfly_beh' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:114]
+	Parameter NUM_OF_WORDS bound to: 5 - type: integer 
+	Parameter POWER bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+	Parameter STAGE bound to: 0 - type: integer 
+	Parameter INPUT_NUM bound to: 2 - type: integer 
+WARNING: [Synth 8-5858] RAM buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fft_block' (1#1) [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:79]
+WARNING: [Synth 8-5858] RAM input_reg_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-4471] merging register 'input_reg_reg[1][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[2][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[3][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[4][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[5][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[6][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-4471] merging register 'input_reg_reg[7][Im][15:0]' into 'input_reg_reg[0][Im][15:0]' [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[1][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[2][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[3][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[4][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[5][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[6][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+WARNING: [Synth 8-6014] Unused sequential element input_reg_reg[7][Im] was removed.  [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:174]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly_beh' (2#1) [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:114]
+WARNING: [Synth 8-3331] design fft_block has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1438.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1438.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1438.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1472.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1472.105 ; gain = 33.473
+14 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1472.105 ; gain = 33.473
+close_design
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 02:27:02 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 03:14:07 2021...

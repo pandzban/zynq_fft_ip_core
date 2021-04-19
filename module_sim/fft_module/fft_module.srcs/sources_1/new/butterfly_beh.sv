@@ -61,7 +61,7 @@ package fft_package;
 		return res;
 	endfunction : mult_comp
 
-	function automatic complex_t calc_weight(input int n, input int Nt);
+	function complex_t calc_weight(input int n, input int Nt);
 		complex_t res;
 		real temp = real'(-2 * pi_const) * real'(n) / real'(Nt);
 		$display("For n = %0d, N = %0d : temp = %0f, Re = %0f, Im = %0f", n, Nt, temp, cos(temp), sin(temp));
@@ -86,13 +86,17 @@ module fft_block#(
 		output complex_t Output [INPUT_NUM]
 	);
 
-	complex_t buffer [INPUT_NUM]; 
-	complex_t weights [INPUT_NUM/2]; // constant values
+	// typedef so that function can return whole array
+	typedef complex_t w_t [INPUT_NUM/2];
 
-	// generate weights during elaboration
-	for(genvar j = 0; j < (INPUT_NUM/2); j++) begin
-		assign weights[j] = calc_weight(j, INPUT_NUM);
-	end
+	complex_t buffer [INPUT_NUM]; 
+	const w_t weights = fill_weights(); // constant values // need immidiate assignment
+
+	function w_t fill_weights();
+		for (int j = 0; j < (INPUT_NUM/2); j++) begin 
+			fill_weights[j] = calc_weight(j, INPUT_NUM); // returned array
+		end
+	endfunction : fill_weights
 
 	// two stage calculation => two clock cycles to complete one transfer 
 	always_ff @(posedge clk) begin
