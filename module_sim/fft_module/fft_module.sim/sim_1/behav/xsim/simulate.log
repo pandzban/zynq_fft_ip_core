@@ -1,152 +1,16 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
+For n = 0, N = 8 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 8 : temp = -0.785398, Re = 0.707107, Im = -0.707107
+For n = 2, N = 8 : temp = -1.570796, Re = 0.000000, Im = -1.000000
+For n = 3, N = 8 : temp = -2.356194, Re = -0.707107, Im = -0.707107
+For n = 0, N = 4 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 4 : temp = -1.570796, Re = 0.000000, Im = -1.000000
+For n = 0, N = 4 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 4 : temp = -1.570796, Re = 0.000000, Im = -1.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
-POWER = 8
-x_input[0] = xxxxxxxx
-x_input[0] = xxxxxxxx
-input_reg[0] = xxxxxxxx
-x_input[1] = xxxxxxxx
-x_input[1] = xxxxxxxx
-input_reg[1] = xxxxxxxx
-x_input[2] = xxxxxxxx
-x_input[2] = xxxxxxxx
-input_reg[2] = xxxxxxxx
-x_input[3] = xxxxxxxx
-x_input[3] = xxxxxxxx
-input_reg[3] = xxxxxxxx
-x_input[4] = xxxxxxxx
-x_input[4] = xxxxxxxx
-input_reg[4] = xxxxxxxx
-x_input[5] = xxxxxxxx
-x_input[5] = xxxxxxxx
-input_reg[5] = xxxxxxxx
-x_input[6] = xxxxxxxx
-x_input[6] = xxxxxxxx
-input_reg[6] = xxxxxxxx
-x_input[7] = xxxxxxxx
-x_input[7] = xxxxxxxx
-input_reg[7] = xxxxxxxx
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-x_input[0] = c9cb0000
-x_input[0] = c9cb0000
-input_reg[0] = c9cb0000
-x_input[1] = 42cf0000
-x_input[1] = d8a70000
-input_reg[1] = d8a70000
-x_input[2] = 781a0000
-x_input[2] = 42cf0000
-input_reg[2] = 42cf0000
-x_input[3] = 0
-x_input[3] = d010000
-input_reg[3] = d010000
-x_input[4] = d8a70000
-x_input[4] = 781a0000
-input_reg[4] = 781a0000
-x_input[5] = d010000
-x_input[5] = 0
-input_reg[5] = 0
-x_input[6] = 0
-x_input[6] = 0
-input_reg[6] = 0
-x_input[7] = 0
-x_input[7] = 0
-input_reg[7] = 0
-$finish called at time : 65 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 78
+NUM_OF_WORDS = 6, POWER = 8, NUM_OF_STAGES = 3
+$finish called at time : 125 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 102

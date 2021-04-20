@@ -23,17 +23,12 @@ package fft_package;
 
 	real pi_const = 3.14159265;
 
-	// from internet // Direct Programming Interface
-
+	 // Direct Programming Interface
   	//import dpi task      C Name = SV function name
-
   	import "DPI-C" pure function real cos (input real rTheta);
-
  	import "DPI-C" pure function real sin (input real rTheta);
-
-  	// import "DPI" pure function real log (input real rVal);
-
-  	// import "DPI" pure function real log10 (input real rVal);
+  	// import "DPI-C" pure function real log (input real rVal);
+  	// import "DPI-C" pure function real log10 (input real rVal);
 
 	typedef struct packed{
 		logic [15:0] Re;
@@ -98,7 +93,6 @@ module fft_block#(
 		end
 	endfunction : fill_weights
 
-	// two stage calculation => two clock cycles to complete one transfer 
 	always_ff @(posedge clk) begin
 		for (int i = 0; i < (INPUT_NUM/2); i++) begin
 			buffer[i] <= add_comp(Input[i], Input[i + (INPUT_NUM/2)]);
@@ -112,8 +106,9 @@ endmodule : fft_block
 
 
 module butterfly_beh#(
-		parameter NUM_OF_WORDS = 5,
-		parameter POWER = 2**($clog2(NUM_OF_WORDS))
+		parameter NUM_OF_WORDS = 6,
+		parameter POWER = 2**($clog2(NUM_OF_WORDS-1)),
+		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS-1)
 	)(
 		input logic clk,
 		input logic reset,
@@ -121,54 +116,38 @@ module butterfly_beh#(
 		output logic [15:0] Output [POWER]
 	);
 
-	complex_t input_reg [POWER];
-	complex_t x_input [POWER];
 	logic [15:0] input_real [POWER];
+	logic [15:0] zero_reg = 16'h0000;	// for zero padd
+	complex_t input_reg [POWER];		// complex input			
+	complex_t internal_reg [NUM_OF_STAGES+1][POWER]; 	// internal memory
 	complex_t output_reg [POWER];
-	logic [15:0] zero_reg = 16'h0000;
 
-	// complex_t cont = calc_weight(0, 8);
-	// complex_t cont1 = calc_weight(1, 8);
-	// complex_t cont2 = calc_weight(2, 8);
-	// complex_t cont3 = calc_weight(3, 8);
 
-	fft_block #(.STAGE(0)) block0(
-		.clk,
-		.reset,
-		.Input(x_input[0:1]),
-		.Output(output_reg[0:1])
-	);
 
-	fft_block #(.STAGE(0)) block1(
-		.clk,
-		.reset,
-		.Input(x_input[2:3]),
-		.Output(output_reg[2:3])
-	);
-
-	fft_block #(.STAGE(0)) block2(
-		.clk,
-		.reset,
-		.Input(x_input[4:5]),
-		.Output(output_reg[4:5])
-	);
-
-	fft_block #(.STAGE(0)) block3(
-		.clk,
-		.reset,
-		.Input(x_input[6:7]),
-		.Output(output_reg[6:7])
-	);
+	// generation of fft internal blocks and their connections
+	for (genvar j = 0; j < NUM_OF_STAGES; j++) begin 
+		for (genvar k = 0; k < 2**j; k++) begin
+			fft_block #(.STAGE(NUM_OF_STAGES-j-1)) fft_block_inst(
+				.clk,
+				.reset,
+				.Input(internal_reg[NUM_OF_STAGES-j-1][k*POWER/(2**j):((k+1)*POWER/(2**j))-1]),
+				.Output(internal_reg[NUM_OF_STAGES-j][k*POWER/(2**j):((k+1)*POWER/(2**j))-1])
+			);
+		end
+	end
 
 	initial begin
-		$display("POWER = %0d", POWER);
+		$display("NUM_OF_WORDS = %0d, POWER = %0d, NUM_OF_STAGES = %0d", NUM_OF_WORDS, POWER, NUM_OF_STAGES);
 	end
 
+	// zero padding
 	always_comb begin
+		input_real[0:(POWER-1)] = '{default:16'h0000};
 		input_real[0:(NUM_OF_WORDS-1)] = Input;
-		input_real[NUM_OF_WORDS:(POWER-1)] = '{default:16'h0000};
+		//input_real[NUM_OF_WORDS:(POWER-1)] = '{default:16'h0000};
 	end
 
+	// real to complex values
 	always_ff @(posedge clk) begin 
 		for (int j = 0; j < POWER; j++) begin
 			input_reg[j].Re <= input_real[j];
@@ -176,26 +155,20 @@ module butterfly_beh#(
 		end
 	end
 
-	// always_ff @(posedge clk) begin
-	// 	for (int j = 0; j < POWER; j++) begin
-	// 		output_reg[j] <= x_input[j];
-	// 	end
-	// end
-
-	always @(posedge clk) begin
-		for (int i = 0; i < POWER; i++) begin
-			$display("x_input[%0d] = %0h", i, x_input[i]);
-			$display("x_input[%0d] = %0h", i, input_reg[i]);
-			$display("input_reg[%0d] = %0h", i, input_reg[i]);
+	// connect internal memory matrix to output registers
+	always_ff @(posedge clk) begin
+		for (int j = 0; j < POWER; j++) begin
+			output_reg[j] <= internal_reg[NUM_OF_STAGES][j];
 		end
 	end
 
 	// rearrange input
-	for(genvar j = 0; j < (POWER/2); j++) begin
-		assign x_input[j] = input_reg[2 * j];
-		assign x_input[j + (POWER/2)] = input_reg[(2 * j) + 1];
+	for (genvar j = 0; j < (POWER/2); j++) begin
+		assign internal_reg[0][j] = input_reg[2 * j];
+		assign internal_reg[0][j + (POWER/2)] = input_reg[(2 * j) + 1];
 	end
 
+	// only real outputs -- for now
 	for (genvar j = 0; j < POWER; j++) begin
 		assign Output[j] = output_reg[j].Re;
 	end
