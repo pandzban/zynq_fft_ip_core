@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Apr 20 22:48:52 2021
-# Process ID: 3520
+# Start of session at: Wed Apr 21 20:58:30 2021
+# Process ID: 13840
 # Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15328 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19624 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
 # Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/vivado.log
 # Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module\vivado.jou
 #-----------------------------------------------------------
@@ -13,54 +13,71 @@ start_gui
 open_project D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-launch_simulation
 source butterfly_tb.tcl
+relaunch_sim
+relaunch_sim
 close_sim
-launch_simulation
-launch_simulation
-source butterfly_tb.tcl
-run all
-close_sim
-launch_simulation
-launch_simulation
 launch_simulation
 launch_simulation
 source butterfly_tb.tcl
 relaunch_sim
 close_sim
 launch_simulation
-source butterfly_tb.tcl
-close_sim
 launch_simulation
-source butterfly_tb.tcl
-synth_design -rtl -name rtl_1
-relaunch_sim
-close_sim
-launch_simulation
-source butterfly_tb.tcl
-relaunch_sim
-close_sim
 close_project
 open_project D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr
 update_compile_order -fileset sources_1
 launch_simulation
 source butterfly_tb.tcl
-current_wave_config {Untitled 7}
-add_wave {{/butterfly_tb/uut}} 
+close_sim
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+source butterfly_tb.tcl
 relaunch_sim
+close_sim
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+source butterfly_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source butterfly_tb.tcl
+synth_design -rtl -name rtl_1
+close_design
+close_sim
+launch_simulation
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+source butterfly_tb.tcl
+close_sim
+launch_simulation
+source butterfly_tb.tcl
 synth_design -rtl -name rtl_1
 close_design
 close_sim
 launch_simulation
 source butterfly_tb.tcl
-relaunch_sim
 synth_design -rtl -name rtl_1
 close_design
 close_sim
 launch_simulation
 source butterfly_tb.tcl
-relaunch_sim
 synth_design -rtl -name rtl_1
 close_design
 close_sim
-close_project

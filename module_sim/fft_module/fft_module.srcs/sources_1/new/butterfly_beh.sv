@@ -23,6 +23,13 @@ package fft_package;
 
 	real pi_const = 3.14159265;
 
+	parameter DEFAULT_INPUTS = 6;
+
+	parameter M = 6;	// integer part
+	parameter F = 10;	// fractional part
+
+	parameter DEFAULT_OUTPUTS = 2**($clog2(DEFAULT_INPUTS-1));
+
 	 // Direct Programming Interface
   	//import dpi task      C Name = SV function name
   	import "DPI-C" pure function real cos (input real rTheta);
@@ -31,9 +38,14 @@ package fft_package;
   	// import "DPI-C" pure function real log10 (input real rVal);
 
 	typedef struct packed{
-		logic [15:0] Re;
-		logic [15:0] Im;
+		logic [M-1:-F] Re;
+		logic [M-1:-F] Im;
 	} complex_t;
+
+	typedef struct packed{
+		logic [(2*M)-1:-(2*F)] Re;
+		logic [(2*M)-1:-(2*F)] Im;
+	} complex_mul_res_t;
 
 	function automatic complex_t add_comp(input complex_t a, complex_t b);
 		complex_t res;
@@ -49,10 +61,20 @@ package fft_package;
 		return res;
 	endfunction : sub_comp
 
+	// function automatic complex_t mult_comp(input complex_t a, complex_t b);
+	// 	complex_t res;
+	// 	res.Re = (a.Re * b.Re) - ((a.Im * b.Im));
+	// 	res.Im = (a.Re * b.Im) + ((a.Im * b.Re);
+	// 	return res;
+	// endfunction : mult_comp
+
 	function automatic complex_t mult_comp(input complex_t a, complex_t b);
+		complex_mul_res_t temp;
 		complex_t res;
-		res.Re = (a.Re * b.Re) - (a.Im * b.Im);
-		res.Im = (a.Re * b.Im) + (a.Im * b.Re);
+		temp.Re = ((a.Re * b.Re) >> F) - ((a.Im * b.Im) >> F);
+		temp.Im = ((a.Re * b.Im) >> F) + ((a.Im * b.Re) >> F);
+		res.Re = temp.Re;
+		res.Im = temp.Im;
 		return res;
 	endfunction : mult_comp
 
@@ -60,8 +82,8 @@ package fft_package;
 		complex_t res;
 		real temp = real'(-2 * pi_const) * real'(n) / real'(Nt);
 		$display("For n = %0d, N = %0d : temp = %0f, Re = %0f, Im = %0f", n, Nt, temp, cos(temp), sin(temp));
-		res.Re = cos(temp); // * FRAC 
-		res.Im = sin(temp); // * FRAC
+		res.Re = cos(temp) * (2**F); // * 2^FRAC 
+		res.Im = sin(temp) * (2**F); // * 2^FRAC
 		return res;
 	endfunction : calc_weight
 
@@ -106,39 +128,24 @@ endmodule : fft_block
 
 
 module butterfly_beh#(
-		parameter NUM_OF_WORDS = 6,
+		parameter NUM_OF_WORDS = DEFAULT_INPUTS,
 		parameter POWER = 2**($clog2(NUM_OF_WORDS-1)),
-		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS-1)
+		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS-1),
+		parameter BUFF_DELAY = 5
 	)(
 		input logic clk,
 		input logic reset,
-		input logic [15:0] Input [NUM_OF_WORDS],
-		output logic [15:0] Output [POWER]
+		input logic [M-1:-F] Input [NUM_OF_WORDS],
+		// output logic [M-1:-F] Output [POWER]
+		output complex_t Output [POWER]
 	);
 
-	logic [15:0] input_real [POWER];
-	logic [15:0] zero_reg = 16'h0000;	// for zero padd
+	logic [M-1:-F] input_real [POWER];
+	logic [M-1:-F] zero_reg = 16'h0000;	// for zero padd
 	complex_t input_reg [POWER];		// complex input			
-	complex_t internal_reg [NUM_OF_STAGES+1][POWER]; 	// internal memory
+	complex_t internal_reg [NUM_OF_STAGES+1+BUFF_DELAY][POWER]; 	// internal memory
 	complex_t output_reg [POWER];
-
-
-
-	// generation of fft internal blocks and their connections
-	for (genvar j = 0; j < NUM_OF_STAGES; j++) begin 
-		for (genvar k = 0; k < 2**j; k++) begin
-			fft_block #(.STAGE(NUM_OF_STAGES-j-1)) fft_block_inst(
-				.clk,
-				.reset,
-				.Input(internal_reg[NUM_OF_STAGES-j-1][k*POWER/(2**j):((k+1)*POWER/(2**j))-1]),
-				.Output(internal_reg[NUM_OF_STAGES-j][k*POWER/(2**j):((k+1)*POWER/(2**j))-1])
-			);
-		end
-	end
-
-	initial begin
-		$display("NUM_OF_WORDS = %0d, POWER = %0d, NUM_OF_STAGES = %0d", NUM_OF_WORDS, POWER, NUM_OF_STAGES);
-	end
+	//complex_t buffer_reg [BUFF_DELAY][POWER];
 
 	// zero padding
 	always_comb begin
@@ -155,22 +162,48 @@ module butterfly_beh#(
 		end
 	end
 
-	// connect internal memory matrix to output registers
-	always_ff @(posedge clk) begin
-		for (int j = 0; j < POWER; j++) begin
-			output_reg[j] <= internal_reg[NUM_OF_STAGES][j];
-		end
-	end
-
 	// rearrange input
 	for (genvar j = 0; j < (POWER/2); j++) begin
 		assign internal_reg[0][j] = input_reg[2 * j];
 		assign internal_reg[0][j + (POWER/2)] = input_reg[(2 * j) + 1];
 	end
 
-	// only real outputs -- for now
+	// generation of fft internal blocks and their connections
+	for (genvar j = 0; j < NUM_OF_STAGES; j++) begin 
+		for (genvar k = 0; k < 2**j; k++) begin
+			fft_block #(.STAGE(NUM_OF_STAGES-j-1)) fft_block_inst(
+				.clk,
+				.reset,
+				.Input(internal_reg[NUM_OF_STAGES-j-1][k*POWER/(2**j):((k+1)*POWER/(2**j))-1]),
+				.Output(internal_reg[NUM_OF_STAGES-j][k*POWER/(2**j):((k+1)*POWER/(2**j))-1])
+			);
+		end
+	end
+
+	// buffer registers
+	always_ff @(posedge clk) begin
+		for (int i = 0; i < BUFF_DELAY; i++) begin 	
+			for (int k = 0; k < POWER; k++) begin
+				internal_reg[i+NUM_OF_STAGES+1][k] <= internal_reg[i+NUM_OF_STAGES][k];  
+			end
+		end
+	end
+
+	// connect internal memory matrix to output registers
+	always_ff @(posedge clk) begin
+		for (int j = 0; j < POWER; j++) begin
+			output_reg[j] <= internal_reg[NUM_OF_STAGES+BUFF_DELAY][j];
+		end
+	end
+
+	// only real outputs? -- for now
 	for (genvar j = 0; j < POWER; j++) begin
-		assign Output[j] = output_reg[j].Re;
+		//assign Output[j] = output_reg[j].Re;
+		assign Output[j] = output_reg[j];
+	end
+
+	initial begin
+		$display("NUM_OF_WORDS = %0d, POWER = %0d, NUM_OF_STAGES = %0d", NUM_OF_WORDS, POWER, NUM_OF_STAGES);
 	end
 
 endmodule : butterfly_beh

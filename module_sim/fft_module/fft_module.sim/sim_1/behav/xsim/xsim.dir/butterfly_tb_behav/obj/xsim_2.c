@@ -102,24 +102,24 @@ namespace XILINX_DPI {
 	{
 		DPIAllocateSVCallerInfo(4) ;
 		DPISetCallerName(0, "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv") ;
-		DPISetCallerLine(0, 62) ;
+		DPISetCallerLine(0, 84) ;
 		DPISetCallerOffset(0, 0) ;
 		DPISetCallerName(1, "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv") ;
-		DPISetCallerLine(1, 62) ;
+		DPISetCallerLine(1, 84) ;
 		DPISetCallerOffset(1, 0) ;
 		DPISetCallerName(2, "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv") ;
-		DPISetCallerLine(2, 63) ;
+		DPISetCallerLine(2, 85) ;
 		DPISetCallerOffset(2, 0) ;
 		DPISetCallerName(3, "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv") ;
-		DPISetCallerLine(3, 64) ;
+		DPISetCallerLine(3, 86) ;
 		DPISetCallerOffset(3, 0) ;
 		DPIAllocateDPIScopes(2) ;
 		DPISetDPIScopeFunctionName(0, "cos") ;
 		DPISetDPIScopeHierarchy(0, "fft_package") ;
-		DPIRelocateDPIScopeIP(0, (char*)(0x59a0)) ;
+		DPIRelocateDPIScopeIP(0, (char*)(0x6268)) ;
 		DPISetDPIScopeFunctionName(1, "sin") ;
 		DPISetDPIScopeHierarchy(1, "fft_package") ;
-		DPIRelocateDPIScopeIP(1, (char*)(0x59a0)) ;
+		DPIRelocateDPIScopeIP(1, (char*)(0x6268)) ;
 	}
 
 }

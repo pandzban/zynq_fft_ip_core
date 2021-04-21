@@ -21,7 +21,12 @@
 
 
 class Input_vector;
-	rand bit [15:0] x_input [6];
+	rand bit [M-1:-F] x_input [DEFAULT_INPUTS];
+	constraint input_cstr {
+		foreach (x_input[i]){
+			x_input[i][M-1:0] == 0; // below 1.0
+		}
+	}
 endclass : Input_vector
 
 import fft_package::*;
@@ -29,9 +34,11 @@ import fft_package::*;
 module butterfly_tb;
 	logic clk;
 	logic reset;
-	logic [15:0] Input [6];
-	logic [15:0] Output [8];
+	logic [M-1:-F] Input [DEFAULT_INPUTS];
+	//logic [M-1:-F] Output [8];
+	complex_t Output [DEFAULT_OUTPUTS];
 	Input_vector input_rand;
+	parameter SIM_TIME = 20;	// in clk cycles
 
 	butterfly_beh uut(
 	   .clk,
@@ -48,57 +55,17 @@ module butterfly_tb;
 		foreach(Input[i]) begin
 			Input[i] = input_rand.x_input[i];
 		end
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
-		#5;
-		clk = 0;
-		#5;
-		clk = 1;
+	end
+
+	always begin
+		#5; 
+		clk = ~clk;
+	end
+
+	initial begin 
+		for (int i = 0; i < SIM_TIME; i++) begin 
+			@(posedge clk);
+		end
 		$finish;
 	end
 

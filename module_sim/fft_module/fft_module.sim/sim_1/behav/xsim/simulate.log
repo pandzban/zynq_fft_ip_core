@@ -13,4 +13,4 @@ For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
 NUM_OF_WORDS = 6, POWER = 8, NUM_OF_STAGES = 3
-$finish called at time : 125 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 102
+$finish called at time : 195 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 69
