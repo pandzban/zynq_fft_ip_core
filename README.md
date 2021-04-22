@@ -1,3 +1,4 @@
 # zynq_fft_ip_core
 
-Projekt wykonany przez: Adam Gawlik i Dominik Różycki na przedmiot SDUP
+Cooley-Tukey FFT algorithm implementation as IP-Core for Zynq7000 System on Chip project for course Dedicated Systems in Programmable Devices.
+
