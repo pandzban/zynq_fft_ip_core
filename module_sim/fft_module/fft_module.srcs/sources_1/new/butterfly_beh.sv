@@ -118,9 +118,9 @@ module fft_block#(
 	always_ff @(posedge clk) begin
 		for (int i = 0; i < (INPUT_NUM/2); i++) begin
 			buffer[i] <= add_comp(Input[i], Input[i + (INPUT_NUM/2)]);
-			buffer[i + (INPUT_NUM/2)] <= sub_comp(Input[i], Input[i + (INPUT_NUM/2)]);
+			buffer[i + (INPUT_NUM/2)] <= sub_comp(Input[i], Input[i + (INPUT_NUM/2)]); // just 18 DSP blocks
 			Output[i] <= buffer[i];
-			Output[i + (INPUT_NUM/2)] <= mult_comp(buffer[i + (INPUT_NUM/2)], weights[i]); 
+			Output[i + (INPUT_NUM/2)] <= mult_comp(buffer[i + (INPUT_NUM/2)], weights[i]); // use BRAM
 		end
 	end
 
