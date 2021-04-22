@@ -115,16 +115,62 @@ module fft_block#(
 		end
 	endfunction : fill_weights
 
+	// always_ff @(posedge clk) begin
+	// 	for (int i = 0; i < (INPUT_NUM/2); i++) begin
+	// 		buffer[i] <= add_comp(Input[i], Input[i + (INPUT_NUM/2)]);
+	// 		buffer[i + (INPUT_NUM/2)] <= sub_comp(Input[i], Input[i + (INPUT_NUM/2)]); 
+	// 		Output[i] <= buffer[i];
+	// 		Output[i + (INPUT_NUM/2)] <= mult_comp(buffer[i + (INPUT_NUM/2)], weights[i]); // use BRAM
+	// 	end
+	// end
+
 	always_ff @(posedge clk) begin
 		for (int i = 0; i < (INPUT_NUM/2); i++) begin
-			buffer[i] <= add_comp(Input[i], Input[i + (INPUT_NUM/2)]);
-			buffer[i + (INPUT_NUM/2)] <= sub_comp(Input[i], Input[i + (INPUT_NUM/2)]); // just 18 DSP blocks
-			Output[i] <= buffer[i];
-			Output[i + (INPUT_NUM/2)] <= mult_comp(buffer[i + (INPUT_NUM/2)], weights[i]); // use BRAM
+			buffer[i] <= Input[i];
+			buffer[i + (INPUT_NUM/2)] <= mult_comp(Input[i + (INPUT_NUM/2)], weights[i]); // use BRAM
+			Output[i] <= add_comp(buffer[i], buffer[i + (INPUT_NUM/2)]);
+			Output[i + (INPUT_NUM/2)] <= sub_comp(buffer[i], buffer[i + (INPUT_NUM/2)]);  
 		end
 	end
 
 endmodule : fft_block
+
+module rearrange_n_zero_padd#(
+		parameter NUM_OF_WORDS = DEFAULT_INPUTS,
+		parameter POWER = 2**($clog2(NUM_OF_WORDS-1))
+	)(
+		input logic clk,
+		input logic reset,
+		input logic [M-1:-F] Input [NUM_OF_WORDS],
+		output complex_t Output [POWER]
+	);
+
+	logic [M-1:-F] input_real [POWER];
+	logic [M-1:-F] zero_reg = 16'h0000;	// for zero padd
+	complex_t rearr_reg [POWER];
+
+	// zero padding
+	always_comb begin
+		input_real[0:(POWER-1)] = '{default:16'h0000};
+		input_real[0:(NUM_OF_WORDS-1)] = Input;
+		//input_real[NUM_OF_WORDS:(POWER-1)] = '{default:16'h0000};
+	end
+
+	// real to complex values
+	always_ff @(posedge clk) begin 
+		for (int j = 0; j < POWER; j++) begin
+			rearr_reg[j].Re <= input_real[j];
+			rearr_reg[j].Im <= zero_reg;
+		end
+	end
+
+	// rearrange input
+	for (genvar j = 0; j < (POWER/2); j++) begin
+		assign Output[j] = rearr_reg[2 * j];
+		assign Output[j + (POWER/2)] = rearr_reg[(2 * j) + 1];
+	end
+
+endmodule : rearrange_n_zero_padd
 
 
 module butterfly_beh#(
@@ -140,32 +186,21 @@ module butterfly_beh#(
 		output complex_t Output [POWER]
 	);
 
-	logic [M-1:-F] input_real [POWER];
-	logic [M-1:-F] zero_reg = 16'h0000;	// for zero padd
-	complex_t input_reg [POWER];		// complex input			
+	complex_t x_input [POWER];
 	complex_t internal_reg [NUM_OF_STAGES+1+BUFF_DELAY][POWER]; 	// internal memory
 	complex_t output_reg [POWER];
 	//complex_t buffer_reg [BUFF_DELAY][POWER];
 
-	// zero padding
-	always_comb begin
-		input_real[0:(POWER-1)] = '{default:16'h0000};
-		input_real[0:(NUM_OF_WORDS-1)] = Input;
-		//input_real[NUM_OF_WORDS:(POWER-1)] = '{default:16'h0000};
-	end
 
-	// real to complex values
-	always_ff @(posedge clk) begin 
-		for (int j = 0; j < POWER; j++) begin
-			input_reg[j].Re <= input_real[j];
-			input_reg[j].Im <= zero_reg;
-		end
-	end
+	rearrange_n_zero_padd #(.NUM_OF_WORDS(NUM_OF_WORDS)) rearrange_inst(
+		.clk,
+		.reset,
+		.Input,
+		.Output(x_input)
+	);
 
-	// rearrange input
-	for (genvar j = 0; j < (POWER/2); j++) begin
-		assign internal_reg[0][j] = input_reg[2 * j];
-		assign internal_reg[0][j + (POWER/2)] = input_reg[(2 * j) + 1];
+	for (genvar j = 0; j < POWER; j++) begin
+		assign internal_reg[0][j] = x_input[j];
 	end
 
 	// generation of fft internal blocks and their connections
