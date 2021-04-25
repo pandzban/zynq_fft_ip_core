@@ -116,10 +116,10 @@ namespace XILINX_DPI {
 		DPIAllocateDPIScopes(2) ;
 		DPISetDPIScopeFunctionName(0, "cos") ;
 		DPISetDPIScopeHierarchy(0, "fft_package") ;
-		DPIRelocateDPIScopeIP(0, (char*)(0x94f0)) ;
+		DPIRelocateDPIScopeIP(0, (char*)(0x95f0)) ;
 		DPISetDPIScopeFunctionName(1, "sin") ;
 		DPISetDPIScopeHierarchy(1, "fft_package") ;
-		DPIRelocateDPIScopeIP(1, (char*)(0x94f0)) ;
+		DPIRelocateDPIScopeIP(1, (char*)(0x95f0)) ;
 	}
 
 }

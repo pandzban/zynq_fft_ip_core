@@ -3,17 +3,5 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: E:/Vivado_2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.fft_package
-Compiling module xil_defaultlib.rearrange_zero_padd(NUM_OF_WORDS...
-Compiling module xil_defaultlib.single_fft_block(STAGE=3)
-Compiling module xil_defaultlib.single_fft_block(STAGE=2)
-Compiling module xil_defaultlib.single_fft_block(STAGE=1)
-Compiling module xil_defaultlib.single_fft_block_default
-Compiling module xil_defaultlib.butterfly_beh_default
-Compiling module xil_defaultlib.butterfly_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot butterfly_tb_behav
+ERROR: [VRFC 10-2991] 'Re' is not declared under prefix 'Data_Input_Vectors' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

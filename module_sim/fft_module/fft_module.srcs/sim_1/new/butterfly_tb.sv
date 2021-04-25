@@ -32,9 +32,9 @@
 import fft_package::*;
 
 module butterfly_tb;
-    parameter NUM_OF_VECTORS = 3;
+    parameter NUM_OF_VECTORS = 4; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO MEMORY AND CHOOSE FROM
     logic [15:0] Data_Input_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
-    logic [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
+    complex_t [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
     logic [15:0] Data_Output_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
     logic [15:0] Data_Vector_Outputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
 	logic clk;
@@ -56,7 +56,7 @@ module butterfly_tb;
         $readmemb("C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Output_Vectors.csv", Data_Vector_Outputs);
         for(Adress =0; Adress < NUM_OF_VECTORS;Adress = Adress + 1) begin
             Data_Input_Vectors[Adress] = Data_Vector_Inputs[Adress*16+:16];
-            Data_Output_Vectors[Adress] = Data_Vector_Outputs[Adress*16+:16];
+//            Data_Output_Vectors[Adress] = Data_Vector_Outputs[Adress*16+:16];
         end
     end
     
@@ -65,7 +65,8 @@ module butterfly_tb;
 		reset = 0;
 		valid_in = 0;
 		#10;
-		Input_FFT = Data_Input_Vectors[1];
+		//0 - CONST SIGNAL = 0, 1 - CONST SIGNAL = 1, 2 - SQUARE SIGNAL, 3 - SINUS SIGNAL, 4 - COSINUS SIGNAL
+		Input_FFT = Data_Input_Vectors[3]; //CHOOSE WHICH INPUT_VECTOR IS GOING TO BE LOADED 
 		valid_in = 1;
 		#10;
 		valid_in = 0;

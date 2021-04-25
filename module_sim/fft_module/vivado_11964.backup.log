@@ -2,27 +2,20 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr 25 21:01:54 2021
-# Process ID: 11232
+# Start of session at: Sun Apr 25 20:14:34 2021
+# Process ID: 11964
 # Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9792 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16504 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
 # Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
 # Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
 update_compile_order -fileset sources_1
-launch_simulation
-source butterfly_tb.tcl
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-close_sim
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 25 20:18:29 2021...
