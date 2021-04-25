@@ -28,40 +28,45 @@
 // 		}
 // 	}
 // endclass : Input_vector
-
+`include "fft_package.sv"
 import fft_package::*;
 
 module butterfly_tb;
+    parameter NUM_OF_VECTORS = 3;
+    logic [15:0] Data_Input_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
+    logic [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
+    logic [15:0] Data_Output_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
+    logic [15:0] Data_Vector_Outputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
 	logic clk;
 	logic reset;
+	logic [M-1:-F] Input_FFT [DEFAULT_INPUTS-1:0];
 	logic valid_in;
 	logic valid_out;
-	real Input_ref [6] = {0.135, 0.45, 0.95, 0.12, 0.0, 0.89};
-	real Input_ref2 [3] = {0.12, 0.435, 0.89};
-	logic [M-1:-F] Input [6];
 	//logic [M-1:-F] Output [8];
-	complex_t Output [DEFAULT_OUTPUTS];
-	//Input_vector input_rand;
+	complex_t Output_FFT [DEFAULT_OUTPUTS-1:0];
 	parameter SIM_TIME = 20;	// in clk cycles
 
-	butterfly_beh uut(
-	   .clk,
-	   .reset,
-	   .valid_in,
-	   .Input,
-	   .valid_out,
-	   .Output
-	);
-
-	initial begin
+    initial begin
+        int Adress;
+//          Read_Input = $fopen("C:/Users/Vrael/Desktop/FFT_Project/Input_Vectors.csv","r");
+//          Read_Output = $fopen("C:/Users/Vrael/Desktop/FFT_Project/Output_Vectors.csv","r");
+//          status = $fread(Read_Input,"%d\n",Data_Vector_Inputs);
+//          status = $fread(Read_Output,"%d\n",Data_Vector_Outputs);
+        $readmemb("C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Input_Vectors.csv", Data_Vector_Inputs);
+        $readmemb("C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Output_Vectors.csv", Data_Vector_Outputs);
+        for(Adress =0; Adress < NUM_OF_VECTORS;Adress = Adress + 1) begin
+            Data_Input_Vectors[Adress] = Data_Vector_Inputs[Adress*16+:16];
+            Data_Output_Vectors[Adress] = Data_Vector_Outputs[Adress*16+:16];
+        end
+    end
+    
+    initial begin
 		clk = 0;
 		reset = 0;
 		valid_in = 0;
 		#10;
+		Input_FFT = Data_Input_Vectors[1];
 		valid_in = 1;
-		foreach(Input_ref[i]) begin
-			Input[i] = Input_ref[i] * (2**F);
-		end
 		#10;
 		valid_in = 0;
 		// input_rand = new();
@@ -70,17 +75,27 @@ module butterfly_tb;
 		// 	Input[i] = input_rand.x_input[i];
 		// end
 	end
-
-	always begin
-		#5; 
-		clk = ~clk;
-	end
-
-	initial begin 
+    
+    initial begin 
 		for (int i = 0; i < SIM_TIME; i++) begin 
 			@(posedge clk);
 		end
 		$finish;
 	end
+    
+    //Clock
+    always begin
+        #5; 
+        clk = ~clk;
+	end
+
+	butterfly_beh uut(
+	   .clk,
+	   .reset,
+	   .valid_in,
+	   .Input(Input_FFT),
+	   .valid_out,
+	   .Output(Output_FFT)
+	);
 
 endmodule
