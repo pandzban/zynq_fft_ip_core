@@ -373,6 +373,24 @@ a[Sign] = x, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
 tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
 BEGIN WITH a = 0, b = 10000000000
 a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
@@ -391,42 +409,24 @@ a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = 0, btemp = 10000000000
 tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
 BEGIN WITH a = 0, b = 0
 a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2], a.Re = 0, b.Im = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
 BEGIN WITH a = 0, b = 10000000000
 a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 1110001111, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1110001111, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 1110001111, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1110001111, btemp = 0
-tempw[2], a.Re = 38f, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
 BEGIN WITH a = 0, b = 10000000000
 a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
@@ -733,6 +733,222 @@ a[Sign] = x, b[Sign] = 1
 signa = 0, bsign = 1, bool = 1
 END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
 tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = 0, b = 1111110000000000
+a[Sign] = 0, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = 0, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = 0, b = 1111110000000000
+a[Sign] = 0, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = 0, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+tempw[2] = xxxx, tempw[3] = 0, res.Im = xxxx
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+tempw[2], a.Re = 0, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = 0, tempw[3] = 0, res.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+tempw[2], a.Re = 0, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = 0, tempw[3] = 0, res.Im = 0
+BEGIN WITH a = 1110001111, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 1110001111, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = 1110001111, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 1110001111, btemp = 0
+tempw[2], a.Re = 38f, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = 0, tempw[3] = 0, res.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+BEGIN WITH a = 0, b = 0
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 0
+tempw[2], a.Re = 0, b.Im = 0
+BEGIN WITH a = 0, b = 10000000000
+a[Sign] = 0, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = 0, btemp = 10000000000
+tempw[2] = 0, tempw[3] = 0, res.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1011010100
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2], a.Re = xxxx, b.Im = fd2c
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1011010100
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2], a.Re = xxxx, b.Im = fd2c
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
 BEGIN WITH a = 1111001101, b = 10000000000
 a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
@@ -3901,220 +4117,4 @@ a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = 0, btemp = 10000000000
 tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 10111010111, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 10111010111, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 10111010111, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 10111010111, btemp = 0
-tempw[2], a.Re = 5d7, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 1111111000111110, b = 1011010100
-a[Sign] = 1, b[Sign] = 0
-signa = 1, bsign = 0, bool = 1
-END WITH atemp = 111000010, btemp = 1011010100
-BEGIN WITH a = 1111111110000101, b = 1111110100101100
-a[Sign] = 1, b[Sign] = 1
-signa = 1, bsign = 1, bool = 0
-END WITH atemp = 1111011, btemp = 1011010100
-BEGIN WITH a = 1111111000111110, b = 1111110100101100
-a[Sign] = 1, b[Sign] = 1
-signa = 1, bsign = 1, bool = 0
-END WITH atemp = 111000010, btemp = 1011010100
-tempw[2], a.Re = fe3e, b.Im = fd2c
-BEGIN WITH a = 1111111110000101, b = 1011010100
-a[Sign] = 1, b[Sign] = 0
-signa = 1, bsign = 0, bool = 1
-END WITH atemp = 1111011, btemp = 1011010100
-tempw[2] = 13e, tempw[3] = ffaa, res.Im = e8
-BEGIN WITH a = 10011100001, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 10011100001, btemp = 0
-BEGIN WITH a = 0, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 10011100001, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 10011100001, btemp = 10000000000
-tempw[2], a.Re = 4e1, b.Im = fc00
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2] = fb1f, tempw[3] = 0, res.Im = fb1f
-BEGIN WITH a = 1111111000111110, b = 1111110100101100
-a[Sign] = 1, b[Sign] = 1
-signa = 1, bsign = 1, bool = 0
-END WITH atemp = 111000010, btemp = 1011010100
-BEGIN WITH a = 1111011, b = 1111110100101100
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 1111011, btemp = 1011010100
-BEGIN WITH a = 1111111000111110, b = 1111110100101100
-a[Sign] = 1, b[Sign] = 1
-signa = 1, bsign = 1, bool = 0
-END WITH atemp = 111000010, btemp = 1011010100
-tempw[2], a.Re = fe3e, b.Im = fd2c
-BEGIN WITH a = 1111011, b = 1111110100101100
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 1111011, btemp = 1011010100
-tempw[2] = 13e, tempw[3] = ffaa, res.Im = e8
-BEGIN WITH a = 1111001101, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111001101, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 1111001101, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111001101, btemp = 0
-tempw[2], a.Re = 3cd, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 1111001101, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111001101, btemp = 0
-BEGIN WITH a = 0, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 1111001101, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 1111001101, btemp = 10000000000
-tempw[2], a.Re = 3cd, b.Im = fc00
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2] = fc33, tempw[3] = 0, res.Im = fc33
-BEGIN WITH a = 1111011, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111011, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 1111011, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111011, btemp = 0
-tempw[2], a.Re = 7b, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 1111011, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1111011, btemp = 0
-BEGIN WITH a = 0, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 1111011, b = 1111110000000000
-a[Sign] = 0, b[Sign] = 1
-signa = 0, bsign = 1, bool = 1
-END WITH atemp = 1111011, btemp = 10000000000
-tempw[2], a.Re = 7b, b.Im = fc00
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2] = ff85, tempw[3] = 0, res.Im = ff85
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2], a.Re = 0, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2], a.Re = 0, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 1110001111, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1110001111, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 1110001111, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 1110001111, btemp = 0
-tempw[2], a.Re = 38f, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-BEGIN WITH a = 0, b = 0
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 0
-tempw[2], a.Re = 0, b.Im = 0
-BEGIN WITH a = 0, b = 10000000000
-a[Sign] = 0, b[Sign] = 0
-signa = 0, bsign = 0, bool = 0
-END WITH atemp = 0, btemp = 10000000000
-tempw[2] = 0, tempw[3] = 0, res.Im = 0
-$finish called at time : 195 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 74
+$finish called at time : 195 ns : File "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 83

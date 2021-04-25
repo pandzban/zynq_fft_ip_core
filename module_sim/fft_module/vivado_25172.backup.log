@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 25 03:47:48 2021
+# Process ID: 25172
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15084 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/vivado.log
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'butterfly_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj butterfly_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:131]
+INFO: [VRFC 10-311] analyzing module fft_block
+INFO: [VRFC 10-311] analyzing module rearrange_n_zero_padd
+WARNING: [VRFC 10-3824] variable 'temp' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:214]
+WARNING: [VRFC 10-3824] variable 'j' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:217]
+WARNING: [VRFC 10-3824] variable 'n2' must explicitly be declared as automatic or static [D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/butterfly_beh.sv:218]
+INFO: [VRFC 10-311] analyzing module butterfly_beh
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx2/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.fft_package
+Compiling module xil_defaultlib.rearrange_n_zero_padd(NUM_OF_WOR...
+Compiling module xil_defaultlib.fft_block(STAGE=2)
+Compiling module xil_defaultlib.fft_block(STAGE=1)
+Compiling module xil_defaultlib.fft_block_default
+Compiling module xil_defaultlib.butterfly_beh_default
+Compiling module xil_defaultlib.butterfly_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot butterfly_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "butterfly_tb_behav -key {Behavioral:sim_1:Functional:butterfly_tb} -tclbatch {butterfly_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source butterfly_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+For n = 0, N = 8 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 8 : temp = -0.785398, Re = 0.707107, Im = -0.707107
+For n = 2, N = 8 : temp = -1.570796, Re = 0.000000, Im = -1.000000
+For n = 3, N = 8 : temp = -2.356194, Re = -0.707107, Im = -0.707107
+For n = 0, N = 4 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 4 : temp = -1.570796, Re = 0.000000, Im = -1.000000
+For n = 0, N = 4 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 1, N = 4 : temp = -1.570796, Re = 0.000000, Im = -1.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+For n = 0, N = 2 : temp = -0.000000, Re = 1.000000, Im = -0.000000
+NUM_OF_WORDS = 6, POWER = 8, NUM_OF_STAGES = 3
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1011010100
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2], a.Re = xxxx, b.Im = fd2c
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1011010100
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2], a.Re = xxxx, b.Im = fd2c
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110100101100
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 1011010100
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 1111110000000000
+a[Sign] = x, b[Sign] = 1
+signa = 0, bsign = 1, bool = 1
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2], a.Re = xxxx, b.Im = fc00
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 0
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 0
+tempw[2], a.Re = xxxx, b.Im = 0
+BEGIN WITH a = xxxxxxxxxxxxxxxx, b = 10000000000
+a[Sign] = x, b[Sign] = 0
+signa = 0, bsign = 0, bool = 0
+END WITH atemp = xxxxxxxxxxxxxxxx, btemp = 10000000000
+tempw[2] = xxxx, tempw[3] = xxxx, res.Im = xxxx

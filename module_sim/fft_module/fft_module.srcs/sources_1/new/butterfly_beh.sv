@@ -213,10 +213,10 @@ module rearrange_n_zero_padd#(
 	function arr_t rearrange(input complex_t a[POWER]);
 		complex_t temp[POWER] = a;
 		complex_t tempx;
-		int n1;
-		int j = 0;
-		int n2 = POWER/2;
-		for (int i = 1; i < POWER -1; i++) begin 
+		int n1, n2, j, i;
+		j = 0;
+		n2 = POWER/2;
+		for (i = 1; i < POWER -1; i++) begin 
 			n1 = n2;
 			while (j >= n1) begin 
 				j = j -n1;
@@ -237,19 +237,24 @@ endmodule : rearrange_n_zero_padd
 
 module butterfly_beh#(
 		parameter NUM_OF_WORDS = DEFAULT_INPUTS,
+		parameter DATA_PROCESS_TIME = 8, 	// minimum (NUM_OF_STAGES*2) + 1
 		parameter POWER = 2**($clog2(NUM_OF_WORDS)),
 		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS),
-		parameter BUFF_DELAY = 5
+		parameter BUFF_DELAY = DATA_PROCESS_TIME - (NUM_OF_STAGES*2),
+		parameter BUFF_LENG = (NUM_OF_STAGES*2)+1+BUFF_DELAY
 	)(
 		input logic clk,
 		input logic reset,
+		input logic valid_in,
 		input logic [M-1:-F] Input [NUM_OF_WORDS],
+		output logic valid_out,
 		// output logic [M-1:-F] Output [POWER]
 		output complex_t Output [POWER]
 	);
 
 	complex_t x_input [POWER];
 	complex_t internal_reg [NUM_OF_STAGES+1+BUFF_DELAY][POWER]; 	// internal memory
+	logic valid_reg [BUFF_LENG];
 	complex_t output_reg [POWER];
 	//complex_t buffer_reg [BUFF_DELAY][POWER];
 
@@ -260,6 +265,14 @@ module butterfly_beh#(
 		.Input,
 		.Output(x_input)
 	);
+
+	always_ff @(posedge clk) begin
+		for (int i = 0; i < BUFF_LENG-1; i++) begin
+			valid_reg [i + 1] <= valid_reg[i];
+			valid_reg [0] <= valid_in;
+			valid_out <= valid_reg[BUFF_LENG-1];
+		end
+	end
 
 	for (genvar j = 0; j < POWER; j++) begin
 		assign internal_reg[0][j] = x_input[j];
