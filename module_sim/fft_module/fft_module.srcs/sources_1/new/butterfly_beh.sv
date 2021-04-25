@@ -27,8 +27,9 @@ package fft_package;
 
 	parameter M = 6;	// integer part
 	parameter F = 10;	// fractional part
+	parameter SIGN = M-1;
 
-	parameter DEFAULT_OUTPUTS = 2**($clog2(DEFAULT_INPUTS-1));
+	parameter DEFAULT_OUTPUTS = 2**($clog2(DEFAULT_INPUTS)); // -1
 
 	 // Direct Programming Interface
   	//import dpi task      C Name = SV function name
@@ -36,6 +37,9 @@ package fft_package;
  	import "DPI-C" pure function real sin (input real rTheta);
   	// import "DPI-C" pure function real log (input real rVal);
   	// import "DPI-C" pure function real log10 (input real rVal);
+
+	typedef logic [M-1:-F] word_t;
+	typedef logic [(2*M)-1:-(2*F)] long_word_t;
 
 	typedef struct packed{
 		logic [M-1:-F] Re;
@@ -70,13 +74,57 @@ package fft_package;
 
 	function automatic complex_t mult_comp(input complex_t a, complex_t b);
 		complex_mul_res_t temp;
+		long_word_t tempw [4];
 		complex_t res;
-		temp.Re = ((a.Re * b.Re) >> F) - ((a.Im * b.Im) >> F);
-		temp.Im = ((a.Re * b.Im) >> F) + ((a.Im * b.Re) >> F);
-		res.Re = temp.Re;
-		res.Im = temp.Im;
+
+		tempw[0] = sign_mult(a.Re, b.Re);
+		tempw[1] = sign_mult(a.Im, b.Im);
+		tempw[2] = sign_mult(a.Re, b.Im);
+		$display("tempw[2], a.Re = %0h, b.Im = %0h", a.Re, b.Im);
+		tempw[3] = sign_mult(a.Im, b.Re);
+		res.Re = tempw[0] - tempw[1];
+
+		res.Im = tempw[2] + tempw[3];
+		$display("tempw[2] = %0h, tempw[3] = %0h, res.Im = %0h", tempw[2], tempw[3], res.Im);
 		return res;
 	endfunction : mult_comp
+
+	function automatic word_t sign_mult (input word_t a, word_t b);
+		word_t atemp, btemp;
+		logic signa = 0; logic signb = 0;
+		long_word_t res;
+		$display("BEGIN WITH a = %0b, b = %0b", a , b);
+		$display("a[Sign] = %0h, b[Sign] = %0h",a[SIGN] , b[SIGN]);
+		if (a[SIGN] == 1) begin
+			atemp = change_sign(a);
+			signa = 1;
+		end else begin 
+			atemp = a;
+		end
+
+		if (b[SIGN] == 1) begin
+			btemp = change_sign(b);
+			signb = 1;
+		end else begin 
+			btemp = b; 
+		end
+
+		res = (atemp * btemp) >> F;
+		$display("signa = %0h, bsign = %0h, bool = %0h", signa, signb, signa ^ signb);
+		if ((signa ^ signb)) begin
+			res = change_sign(res);
+		end
+
+		$display("END WITH atemp = %0b, btemp = %0b", atemp , btemp);
+
+		return res;
+	endfunction : sign_mult
+
+	function automatic word_t change_sign (input word_t a);
+		word_t res;
+		res = ~a + 1;
+		return res;
+	endfunction : change_sign
 
 	function complex_t calc_weight(input int n, input int Nt);
 		complex_t res;
@@ -86,6 +134,8 @@ package fft_package;
 		res.Im = sin(temp) * (2**F); // * 2^FRAC
 		return res;
 	endfunction : calc_weight
+
+
 
 endpackage : fft_package
 
@@ -115,15 +165,6 @@ module fft_block#(
 		end
 	endfunction : fill_weights
 
-	// always_ff @(posedge clk) begin
-	// 	for (int i = 0; i < (INPUT_NUM/2); i++) begin
-	// 		buffer[i] <= add_comp(Input[i], Input[i + (INPUT_NUM/2)]);
-	// 		buffer[i + (INPUT_NUM/2)] <= sub_comp(Input[i], Input[i + (INPUT_NUM/2)]); 
-	// 		Output[i] <= buffer[i];
-	// 		Output[i + (INPUT_NUM/2)] <= mult_comp(buffer[i + (INPUT_NUM/2)], weights[i]); // use BRAM
-	// 	end
-	// end
-
 	always_ff @(posedge clk) begin
 		for (int i = 0; i < (INPUT_NUM/2); i++) begin
 			buffer[i] <= Input[i];
@@ -137,13 +178,15 @@ endmodule : fft_block
 
 module rearrange_n_zero_padd#(
 		parameter NUM_OF_WORDS = DEFAULT_INPUTS,
-		parameter POWER = 2**($clog2(NUM_OF_WORDS-1))
+		parameter POWER = 2**($clog2(NUM_OF_WORDS))
 	)(
 		input logic clk,
 		input logic reset,
 		input logic [M-1:-F] Input [NUM_OF_WORDS],
 		output complex_t Output [POWER]
 	);
+
+	typedef complex_t arr_t [POWER];
 
 	logic [M-1:-F] input_real [POWER];
 	logic [M-1:-F] zero_reg = 16'h0000;	// for zero padd
@@ -164,19 +207,38 @@ module rearrange_n_zero_padd#(
 		end
 	end
 
-	// rearrange input
-	for (genvar j = 0; j < (POWER/2); j++) begin
-		assign Output[j] = rearr_reg[2 * j];
-		assign Output[j + (POWER/2)] = rearr_reg[(2 * j) + 1];
-	end
+	// bit reversal rearrange of input
+	assign Output = rearrange(rearr_reg);
+
+	function arr_t rearrange(input complex_t a[POWER]);
+		complex_t temp[POWER] = a;
+		complex_t tempx;
+		int n1;
+		int j = 0;
+		int n2 = POWER/2;
+		for (int i = 1; i < POWER -1; i++) begin 
+			n1 = n2;
+			while (j >= n1) begin 
+				j = j -n1;
+				n1 = n1/2;
+			end
+			j = j + n1;
+			if (i < j) begin 
+				tempx = temp[i];
+			    temp[i] = temp[j];
+			    temp[j] = tempx;
+			end
+		end
+		return temp;
+	endfunction : rearrange
 
 endmodule : rearrange_n_zero_padd
 
 
 module butterfly_beh#(
 		parameter NUM_OF_WORDS = DEFAULT_INPUTS,
-		parameter POWER = 2**($clog2(NUM_OF_WORDS-1)),
-		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS-1),
+		parameter POWER = 2**($clog2(NUM_OF_WORDS)),
+		parameter NUM_OF_STAGES = $clog2(NUM_OF_WORDS),
 		parameter BUFF_DELAY = 5
 	)(
 		input logic clk,
