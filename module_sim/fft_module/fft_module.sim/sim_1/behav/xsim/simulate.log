@@ -10976,4 +10976,4 @@ a[Sign] = 0, b[Sign] = 0
 signa = 0, bsign = 0, bool = 0
 END WITH atemp = 0, btemp = 10000000000
 tempw[2] = 0, tempw[3] = 0, res.Im = 0
-$finish called at time : 195 ns : File "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 83
+$finish called at time : 195 ns : File "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sim_1/new/butterfly_tb.sv" Line 84

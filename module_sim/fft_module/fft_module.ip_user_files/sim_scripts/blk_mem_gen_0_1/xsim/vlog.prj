@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

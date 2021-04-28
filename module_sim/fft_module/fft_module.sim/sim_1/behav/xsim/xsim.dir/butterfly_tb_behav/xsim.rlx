@@ -1,8 +1,8 @@
 
 { 
-    crc :  1719527187416494251  , 
+    crc :  2681319911381111897  , 
     ccp_crc :  0  , 
-    cmdline : " -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl" , 
+    cmdline : " -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot butterfly_tb_behav xil_defaultlib.butterfly_tb xil_defaultlib.glbl" , 
     buildDate : "Dec  7 2018" , 
     buildTime : "00:33:28" , 
     linkCmd : "E:\\Vivado_2018_3\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\g++.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/butterfly_tb_behav/xsimk.exe\"   \"xsim.dir/butterfly_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/butterfly_tb_behav/obj/xsim_1.win64.obj\" \"xsim.dir/butterfly_tb_behav/obj/xsim_2.win64.obj\" -L\"E:\\Vivado_2018_3\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 

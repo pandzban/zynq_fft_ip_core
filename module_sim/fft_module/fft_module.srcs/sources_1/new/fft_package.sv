@@ -133,6 +133,7 @@ package fft_package;
 		res.Im = sin(temp) * (2**F); // * 2^FRAC
 		return res;
 	endfunction : calc_weight
-	
-	
-endpackage : fft_package
+endpackage
+
+//module fft_package();
+//endmodule

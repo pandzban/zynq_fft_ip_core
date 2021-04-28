@@ -28,13 +28,13 @@
 // 		}
 // 	}
 // endclass : Input_vector
-`include "fft_package.sv"
+//`include "fft_package.sv"
 import fft_package::*;
 
 module butterfly_tb;
     parameter NUM_OF_VECTORS = 4; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO MEMORY AND CHOOSE FROM
     logic [15:0] Data_Input_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
-    complex_t [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
+    logic [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
     logic [15:0] Data_Output_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
     logic [15:0] Data_Vector_Outputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
 	logic clk;
