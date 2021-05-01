@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  1 21:38:19 2021
+# Process ID: 10260
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8652 D:\addam\Git\SDUP\zynq_fft_ip_core\module_sim\fft_module\fft_module.xpr
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/vivado.log
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/addam/Git/SDUP/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci', nor could it be found using path 'C:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'Phase_Im_Factor_ROM_Memory'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  1 21:39:12 2021...
