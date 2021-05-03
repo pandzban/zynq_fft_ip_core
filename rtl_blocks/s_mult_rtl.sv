@@ -379,6 +379,21 @@ module fft_block_simplified_rtl#(
 endmodule : fft_block_simplified_rtl
 
 
+// inputs stored using this translator will be autmatically rearranged
+
+module addr_rearr_comb#(
+		parameter ADDR_WIDTH = $clog2(DEFAULT_OUTPUTS)
+	)(
+		input logic [ADDR_WIDTH-1:0] addr_in,
+		output logic [ADDR_WIDTH-1:0] addr_out
+	);
+
+	assign addr_out = {<<{addr_in}};	// streaming operator // reverse order	
+
+endmodule : addr_rearr_comb
+
+
+
 // for rtl simulation purposes // don't use inside other modules
 
 module fft_wrap(
