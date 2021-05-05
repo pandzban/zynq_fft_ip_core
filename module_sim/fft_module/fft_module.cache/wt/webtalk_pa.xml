@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Apr 28 13:19:43 2021">
+<application name="pa" timeStamp="Wed May  5 10:29:44 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="8bd147e3e8dc41ec80a8a9dece4c6d8e" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -55,7 +55,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="36" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="11" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_TYPE" value="9" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="472" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="474" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
 <property name="FilterToolBar_HIDE_ALL" value="4" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="3" type="GuiHandlerData"/>
@@ -157,9 +157,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformRealSettingsDialog_UNSIGNED" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="65" type="GuiMode"/>
+<property name="GuiMode" value="67" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="54" type="TclMode"/>
+<property name="TclMode" value="55" type="TclMode"/>
 </item>
 </section>
 </application>
