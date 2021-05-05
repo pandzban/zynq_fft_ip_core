@@ -1,2 +1,0 @@
-Phase_Im_Factor_ROM_Memory.v,verilog,xil_defaultlib,../../../../../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/sim/Phase_Im_Factor_ROM_Memory.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
