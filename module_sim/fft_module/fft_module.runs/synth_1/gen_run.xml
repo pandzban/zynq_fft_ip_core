@@ -1,22 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1619314431">
-  <File Type="PA-TCL" Name="butterfly_beh.tcl"/>
-  <File Type="REPORTS-TCL" Name="butterfly_beh_reports.tcl"/>
-  <File Type="RDS-RDS" Name="butterfly_beh.vds"/>
-  <File Type="RDS-DCP" Name="butterfly_beh.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1621803324">
+  <File Type="PA-TCL" Name="Main_Module.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Main_Module_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Main_Module_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Main_Module.vds"/>
+  <File Type="RDS-UTIL" Name="Main_Module_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Main_Module_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Main_Module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Main_Module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Main_Module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/butterfly_beh.sv">
+    <File Path="$PSRCDIR/sources_1/new/fft_package.sv">
+      <FileInfo>
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FFT_STAGE.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Reverse_Input_Data_Adress.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Simplified_fft_stage.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_blocks/s_mult_rtl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_blocks/s_mult_rtl.sv"/>
+        <Attr Name="ImportTime" Val="1620203356"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Main_Module.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/blk_mem_gen_0_2/blk_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1619517137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Memory_Ram_Controler.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/butterfly_beh.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rearrange_zero_padd.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_fft_block.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/xilinx_true_dual_port_write_first_1_clock_ram.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="butterfly_beh"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="Main_Module"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -35,4 +139,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Phase_Re_Factor_ROM_Memory"/>
+  <BlockFileSet Type="BlockSrcs" Name="Phase_Im_Factor_ROM_Memory"/>
 </GenRun>

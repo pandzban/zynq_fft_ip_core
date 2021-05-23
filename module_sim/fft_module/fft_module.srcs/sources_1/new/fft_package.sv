@@ -30,6 +30,7 @@ package fft_package;
 	parameter SIGN = M-1;
 
 	parameter DEFAULT_OUTPUTS = 2**($clog2(DEFAULT_INPUTS)); // -1
+	parameter MAX_ADRESS = $clog2(DEFAULT_INPUTS);
 
 	 // Direct Programming Interface
   	//import dpi task      C Name = SV function name

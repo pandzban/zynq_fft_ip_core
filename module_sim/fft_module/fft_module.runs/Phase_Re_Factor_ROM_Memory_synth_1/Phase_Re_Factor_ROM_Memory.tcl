@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-7916-DESKTOP-DJCF65G/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7z020clg484-1
@@ -30,6 +27,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/wt [current_project]
 set_property parent.project_path C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]

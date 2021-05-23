@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Phase_Im_Factor_ROM_Memory_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1619607567">
+<GenRun Id="Phase_Im_Factor_ROM_Memory_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1621600878">
   <File Type="PA-TCL" Name="Phase_Im_Factor_ROM_Memory.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Phase_Im_Factor_ROM_Memory_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Phase_Im_Factor_ROM_Memory_reports.tcl"/>
   <File Type="RDS-RDS" Name="Phase_Im_Factor_ROM_Memory.vds"/>
   <File Type="RDS-UTIL" Name="Phase_Im_Factor_ROM_Memory_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Phase_Im_Factor_ROM_Memory_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Phase_Im_Factor_ROM_Memory.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Phase_Im_Factor_ROM_Memory_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Phase_Im_Factor_ROM_Memory_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Phase_Im_Factor_ROM_Memory">
     <File Path="$PPRDIR/../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

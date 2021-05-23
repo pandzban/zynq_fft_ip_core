@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr 25 03:33:53 2021
-# Process ID: 25212
-# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1
-# Command line: vivado.exe -log butterfly_beh.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source butterfly_beh.tcl
-# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1/butterfly_beh.vds
-# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1\vivado.jou
+# Start of session at: Sun May 23 22:55:26 2021
+# Process ID: 4660
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1
+# Command line: vivado.exe -log Main_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_Module.tcl
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/Main_Module.vds
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source butterfly_beh.tcl -notrace
+source Main_Module.tcl -notrace

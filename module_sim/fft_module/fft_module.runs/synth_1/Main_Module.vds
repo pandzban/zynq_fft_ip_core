@@ -1,0 +1,1302 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 23 22:55:26 2021
+# Process ID: 4660
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1
+# Command line: vivado.exe -log Main_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_Module.tcl
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/Main_Module.vds
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main_Module.tcl -notrace
+Command: synth_design -top Main_Module -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10264 
+WARNING: [Synth 8-2507] parameter declaration becomes local in FFT_STAGE with formal parameter declaration list [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 404.500 ; gain = 111.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main_Module' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv:23]
+	Parameter Num_Of_Stages bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 1 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Phase_Im_Factor_ROM_Memory' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/.Xil/Vivado-4660-DESKTOP-DJCF65G/realtime/Phase_Im_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Im_Factor_ROM_Memory' (1#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/.Xil/Vivado-4660-DESKTOP-DJCF65G/realtime/Phase_Im_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Phase_Re_Factor_ROM_Memory' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/.Xil/Vivado-4660-DESKTOP-DJCF65G/realtime/Phase_Re_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Re_Factor_ROM_Memory' (2#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/.Xil/Vivado-4660-DESKTOP-DJCF65G/realtime/Phase_Re_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fft_block_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:271]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'comp_mult_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:206]
+INFO: [Synth 8-6157] synthesizing module 's_mult_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'change_sign_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'change_sign_rtl' (3#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 's_mult_rtl' (4#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'comp_mult_rtl' (5#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:206]
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3848] Net Valid in module/entity fft_block_rtl does not have driver. [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:281]
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_rtl' (6#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:271]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized0' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 2 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized0' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized1' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 3 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Common 17-14] Message 'Synth 8-87' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized1' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Reverse_Input_Data_Adress' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_rearr_comb' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:384]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_rearr_comb' (8#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:384]
+WARNING: [Synth 8-689] width (5) of port connection 'addr_in' does not match port width (4) of module 'addr_rearr_comb' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:58]
+WARNING: [Synth 8-5858] RAM Data_A_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Reverse_Input_Data_Adress' (9#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Simplified_fft_stage' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block_simplified_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:335]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM second_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_simplified_rtl' (10#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:335]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Number_of_fft_block_reg was removed.  [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'Simplified_fft_stage' (11#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:23]
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Main_Module' (12#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv:23]
+WARNING: [Synth 8-3331] design fft_block_rtl has unconnected port Valid
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][0]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-6]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-7]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-8]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-9]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-10]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][0]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-6]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-7]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-8]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-9]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.484 ; gain = 170.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 463.484 ; gain = 170.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 463.484 ; gain = 170.605
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[1].FFT_INSTANCE/Re_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[1].FFT_INSTANCE/Re_Memory'
+Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[2].FFT_INSTANCE/Re_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[2].FFT_INSTANCE/Re_Memory'
+Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[3].FFT_INSTANCE/Re_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[3].FFT_INSTANCE/Re_Memory'
+Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[1].FFT_INSTANCE/Im_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[1].FFT_INSTANCE/Im_Memory'
+Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[2].FFT_INSTANCE/Im_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[2].FFT_INSTANCE/Im_Memory'
+Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[3].FFT_INSTANCE/Im_Memory'
+Finished Parsing XDC File [c:/Users/Vrael/Desktop/SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_in_context.xdc] for cell 'genblk1[3].FFT_INSTANCE/Im_Memory'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 836.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 836.328 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 836.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.328 ; gain = 543.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.328 ; gain = 543.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for \genblk1[1].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1[2].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1[3].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1[1].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1[2].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1[3].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 836.328 ; gain = 543.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[1][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buffer_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[15][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[14][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[13][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[12][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[11][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[10][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[9][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[8][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[7][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[6][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[5][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[4][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[3][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[2][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[1][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Re]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Output_Buffer_reg[0][Im]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 836.328 ; gain = 543.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               16 Bit    Registers := 525   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 57    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 153   
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 147   
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main_Module 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 32    
+Module Reverse_Input_Data_Adress 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 64    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module fft_block_simplified_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 20    
+Module Simplified_fft_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 70    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 34    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+Module change_sign_rtl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module s_mult_rtl 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module comp_mult_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+Module fft_block_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module FFT_STAGE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 29    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   3 Input      1 Bit        Muxes := 1     
+Module FFT_STAGE__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 25    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 1     
+Module FFT_STAGE__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[1][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_Buffer_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:106]
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-9]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-10]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-8]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-9]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-7]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-8]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-6]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-7]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-6]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-4]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[12][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[11][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[10][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[9][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[8][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[7][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[6][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[5][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[4][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[3][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[2][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[1][Im][-5]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[0][Im][-4]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[15][Im][-4]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[15][Im][-3]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[14][Im][-4]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'Adress_Change/Data_Output_Buff_reg[13][Im][-4]' (FDRE) to 'Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[0][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[15][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[14][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[13][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[12][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[11][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[10][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[9][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[8][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[7][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[6][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[5][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[4][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[3][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[2][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_Output_Buff_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/i_1/\Adress_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Adress_Change/\Data_A_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Input_Buffer_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[0][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[14][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[12][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[10][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[8][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[6][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[4][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[2][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_reg[2][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\Data_Input_Buffer_reg[2][Im][5] )
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[14][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[12][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[10][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[8][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[6][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[4][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[2][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[0][Im][5]) is unused and will be removed from module Simplified_fft_stage.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\FFT_Block/first_out_reg[Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[1][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[0][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[15][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[14][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[13][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[12][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[11][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[10][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[9][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[8][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[7][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[6][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[5][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[4][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[3][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_Buffer_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (First_Stage/\Data_Output_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\Data_Input_Buffer_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\Data_B_reg[Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[0][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[1][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[3][Im][-10] )
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[15][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[14][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[13][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[12][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[11][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[10][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[9][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[8][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[7][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[6][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[5][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[4][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[3][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[2][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[1][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_Output_Buffer_reg[0][Im][-10]) is unused and will be removed from module Simplified_fft_stage.
+WARNING: [Synth 8-3332] Sequential element (Data_B_reg[Im][-10]) is unused and will be removed from module FFT_STAGE.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].FFT_INSTANCE /\FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[-10] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 836.328 ; gain = 543.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 873.914 ; gain = 581.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 882.660 ; gain = 589.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Main_Module | First_Stage/FFT_Block/second_input_buff_reg[3][Re][5]            | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|Main_Module | First_Stage/FFT_Block/first_input_buff_reg[3][Re][5]             | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|Main_Module | First_Stage/Adress_Delay_reg[5][15]                              | 6      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|Main_Module | First_Stage/Adress_Delay_reg[5][3]                               | 5      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|Main_Module | genblk1[1].FFT_INSTANCE/FFT_Block/first_input_buff_reg[3][Im][5] | 3      | 81    | NO           | NO                 | YES               | 81     | 0       | 
+|Main_Module | genblk1[1].FFT_INSTANCE/Adress_Delay_reg[5][15]                  | 6      | 36    | NO           | NO                 | YES               | 36     | 0       | 
+|Main_Module | genblk1[1].FFT_INSTANCE/Adress_Delay_reg[5][3]                   | 5      | 12    | NO           | NO                 | YES               | 12     | 0       | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |Phase_Im_Factor_ROM_Memory |         3|
+|2     |Phase_Re_Factor_ROM_Memory |         3|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |Phase_Im_Factor_ROM_Memory    |     1|
+|2     |Phase_Im_Factor_ROM_Memory__3 |     1|
+|3     |Phase_Im_Factor_ROM_Memory__4 |     1|
+|4     |Phase_Re_Factor_ROM_Memory    |     1|
+|5     |Phase_Re_Factor_ROM_Memory__3 |     1|
+|6     |Phase_Re_Factor_ROM_Memory__4 |     1|
+|7     |BUFG                          |    12|
+|8     |CARRY4                        |   193|
+|9     |DSP48E1                       |    12|
+|10    |LUT1                          |   195|
+|11    |LUT2                          |   476|
+|12    |LUT3                          |   371|
+|13    |LUT4                          |   117|
+|14    |LUT5                          |    68|
+|15    |LUT6                          |  1915|
+|16    |MUXF7                         |   162|
+|17    |MUXF8                         |    48|
+|18    |SRL16E                        |   176|
+|19    |FDRE                          |  5884|
+|20    |FDSE                          |     6|
+|21    |LD                            |  1962|
+|22    |IBUF                          |   258|
+|23    |OBUF                          |   512|
++------+------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------------+------+
+|      |Instance                       |Module                    |Cells |
++------+-------------------------------+--------------------------+------+
+|1     |top                            |                          | 12463|
+|2     |  Adress_Change                |Reverse_Input_Data_Adress |   653|
+|3     |  First_Stage                  |Simplified_fft_stage      |  1274|
+|4     |    FFT_Block                  |fft_block_simplified_rtl  |   403|
+|5     |  \genblk1[1].FFT_INSTANCE     |FFT_STAGE                 |  2948|
+|6     |    FFT_Block                  |fft_block_rtl_24          |  1219|
+|7     |      complex_multiply_inst    |comp_mult_rtl_25          |   640|
+|8     |        a_Im_b_Im_cmult        |s_mult_rtl_26             |   174|
+|9     |          change_sign_inst_a   |change_sign_rtl_35        |    34|
+|10    |          change_sign_inst_b   |change_sign_rtl_36        |    36|
+|11    |          change_sign_inst_res |change_sign_rtl_37        |    35|
+|12    |        a_Im_b_Re_cmult        |s_mult_rtl_27             |    54|
+|13    |          change_sign_inst_res |change_sign_rtl_34        |    35|
+|14    |        a_Re_b_Im_cmult        |s_mult_rtl_28             |    85|
+|15    |          change_sign_inst_res |change_sign_rtl_33        |    51|
+|16    |        a_Re_b_Re_cmult        |s_mult_rtl_29             |   223|
+|17    |          change_sign_inst_a   |change_sign_rtl_30        |    36|
+|18    |          change_sign_inst_b   |change_sign_rtl_31        |    36|
+|19    |          change_sign_inst_res |change_sign_rtl_32        |    51|
+|20    |  \genblk1[2].FFT_INSTANCE     |FFT_STAGE__parameterized0 |  3181|
+|21    |    FFT_Block                  |fft_block_rtl_10          |  1218|
+|22    |      complex_multiply_inst    |comp_mult_rtl_11          |   658|
+|23    |        a_Im_b_Im_cmult        |s_mult_rtl_12             |   192|
+|24    |          change_sign_inst_a   |change_sign_rtl_21        |    36|
+|25    |          change_sign_inst_b   |change_sign_rtl_22        |    36|
+|26    |          change_sign_inst_res |change_sign_rtl_23        |    35|
+|27    |        a_Im_b_Re_cmult        |s_mult_rtl_13             |    54|
+|28    |          change_sign_inst_res |change_sign_rtl_20        |    35|
+|29    |        a_Re_b_Im_cmult        |s_mult_rtl_14             |    85|
+|30    |          change_sign_inst_res |change_sign_rtl_19        |    51|
+|31    |        a_Re_b_Re_cmult        |s_mult_rtl_15             |   223|
+|32    |          change_sign_inst_a   |change_sign_rtl_16        |    36|
+|33    |          change_sign_inst_b   |change_sign_rtl_17        |    36|
+|34    |          change_sign_inst_res |change_sign_rtl_18        |    51|
+|35    |  \genblk1[3].FFT_INSTANCE     |FFT_STAGE__parameterized1 |  3113|
+|36    |    FFT_Block                  |fft_block_rtl             |  1090|
+|37    |      complex_multiply_inst    |comp_mult_rtl             |   658|
+|38    |        a_Im_b_Im_cmult        |s_mult_rtl                |   192|
+|39    |          change_sign_inst_a   |change_sign_rtl_7         |    36|
+|40    |          change_sign_inst_b   |change_sign_rtl_8         |    36|
+|41    |          change_sign_inst_res |change_sign_rtl_9         |    35|
+|42    |        a_Im_b_Re_cmult        |s_mult_rtl_0              |    54|
+|43    |          change_sign_inst_res |change_sign_rtl_6         |    35|
+|44    |        a_Re_b_Im_cmult        |s_mult_rtl_1              |    85|
+|45    |          change_sign_inst_res |change_sign_rtl_5         |    51|
+|46    |        a_Re_b_Re_cmult        |s_mult_rtl_2              |   223|
+|47    |          change_sign_inst_a   |change_sign_rtl           |    36|
+|48    |          change_sign_inst_b   |change_sign_rtl_3         |    36|
+|49    |          change_sign_inst_res |change_sign_rtl_4         |    51|
++------+-------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 921.141 ; gain = 628.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 165 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 921.141 ; gain = 255.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 921.141 ; gain = 628.262
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 921.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1962 instances were transformed.
+  LD => LDCE: 1962 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+453 Infos, 280 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 921.141 ; gain = 634.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 921.141 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/Main_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_Module_utilization_synth.rpt -pb Main_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 23 22:56:29 2021...

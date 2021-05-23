@@ -12,15 +12,16 @@ fprintf(file_1,'%s\n','memory_initialization_vector=');
 %Iter from butterfly with highest number of inputs(last one)
 %We abort factors for FFT_Block with only 2 inputs, beacause Cos(0) = 1,
 %Sin(0) = 0
-for stage=number_of_stages:-1:2
+for stage=2:1:number_of_stages
     number_of_inputs = 2^stage; %Count number of Inputs for FFT_Block in each stage
     for j=0:(number_of_inputs/2)-1 %Count number of factors for FFT_Block in each stage
         %Write to files values of factors in binary format fixed
         %point[6,10] np. 1 = 0000010000000000
+        display(cos(-2*pi*j/(number_of_inputs)))
         fprintf(file, '%s', bin(fi(cos(-2*pi*j/(number_of_inputs)),1,16,10)));
         fprintf(file_1, '%s', bin(fi(sin(-2*pi*j/(number_of_inputs)),1,16,10)));
         %Add at the end of file -> ;
-        if((j==1) && (stage == 2))
+        if((j==number_of_inputs/2 - 1) && (stage == number_of_stages))
             fprintf(file,'%s',';');
             fprintf(file_1,'%s', ';');
         else %Add at the end of each line -> ,
