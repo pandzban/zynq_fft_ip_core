@@ -27,7 +27,8 @@ module Main_Module #(
     input logic clk,
     input logic reset,
     output complex_t Data_Output [DEFAULT_INPUTS-1:0],
-    output logic Valid_Data
+    output logic Valid_Data,
+    output logic Valid_Input
     );
     
     genvar i;
@@ -66,6 +67,7 @@ module Main_Module #(
     end
     
     assign Valid_Data = Valid_FFT_STAGE[Num_Of_Stages-1];
+    assign Valid_Input = Valid_Adress_Change;
     
     always_ff @(posedge Valid_Data) begin
         Data_Output <= Data_FFT_STAGE[Num_Of_Stages-1];

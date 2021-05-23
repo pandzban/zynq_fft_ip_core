@@ -21,7 +21,7 @@
 import fft_package::*;
 
 module Main_Module_TB;
-parameter NUM_OF_VECTORS = 4; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO MEMORY AND CHOOSE FROM
+parameter NUM_OF_VECTORS = 5; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO MEMORY AND CHOOSE FROM
     logic [15:0] Data_Input_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
     logic [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
     logic [15:0] Data_Output_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
@@ -55,20 +55,12 @@ parameter NUM_OF_VECTORS = 4; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO ME
 		#50;
 		reset = 0;
 		//0 - CONST SIGNAL = 0, 1 - CONST SIGNAL = 1, 2 - SQUARE SIGNAL, 3 - SINUS SIGNAL, 4 - COSINUS SIGNAL
-		Input_FFT = Data_Input_Vectors[3]; //CHOOSE WHICH INPUT_VECTOR IS GOING TO BE LOADED 
-		#10;
+		Input_FFT = Data_Input_Vectors[0]; //CHOOSE WHICH INPUT_VECTOR IS GOING TO BE LOADED 
 		// input_rand = new();
 		// input_rand.randomize();
 		// foreach(Input[i]) begin
 		// 	Input[i] = input_rand.x_input[i];
 		// end
-	end
-    
-    initial begin 
-		for (int i = 0; i < SIM_TIME; i++) begin 
-			@(posedge clk);
-		end
-		$finish;
 	end
     
     //Clock
@@ -77,12 +69,23 @@ parameter NUM_OF_VECTORS = 4; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO ME
         clk = ~clk;
 	end
 	
+	int counter = 1;
+	
+	always @(posedge clk) begin
+        if(valid_in) begin
+            Input_FFT = Data_Input_Vectors[counter];
+            counter = counter + 1;
+        end
+	
+	end
+	
 	Main_Module Main(
 	   .clk,
 	   .reset,
 	   .Data_Input(Input_FFT),
 	   .Data_Output(Output_FFT),
-	   .Valid_Data(valid_out)
+	   .Valid_Data(valid_out),
+	   .Valid_Input(valid_in)
    );
 	
 	
