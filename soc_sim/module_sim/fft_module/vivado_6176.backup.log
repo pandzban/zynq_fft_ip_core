@@ -1,0 +1,1170 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun  4 21:28:49 2021
+# Process ID: 6176
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3232 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 695.504 ; gain = 113.359
+update_compile_order -fileset sources_1
+create_bd_design "FFT_Zynq"
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+create_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 819.672 ; gain = 66.809
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_ip:1.0 fft_ip_0
+endgroup
+delete_bd_objs [get_bd_cells fft_ip_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_ip:1.0 fft_ip_0
+endgroup
+delete_bd_objs [get_bd_cells fft_ip_0]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+update_ip_catalog -add_ip C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_core_rg_1.0/component.xml -repo_path c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0
+WARNING: [IP_Flow 19-872] During add IP, failed to copy file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0/fft_ip_core_rg_1/../../../../../../../Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv
+WARNING: [IP_Flow 19-872] During add IP, failed to copy file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0/fft_ip_core_rg_1/../../../../../../../Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v
+WARNING: [IP_Flow 19-872] During add IP, failed to copy file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0/fft_ip_core_rg_1/../../../../../../../Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v
+WARNING: [IP_Flow 19-872] During add IP, failed to copy file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0/fft_ip_core_rg_1/../../../../../../../Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v
+INFO: [IP_Flow 19-1655] Copied IP 'xilinx.com:user:fft_ip_core_rg:1.0' into repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0' at c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0/fft_ip_core_rg_1.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_ip_core_rg:1.0 fft_ip_core_rg_0
+endgroup
+set_property location {1 202 66} [get_bd_cells fft_ip_core_rg_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE btns_5bits [get_bd_cells /axi_gpio_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 btns_5bits
+INFO: [board_rule 100-100] connect_bd_intf_net /btns_5bits /axi_gpio_0/GPIO
+endgroup
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_intf_ports btns_5bits]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_ports FIXED_IO]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </processing_system7_0/Data> at <0x40400000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins fft_ip_core_rg_0/S00_AXIS]
+connect_bd_intf_net [get_bd_intf_pins fft_ip_core_rg_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_ip_core_rg_0/m00_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_ip_core_rg_0/s00_axis_aclk]
+endgroup
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -top
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_dma_0/m_axi_sg_aclk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -top
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+add_files -norecurse C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+update_compile_order -fileset sources_1
+set_property top FFT_Zynq_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'FFT_Zynq.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_ip_core_rg_0 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'FFT_Zynq.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_ip_core_rg_0 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_fft_ip_core_rg_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_fft_ip_core_rg_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_rst_ps7_0_100M_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_rst_ps7_0_100M_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+Hint: use the '-force' option to overwrite the local copies.
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_fft_ip_core_rg_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_fft_ip_core_rg_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_rst_ps7_0_100M_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_rst_ps7_0_100M_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+Hint: use the '-force' option to overwrite the local copies.
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'FFT_Zynq.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_ip_core_rg_0 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+delete_bd_objs [get_bd_intf_nets fft_ip_core_rg_0_M00_AXIS] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells fft_ip_core_rg_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+delete_bd_objs [get_bd_intf_ports DDR]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_ip_core_rg:1.0 fft_ip_core_rg_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </processing_system7_0/Data> at <0x40400000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins fft_ip_core_rg_0/S00_AXIS]
+connect_bd_intf_net [get_bd_intf_pins fft_ip_core_rg_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_ip_core_rg_0/m00_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_ip_core_rg_0/s00_axis_aclk]
+endgroup
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/src/Main_Module.sv'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_M00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0_S00_AXIS.v'.
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/edit_fft_ip_core_rg_v1_0.srcs/sources_1/imports/fft_ip_core_rg_1.0/hdl/fft_ip_core_rg_v1_0.v'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_ip_core_rg_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_ip_core_rg_0 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_1/FFT_Zynq_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+create_peripheral xilinx.com user fft_butterlfy_ip 1.0 -dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1
+add_peripheral_interface M00_AXIS -interface_mode master -axi_type stream [ipx::find_open_core xilinx.com:user:fft_butterlfy_ip:1.0]
+add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:fft_butterlfy_ip:1.0]
+generate_peripheral [ipx::find_open_core xilinx.com:user:fft_butterlfy_ip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:fft_butterlfy_ip:1.0]
+set_property  ip_repo_paths  {C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0 C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+ipx::edit_ip_in_project -upgrade true -name edit_fft_butterlfy_ip_v1_0 -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1 c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v:]
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+update_compile_order -fileset sources_1
+set_property file_type SystemVerilog [get_files  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv
+update_compile_order -fileset sources_1
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+set_property file_type SystemVerilog [get_files  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v]
+set_property file_type SystemVerilog [get_files  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v]
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets fft_ip_core_rg_0_M00_AXIS] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells fft_ip_core_rg_0]
+delete_bd_objs [get_bd_cells rst_ps7_0_50M]
+delete_bd_objs [get_bd_nets rst_ps7_0_50M_peripheral_aresetn] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 fft_butterlfy_ip_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </processing_system7_0/Data> at <0x40400000 [ 64K ]>
+connect_bd_intf_net [get_bd_intf_pins fft_butterlfy_ip_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins fft_butterlfy_ip_0/S00_AXIS]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/m00_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/s00_axis_aclk]
+endgroup
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+save_bd_design
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -top
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'FFT_Zynq.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+[Fri Jun  4 22:18:50 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_0_synth_1, FFT_Zynq_processing_system7_0_0_synth_1, FFT_Zynq_axi_dma_0_0_synth_1, FFT_Zynq_auto_pc_0_synth_1, FFT_Zynq_rst_ps7_0_100M_0_synth_1, synth_1...
+Run output will be captured here:
+FFT_Zynq_fft_butterlfy_ip_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+FFT_Zynq_processing_system7_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_processing_system7_0_0_synth_1/runme.log
+FFT_Zynq_axi_dma_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_axi_dma_0_0_synth_1/runme.log
+FFT_Zynq_auto_pc_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_auto_pc_0_synth_1/runme.log
+FFT_Zynq_rst_ps7_0_100M_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_rst_ps7_0_100M_0_synth_1/runme.log
+synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Fri Jun  4 22:18:50 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2494.914 ; gain = 0.000
+set_property file_type SystemVerilog [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v]
+reset_run FFT_Zynq_axi_dma_0_0_synth_1
+current_project edit_fft_butterlfy_ip_v1_0
+current_project fft_module
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_auto_pc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_fft_butterlfy_ip_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_fft_butterlfy_ip_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+Hint: use the '-force' option to overwrite the local copies.
+current_project edit_fft_butterlfy_ip_v1_0
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src {C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.sv C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.sv C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v] -no_script -reset -force -quiet
+remove_files  {c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v}
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_M00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0_S00_AXIS.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/hdl/fft_butterlfy_ip_v1_0.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project edit_fft_butterlfy_ip_v1_0
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_0 (fft_butterlfy_ip_v1.0 1.0) from revision 1 to revision 4
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_fft_butterlfy_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_axi_dma_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 4.737 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+launch_runs -jobs 6 {FFT_Zynq_axi_dma_0_0_synth_1 FFT_Zynq_fft_butterlfy_ip_0_0_synth_1}
+[Fri Jun  4 22:27:59 2021] Launched FFT_Zynq_axi_dma_0_0_synth_1, FFT_Zynq_fft_butterlfy_ip_0_0_synth_1...
+Run output will be captured here:
+FFT_Zynq_axi_dma_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_axi_dma_0_0_synth_1/runme.log
+FFT_Zynq_fft_butterlfy_ip_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+current_project edit_fft_butterlfy_ip_v1_0
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv}
+update_compile_order -fileset sources_1
+current_project fft_module
+current_project edit_fft_butterlfy_ip_v1_0
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci}
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2494.914 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv
+update_compile_order -fileset sources_1
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project edit_fft_butterlfy_ip_v1_0
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_0 (fft_butterlfy_ip_v1.0 1.0) from revision 4 to revision 5
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_fft_butterlfy_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 12.422 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+launch_runs -jobs 6 FFT_Zynq_fft_butterlfy_ip_0_0_synth_1
+[Fri Jun  4 22:37:04 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_0_synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project edit_fft_butterlfy_ip_v1_0
+current_project fft_module
+report_ip_status -name ip_status 
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_fft_butterlfy_ip_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_fft_butterlfy_ip_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'FFT_Zynq_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'FFT_Zynq_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Im_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Phase_Re_Factor_ROM_Memory'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+Hint: use the '-force' option to overwrite the local copies.
+current_project edit_fft_butterlfy_ip_v1_0
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project edit_fft_butterlfy_ip_v1_0
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_0 (fft_butterlfy_ip_v1.0 1.0) from revision 5 to revision 6
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_fft_butterlfy_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 12.422 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+launch_runs -jobs 6 FFT_Zynq_fft_butterlfy_ip_0_0_synth_1
+[Fri Jun  4 22:39:04 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_0_synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project edit_fft_butterlfy_ip_v1_0
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+current_project fft_module
+reset_run synth_1
+reset_run FFT_Zynq_fft_butterlfy_ip_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Jun  4 22:39:44 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+FFT_Zynq_fft_butterlfy_ip_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Fri Jun  4 22:39:44 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+current_project edit_fft_butterlfy_ip_v1_0
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: c:/Users/Vrael/Desktop/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+current_project fft_module
+delete_bd_objs [get_bd_intf_nets fft_butterlfy_ip_0_M00_AXIS] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells fft_butterlfy_ip_0]
+save_bd_design
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 12.422 MB.
+[Fri Jun  4 22:41:48 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Fri Jun  4 22:41:48 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 fft_butterlfy_ip_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins fft_butterlfy_ip_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins fft_butterlfy_ip_0/S00_AXIS] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/m00_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/s00_axis_aclk]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -top
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'FFT_Zynq.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 12.422 MB.
+[Fri Jun  4 22:47:06 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+FFT_Zynq_fft_butterlfy_ip_0_0_synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Fri Jun  4 22:47:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2494.914 ; gain = 0.000
+current_project edit_fft_butterlfy_ip_v1_0
+ipx::add_file src/fft_butterlfy_ip_v1_0_S00_AXIS.sv [ipx::get_file_groups bd_tcl -of_objects [ipx::current_core]]
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+ipx::add_file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Phase_Im_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type xci [ipx::get_files src/Phase_Im_Factor_ROM_Memory.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+ipx::add_file c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Phase_Re_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type xci [ipx::get_files src/Phase_Re_Factor_ROM_Memory.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+error copying "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv" to "c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/s_mult_rtl.sv": file already exists
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+error copying "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv" to "c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/s_mult_rtl.sv": file already exists
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+error copying "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv" to "c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/s_mult_rtl.sv": file already exists
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project edit_fft_butterlfy_ip_v1_0
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_0 (fft_butterlfy_ip_v1.0 1.0) from revision 6 to revision 7
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_0' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2494.914 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+current_project edit_fft_butterlfy_ip_v1_0
+file copy C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src
+error copying "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv" to "c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Reverse_Input_Data_Adress.sv": file already exists
+ipx::add_file_group -type synthesis {} [ipx::current_core]
+ipx::remove_file_group xilinx_anylanguagesynthesis [ipx::current_core]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-1972] Upgraded FFT_Zynq_fft_butterlfy_ip_0_0 from fft_butterlfy_ip_v1.0 1.0 to fft_butterlfy_ip_v1.0 1.0
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_0' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets fft_butterlfy_ip_0_M00_AXIS] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells fft_butterlfy_ip_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 fft_butterlfy_ip_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins fft_butterlfy_ip_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins fft_butterlfy_ip_0/S00_AXIS] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/m00_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins fft_butterlfy_ip_0/s00_axis_aclk]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ui/bd_4e94936d.ui> 
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_1' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 12.422 MB.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_fft_butterlfy_ip_0_1/FFT_Zynq_fft_butterlfy_ip_0_1.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-1972] Upgraded FFT_Zynq_fft_butterlfy_ip_0_1 from fft_butterlfy_ip_v1.0 1.0 to fft_butterlfy_ip_v1.0 1.0
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_1' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+current_project edit_fft_butterlfy_ip_v1_0
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 9 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project edit_fft_butterlfy_ip_v1_0
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_1 (fft_butterlfy_ip_v1.0 1.0) from revision 8 to revision 9
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_1' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3621.508 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-1972] Upgraded FFT_Zynq_fft_butterlfy_ip_0_1 from fft_butterlfy_ip_v1.0 1.0 to fft_butterlfy_ip_v1.0 1.0
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1823] Unable to identify upgrade version ''
+CRITICAL WARNING: [IP_Flow 19-3817] IP 'FFT_Zynq_fft_butterlfy_ip_0_1' failed to properly generate child IP 'Phase_Im_Factor_ROM_Memory'.  Please edit or regenerate IP Definition to correct the child IP.  Reason: 
+Cannot upgrade to invalid target ''
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Cannot upgrade to invalid target ''
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+CRITICAL WARNING: [BD 41-1938] The current design is out-of-date/locked, so it is best to update before calling write_bd_tcl, however, a Tcl script is still generated for the current design.
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+current_project edit_fft_butterlfy_ip_v1_0
+ipx::remove_file src/Phase_Im_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file src/Phase_Re_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type xci [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type xci [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 10 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_1 (fft_butterlfy_ip_v1.0 1.0) from revision 9 to revision 10
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv' to 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ipshared/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_butterlfy_ip_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_butterlfy_ip_0'. Failed to generate 'Verilog Synthesis' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name fft_butterlfy_ip_v1_0_project -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv' does not exist. The file is ignored.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/fft_butterlfy_ip_v1_0_M00_AXIS.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/fft_butterlfy_ip_v1_0_S00_AXIS.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/fft_butterlfy_ip_v1_0.sv:]
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3621.508 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::remove_file ../edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv' already exists, please use -force if you want to overwrite!
+add_files -norecurse -force -copy_to c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv
+WARNING: [Vivado 12-3631] The destination file or directory 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv' already exists, -force is used to overwrite it
+c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/src/Main_Module.sv
+update_compile_order -fileset sources_1
+ipx::add_file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type systemVerilogSource [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/edit_fft_butterlfy_ip_v1_0.srcs/sources_1/imports/fft_butterlfy_ip_1.0/src/Main_Module.sv' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 11 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fft_module
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+report_ip_status -name ip_status
+current_project fft_butterlfy_ip_v1_0_project
+current_project fft_module
+upgrade_ip -vlnv xilinx.com:user:fft_butterlfy_ip:1.0 [get_ips  FFT_Zynq_fft_butterlfy_ip_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_fft_butterlfy_ip_0_1 (fft_butterlfy_ip_v1.0 1.0) from revision 10 to revision 11
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_fft_butterlfy_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../ipshared/9f45/src/Main_Module.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::ipinstname": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::ipinstname' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::ipinstname": parent namespace doesn't exist
+can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::updation_group_index": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::updation_group_index' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::updation_group_index": parent namespace doesn't exist
+can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::validation_group_index": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::validation_group_index' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': can't set "::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::validation_group_index": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::bram_bits' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': 
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::ecctype_previous_value' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': 
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::uram_bits' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': 
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_blk_mem_gen_8_4_1::fileData' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': 
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::tcl_precision' in Tcl scope '::ipgui_xilinx_com_ip_blk_mem_gen_8_4': 
+ERROR: [IP_Flow 19-3428] Failed to create Customization object FFT_Zynq_fft_butterlfy_ip_0_1/Phase_Im_Factor_ROM_Memory
+CRITICAL WARNING: [IP_Flow 19-978] Failed to recreate IP instance 'Phase_Im_Factor_ROM_Memory'. Error during recustomization.
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'fft_butterlfy_ip_0'. Failed to create IP subcores.
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'fft_butterlfy_ip_0'. Failed to create IP subcores.
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block fft_butterlfy_ip_0 
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+current_project fft_butterlfy_ip_v1_0_project
+current_project fft_module
+current_project fft_butterlfy_ip_v1_0_project
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.dcp' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_stub.v' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_stub.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_stub.vhdl' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_stub.vhdl'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_sim_netlist.v' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_sim_netlist.vhdl' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_sim_netlist.vhdl'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl' to 'c:/users/vrael/desktop/fft_project/module_sim/fft_module/fft_module.tmp/fft_butterlfy_ip_v1_0_project/fft_butterlfy_ip_v1_0_project.srcs/sources_1/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl'

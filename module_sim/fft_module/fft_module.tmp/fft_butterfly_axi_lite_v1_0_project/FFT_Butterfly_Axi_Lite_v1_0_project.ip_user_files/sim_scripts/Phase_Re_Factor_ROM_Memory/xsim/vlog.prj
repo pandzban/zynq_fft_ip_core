@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../../ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Phase_Re_Factor_ROM_Memory/sim/Phase_Re_Factor_ROM_Memory.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

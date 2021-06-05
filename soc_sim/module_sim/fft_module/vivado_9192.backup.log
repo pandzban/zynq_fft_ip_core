@@ -1,0 +1,378 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 27 09:22:57 2021
+# Process ID: 9192
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16704 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 699.676 ; gain = 82.609
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado_2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Module_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/Phase_Im_Factor_ROM_Memory.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/Phase_Sin_Im_Factors_ROM_Init.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/Phase_Re_Factor_ROM_Memory.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/Phase_Cos_Re_Factors_ROM_Init.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Module_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/sim/Phase_Im_Factor_ROM_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Phase_Im_Factor_ROM_Memory
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado_2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2ce66c6aef364950b00b24e9ac48c0c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Main_Module_TB_behav xil_defaultlib.Main_Module_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'addr_in' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:58]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.fft_package
+Compiling module xil_defaultlib.addr_rearr_comb_default
+Compiling module xil_defaultlib.Reverse_Input_Data_Adress
+Compiling module xil_defaultlib.fft_block_simplified_rtl
+Compiling module xil_defaultlib.Simplified_fft_stage
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.Phase_Im_Factor_ROM_Memory
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.Phase_Re_Factor_ROM_Memory
+Compiling module xil_defaultlib.change_sign_rtl
+Compiling module xil_defaultlib.s_mult_rtl
+Compiling module xil_defaultlib.comp_mult_rtl
+Compiling module xil_defaultlib.fft_block_rtl
+Compiling module xil_defaultlib.FFT_STAGE
+Compiling module xil_defaultlib.FFT_STAGE(Number_Of_Stage=2)
+Compiling module xil_defaultlib.FFT_STAGE(Number_Of_Stage=3)
+Compiling module xil_defaultlib.Main_Module_default
+Compiling module xil_defaultlib.Main_Module_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Module_TB_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim/xsim.dir/Main_Module_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 27 09:32:18 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 766.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Module_TB_behav -key {Behavioral:sim_1:Functional:Main_Module_TB} -tclbatch {Main_Module_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_Module_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[1].FFT_INSTANCE.Im_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[1].FFT_INSTANCE.Re_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[2].FFT_INSTANCE.Im_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[2].FFT_INSTANCE.Re_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[3].FFT_INSTANCE.Im_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module Main_Module_TB.Main.genblk1[3].FFT_INSTANCE.Re_Memory.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Module_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 818.910 ; gain = 51.969
+run 10 us
+set_property top butterfly_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: Main_Module
+WARNING: [Synth 8-2507] parameter declaration becomes local in FFT_STAGE with formal parameter declaration list [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1138.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main_Module' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv:23]
+	Parameter Num_Of_Stages bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 1 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Phase_Im_Factor_ROM_Memory' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-9192-DESKTOP-DJCF65G/realtime/Phase_Im_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Im_Factor_ROM_Memory' (1#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-9192-DESKTOP-DJCF65G/realtime/Phase_Im_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Phase_Re_Factor_ROM_Memory' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-9192-DESKTOP-DJCF65G/realtime/Phase_Re_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_Re_Factor_ROM_Memory' (2#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-9192-DESKTOP-DJCF65G/realtime/Phase_Re_Factor_ROM_Memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fft_block_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:271]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'comp_mult_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:206]
+INFO: [Synth 8-6157] synthesizing module 's_mult_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'change_sign_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'change_sign_rtl' (3#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 's_mult_rtl' (4#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'comp_mult_rtl' (5#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:206]
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3848] Net Valid in module/entity fft_block_rtl does not have driver. [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:281]
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_rtl' (6#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:271]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized0' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 2 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[3][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[2][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[1][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[0][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized0' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized1' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 3 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:117]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[15][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[14][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[13][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[12][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[11][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[10][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[9][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[8][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[7][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[6][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[5][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Re]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+WARNING: [Synth 8-87] always_comb on 'Data_Output_Buffer_reg[4][Im]' did not result in combinational logic [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:120]
+INFO: [Common 17-14] Message 'Synth 8-87' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized1' (7#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Reverse_Input_Data_Adress' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_rearr_comb' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:384]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_rearr_comb' (8#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:384]
+WARNING: [Synth 8-689] width (5) of port connection 'addr_in' does not match port width (4) of module 'addr_rearr_comb' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:58]
+WARNING: [Synth 8-5858] RAM Data_A_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Reverse_Input_Data_Adress' (9#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Simplified_fft_stage' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block_simplified_rtl' [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:335]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM second_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_simplified_rtl' (10#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv:335]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Number_of_fft_block_reg was removed.  [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'Simplified_fft_stage' (11#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv:23]
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Main_Module' (12#1) [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv:23]
+WARNING: [Synth 8-3331] design fft_block_rtl has unconnected port Valid
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][0]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-6]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-7]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-8]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-9]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Re][-10]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][0]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-1]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-2]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-3]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-4]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-5]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-6]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-7]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-8]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-9]
+WARNING: [Synth 8-3331] design fft_block_simplified_rtl has unconnected port phase_factor[Im][-10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1138.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1138.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1138.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp' for cell 'genblk1[1].FFT_INSTANCE/Im_Memory'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.dcp' for cell 'genblk1[1].FFT_INSTANCE/Re_Memory'
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1444.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1484.270 ; gain = 345.855
+39 Infos, 155 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1484.270 ; gain = 345.855
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 27 10:18:46 2021...
