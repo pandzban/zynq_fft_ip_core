@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sat Jun  5 19:42:46 2021
--- Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+-- Date        : Sat Jun  5 23:04:50 2021
+-- Host        : DESKTOP-EIN9C5U running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_stub.vhdl
+--               D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_stub.vhdl
 -- Design      : FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

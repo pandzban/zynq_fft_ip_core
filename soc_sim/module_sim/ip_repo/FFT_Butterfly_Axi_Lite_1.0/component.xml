@@ -269,7 +269,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>133cb4c3</spirit:value>
+            <spirit:value>33fa8bce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -288,7 +288,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>133cb4c3</spirit:value>
+            <spirit:value>33fa8bce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -717,11 +717,11 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe</spirit:name>
+        <spirit:name>src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe</spirit:name>
+        <spirit:name>src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -779,11 +779,11 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe</spirit:name>
+        <spirit:name>src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe</spirit:name>
+        <spirit:name>src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -916,8 +916,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>FFT_Butterfly_Axi_Lite_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>11</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-06-05T17:39:33Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-06-05T20:58:59Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3e19d167_ARCHIVE_LOCATION">c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7e804b71_ARCHIVE_LOCATION">c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
@@ -1077,13 +1077,45 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@34c8d27a_ARCHIVE_LOCATION">c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@73f05014_ARCHIVE_LOCATION">c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@23bcbd2a_ARCHIVE_LOCATION">c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9e4087_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19cc8606_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b16fe45_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9399872_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e34b22_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@149c0ec3_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ca85425_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@498131dc_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38e7bc08_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@315a62cb_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e810af4_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e69d46e_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cacf5aa_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47bf7f10_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64940064_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a394243_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e6d3d34_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a354b2_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20b75684_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4fdf36_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@383d24e5_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fb6c381_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f31bb0e_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df2a95f_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b96048_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46fe66f3_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@552c1d6b_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@210c042b_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d9d77d1_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31f531f3_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2631d618_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d48428b_ARCHIVE_LOCATION">d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ebb10fb8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="37f4cea9"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="aa312806"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bc1ff39a"/>

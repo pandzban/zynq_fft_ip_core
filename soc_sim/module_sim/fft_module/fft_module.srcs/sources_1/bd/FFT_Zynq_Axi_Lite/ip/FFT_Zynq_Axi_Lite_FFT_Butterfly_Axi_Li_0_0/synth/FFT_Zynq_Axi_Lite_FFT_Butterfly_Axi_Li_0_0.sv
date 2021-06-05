@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0
-// IP Revision: 11
+// IP Revision: 13
 
 (* X_CORE_INFO = "FFT_Butterfly_Axi_Lite_v1_0,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0,FFT_Butterfly_Axi_Lite_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0,FFT_Butterfly_Axi_Lite_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=FFT_Butterfly_Axi_Lite,x_ipVersion=1.0,x_ipCoreRevision=11,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0,FFT_Butterfly_Axi_Lite_v1_0,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=FFT_Butterfly_Axi_Lite,x_ipVersion=1.0,x_ipCoreRevision=13,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (
   s00_axi_awaddr,

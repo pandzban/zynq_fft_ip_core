@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622919822">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622926926">
   <File Type="PA-TCL" Name="FFT_Zynq_Axi_Lite_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="FFT_Zynq_Axi_Lite_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="FFT_Zynq_Axi_Lite_wrapper_reports.tcl"/>
@@ -141,12 +141,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe"/>
@@ -200,9 +194,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_fft_butterlfy_ip_0_1"/>
 </GenRun>

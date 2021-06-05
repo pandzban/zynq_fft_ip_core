@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622914801">
+<GenRun Id="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622926926">
   <File Type="PA-TCL" Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_reports.tcl"/>
@@ -12,9 +12,11 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0">
     <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -25,9 +27,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0">
     <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

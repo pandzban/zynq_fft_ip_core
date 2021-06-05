@@ -24,39 +24,38 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/wt [current_project]
-set_property parent.project_path C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr [current_project]
+set_property webtalk.parent_dir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/wt [current_project]
+set_property parent.project_path D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_ip_1.0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/ip [current_project]
+set_property ip_output_repo d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
-read_verilog -library xil_defaultlib -sv C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv
-set_property is_global_include true [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv]
-read_verilog -library xil_defaultlib C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_processing_system7_0_0/FFT_Zynq_Axi_Lite_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_auto_pc_0/FFT_Zynq_Axi_Lite_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite_ooc.xdc]
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
+read_verilog -library xil_defaultlib -sv D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv
+set_property is_global_include true [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv]
+read_verilog -library xil_defaultlib D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_processing_system7_0_0/FFT_Zynq_Axi_Lite_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0/FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_auto_pc_0/FFT_Zynq_Axi_Lite_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

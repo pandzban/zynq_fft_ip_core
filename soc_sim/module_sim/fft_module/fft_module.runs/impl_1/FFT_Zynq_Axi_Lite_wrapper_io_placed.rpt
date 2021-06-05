@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Sat Jun  5 21:05:21 2021
-| Host                      : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Date                      : Sat Jun  5 23:06:38 2021
+| Host                      : DESKTOP-EIN9C5U running 64-bit major release  (build 9200)
 | Command                   : report_io -file FFT_Zynq_Axi_Lite_wrapper_io_placed.rpt
 | Design                    : FFT_Zynq_Axi_Lite_wrapper
 | Device                    : xc7z020
