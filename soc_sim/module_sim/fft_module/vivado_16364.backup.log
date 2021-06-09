@@ -949,5 +949,8 @@ INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 current_project FFT_Butterfly_Axi_Lite_v1_0_project
 close_project
+<<<<<<< HEAD
 exit
 INFO: [Common 17-206] Exiting Vivado at Sat Jun  5 23:44:52 2021...
+=======
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502

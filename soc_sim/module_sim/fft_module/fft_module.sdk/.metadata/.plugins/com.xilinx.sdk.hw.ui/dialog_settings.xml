@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<item value="FFT_Microblaze_wrapper_hw_platform_0" key="applicationwizard.hw_platform_key"/>
+=======
+	<item value="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0" key="applicationwizard.hw_platform_key"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 </section>

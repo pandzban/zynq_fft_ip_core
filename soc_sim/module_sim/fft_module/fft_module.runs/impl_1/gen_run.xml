@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623244020">
   <File Type="BITSTR-BMM" Name="FFT_Microblaze_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="FFT_Microblaze_wrapper_methodology_drc_opted.rpt"/>
@@ -36,6 +37,45 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="FFT_Microblaze_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="FFT_Microblaze_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="FFT_Microblaze_wrapper_drc_routed.pb"/>
+=======
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622926926">
+  <File Type="BITSTR-BMM" Name="FFT_Zynq_Axi_Lite_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FFT_Zynq_Axi_Lite_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="FFT_Zynq_Axi_Lite_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FFT_Zynq_Axi_Lite_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="FFT_Zynq_Axi_Lite_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FFT_Zynq_Axi_Lite_wrapper_reports.tcl"/>
+  <File Type="OPT-DRC" Name="FFT_Zynq_Axi_Lite_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FFT_Zynq_Axi_Lite_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FFT_Zynq_Axi_Lite_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FFT_Zynq_Axi_Lite_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FFT_Zynq_Axi_Lite_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FFT_Zynq_Axi_Lite_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FFT_Zynq_Axi_Lite_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FFT_Zynq_Axi_Lite_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="FFT_Zynq_Axi_Lite_wrapper.bgn"/>
+  <File Type="PLACE-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="FFT_Zynq_Axi_Lite_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FFT_Zynq_Axi_Lite_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="FFT_Zynq_Axi_Lite_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FFT_Zynq_Axi_Lite_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FFT_Zynq_Axi_Lite_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FFT_Zynq_Axi_Lite_wrapper_drc_routed.pb"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="FFT_Microblaze_wrapper.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="FFT_Microblaze_wrapper_drc_routed.rpx"/>
@@ -217,12 +257,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe"/>
@@ -292,6 +326,7 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+<<<<<<< HEAD
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_axi_dma_0_0"/>
@@ -304,4 +339,7 @@
   <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0"/>
+=======
+  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 </GenRun>

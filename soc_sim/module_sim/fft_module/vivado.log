@@ -2,18 +2,29 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+<<<<<<< HEAD
 # Start of session at: Wed Jun  9 11:41:23 2021
 # Process ID: 2556
 # Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1688 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
 # Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
 # Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
+=======
+# Start of session at: Sat Jun  5 21:47:37 2021
+# Process ID: 2924
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9588 D:\addam\Git\SDUP\zynq_fft_ip_core\soc_sim\module_sim\fft_module\fft_module.xpr
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/vivado.log
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module\vivado.jou
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+open_project D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+<<<<<<< HEAD
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
 WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
@@ -1240,11 +1251,32 @@ upgrade_ip [get_ips  {FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 FFT_Zynq_Axi_Lite_
 Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd'
 INFO: [IP_Flow 19-3422] Upgraded FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (FFT_Butterfly_Axi_Lite_v1.0 1.0) from revision 11 to revision 12
 Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Microblaze\FFT_Microblaze.bd> 
+=======
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 760.543 ; gain = 98.766
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-4159] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream before doing hardware export.
+file mkdir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk
+file copy -force D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk -hwspec D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk -hwspec D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd}
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
 Adding cell -- xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 - FFT_Butterfly_Axi_Li_0
+<<<<<<< HEAD
 Successfully read diagram <FFT_Zynq_Axi_Lite> from BD file <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd>
 Upgrading 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd'
 INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (FFT_Butterfly_Axi_Lite_v1.0 1.0) from revision 11 to revision 12
@@ -6897,9 +6929,39 @@ current_project FFT_Butterfly_Axi_Lite_v1_0_project
 ipx::merge_project_changes files [ipx::current_core]
 WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
 WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+=======
+Successfully read diagram <FFT_Zynq_Axi_Lite> from BD file <D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1477.805 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name FFT_Butterfly_Axi_Lite_v1_0_project -directory D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.tmp/FFT_Butterfly_Axi_Lite_v1_0_project d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/addam/git/sdup/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/fft_package.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/FFT_STAGE.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Main_Module.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Reverse_Input_Data_Adress.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Simplified_fft_stage.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/s_mult_rtl.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/hdl/FFT_Butterfly_Axi_Lite_v1_0.sv:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1477.805 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
+WARNING: [IP_Flow 19-5226] Project source file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 ipx::merge_project_changes hdl_parameters [ipx::current_core]
 WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5226] Project source file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
 WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'SIGN'
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'DEFAULT_INPUTS' by 16 for port or parameter 'DEFAULT_OUTPUTS'
@@ -6913,11 +6975,16 @@ INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'co
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'F' by 10 for port or parameter 'complex_mul_res_t'
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'complex_mul_res_t'
 INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+<<<<<<< HEAD
 set_property core_revision 18 [ipx::current_core]
+=======
+set_property core_revision 12 [ipx::current_core]
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
+<<<<<<< HEAD
 current_project fft_module
 update_ip_catalog -rebuild -scan_changes
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -7722,9 +7789,74 @@ current_project FFT_Butterfly_Axi_Lite_v1_0_project
 ipx::merge_project_changes files [ipx::current_core]
 WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
 WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+=======
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 [get_ips  FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] -log ip_upgrade.log
+Upgrading 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd'
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'. Sub-design: 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.xci'.
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (FFT_Butterfly_Axi_Lite_v1.0 1.0) from revision 11 to revision 12
+Wrote  : <D:\addam\Git\SDUP\zynq_fft_ip_core\soc_sim\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq_Axi_Lite\FFT_Zynq_Axi_Lite.bd> 
+Wrote  : <D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ui/bd_8f0a226d.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+Wrote  : <D:\addam\Git\SDUP\zynq_fft_ip_core\soc_sim\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq_Axi_Lite\FFT_Zynq_Axi_Lite.bd> 
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/sim/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_auto_pc_0/FFT_Zynq_Axi_Lite_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite.hwh
+Generated Block Design Tcl file D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite_bd.tcl
+Generated Hardware Definition File D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1651.395 ; gain = 159.625
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 42.892 MB.
+export_ip_user_files -of_objects [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+launch_runs -jobs 16 FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1
+[Sat Jun  5 22:49:13 2021] Launched FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1...
+Run output will be captured here: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name FFT_Butterfly_Axi_Lite_v1_0_project -directory D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.tmp/FFT_Butterfly_Axi_Lite_v1_0_project d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/addam/git/sdup/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/fft_package.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/FFT_STAGE.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Main_Module.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Reverse_Input_Data_Adress.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/Simplified_fft_stage.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/src/s_mult_rtl.sv:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/hdl/FFT_Butterfly_Axi_Lite_v1_0.sv:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2005.348 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
+WARNING: [IP_Flow 19-5226] Project source file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 ipx::merge_project_changes hdl_parameters [ipx::current_core]
 WARNING: [IP_Flow 19-4963] Phase_Re_Factor_ROM_Memory has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5226] Project source file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0/component.xml' ignored by IP packager.
 WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'SIGN'
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'DEFAULT_INPUTS' by 16 for port or parameter 'DEFAULT_OUTPUTS'
@@ -7738,11 +7870,16 @@ INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'co
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'F' by 10 for port or parameter 'complex_mul_res_t'
 INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'M' by 6 for port or parameter 'complex_mul_res_t'
 INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+<<<<<<< HEAD
 set_property core_revision 20 [ipx::current_core]
+=======
+set_property core_revision 13 [ipx::current_core]
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
+<<<<<<< HEAD
 current_project fft_module
 update_ip_catalog -rebuild -scan_changes
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -8130,3 +8267,51 @@ INFO: [Simtcl 6-16] Simulation closed
 close_project
 exit
 INFO: [Common 17-206] Exiting Vivado at Wed Jun  9 16:45:14 2021...
+=======
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'
+upgrade_ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 [get_ips  FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] -log ip_upgrade.log
+Upgrading 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd'
+INFO: [IP_Flow 19-3422] Upgraded FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (FFT_Butterfly_Axi_Lite_v1.0 1.0) from revision 12 to revision 13
+Wrote  : <D:\addam\Git\SDUP\zynq_fft_ip_core\soc_sim\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq_Axi_Lite\FFT_Zynq_Axi_Lite.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+Wrote  : <D:\addam\Git\SDUP\zynq_fft_ip_core\soc_sim\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq_Axi_Lite\FFT_Zynq_Axi_Lite.bd> 
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/sim/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_auto_pc_0/FFT_Zynq_Axi_Lite_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite.hwh
+Generated Block Design Tcl file D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite_bd.tcl
+Generated Hardware Definition File D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.hwdef
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2005.348 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 52.695 MB.
+export_ip_user_files -of_objects [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+launch_runs -jobs 16 FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1
+[Sat Jun  5 22:59:32 2021] Launched FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1...
+Run output will be captured here: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe] -no_script -reset -force -quiet
+remove_files  D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+reset_run FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sat Jun  5 23:02:06 2021] Launched FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1, synth_1...
+Run output will be captured here:
+FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1/runme.log
+synth_1: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Sat Jun  5 23:02:06 2021] Launched impl_1...
+Run output will be captured here: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  5 23:23:08 2021...
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr">
+<Project Version="7" Minor="39" Path="D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2ce66c6aef364950b00b24e9ac48c0c3"/>
@@ -43,6 +43,7 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
+<<<<<<< HEAD
     <Option Name="WTXSimExportSim" Val="39"/>
     <Option Name="WTModelSimExportSim" Val="39"/>
     <Option Name="WTQuestaExportSim" Val="39"/>
@@ -50,6 +51,15 @@
     <Option Name="WTVcsExportSim" Val="39"/>
     <Option Name="WTRivieraExportSim" Val="39"/>
     <Option Name="WTActivehdlExportSim" Val="39"/>
+=======
+    <Option Name="WTXSimExportSim" Val="38"/>
+    <Option Name="WTModelSimExportSim" Val="38"/>
+    <Option Name="WTQuestaExportSim" Val="38"/>
+    <Option Name="WTIesExportSim" Val="38"/>
+    <Option Name="WTVcsExportSim" Val="38"/>
+    <Option Name="WTRivieraExportSim" Val="38"/>
+    <Option Name="WTActivehdlExportSim" Val="38"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -175,6 +185,7 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+<<<<<<< HEAD
         <CompFileExtendedInfo CompFileName="FFT_Zynq.bd" FileRelPathName="ip/FFT_Zynq_processing_system7_0_0/FFT_Zynq_processing_system7_0_0.xci">
           <Proxy FileSetName="FFT_Zynq_processing_system7_0_0"/>
         </CompFileExtendedInfo>
@@ -184,6 +195,8 @@
         <CompFileExtendedInfo CompFileName="FFT_Zynq.bd" FileRelPathName="ip/FFT_Zynq_axi_dma_0_0/FFT_Zynq_axi_dma_0_0.xci">
           <Proxy FileSetName="FFT_Zynq_axi_dma_0_0"/>
         </CompFileExtendedInfo>
+=======
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
       </File>
       <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v">
         <FileInfo SFType="SVerilog">
@@ -240,12 +253,6 @@
           <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe">
-        <FileInfo RelPath="Phase_Cos_Re_Factors_ROM_Init.coe">
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -388,6 +395,7 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+<<<<<<< HEAD
     <FileSet Name="FFT_Zynq_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/FFT_Zynq_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="FFT_Zynq_processing_system7_0_0"/>
@@ -443,6 +451,9 @@
       </Config>
     </FileSet>
     <FileSet Name="FFT_Microblaze_mdm_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/FFT_Microblaze_mdm_1_0">
+=======
+    <FileSet Name="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0">
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
       <Config>
         <Option Name="TopModule" Val="FFT_Microblaze_mdm_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
@@ -501,6 +512,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+<<<<<<< HEAD
     <Run Id="FFT_Zynq_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="FFT_Zynq_processing_system7_0_0" Part="xc7z020clg484-1" ConstrsSet="FFT_Zynq_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/FFT_Zynq_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
@@ -606,6 +618,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="FFT_Microblaze_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="FFT_Microblaze_clk_wiz_1_0" Part="xc7z020clg484-1" ConstrsSet="FFT_Microblaze_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/FFT_Microblaze_clk_wiz_1_0_synth_1" IncludeInArchive="true">
+=======
+    <Run Id="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" Type="Ft3:Synth" SrcSet="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0" Part="xc7z020clg484-1" ConstrsSet="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" IncludeInArchive="true">
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -665,6 +680,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+<<<<<<< HEAD
     <Run Id="FFT_Zynq_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="FFT_Zynq_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="FFT_Zynq_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
@@ -840,6 +856,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="FFT_Microblaze_clk_wiz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="FFT_Microblaze_clk_wiz_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="FFT_Microblaze_clk_wiz_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+=======
+    <Run Id="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>

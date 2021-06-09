@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
+<<<<<<< HEAD
 	<Run Id="FFT_Microblaze_microblaze_0_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="FFT_Microblaze_dlmb_v10_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="FFT_Microblaze_ilmb_v10_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
@@ -10,6 +11,9 @@
 	<Run Id="FFT_Microblaze_lmb_bram_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="FFT_Microblaze_mdm_1_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="FFT_Microblaze_clk_wiz_1_0_synth_1" LaunchDir="C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Microblaze_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+=======
+	<Run Id="FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" LaunchDir="D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 	</Parameters>

@@ -1,6 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Wed Jun  9 16:21:25 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
@@ -339,6 +340,10 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 | Date         : Wed Jun  9 13:09:05 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+=======
+| Date         : Sat Jun  5 22:59:10 2021
+| Host         : DESKTOP-EIN9C5U running 64-bit major release  (build 9200)
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 | Command      : upgrade_ip
 | Device       : xc7z020clg484-1
 ------------------------------------------------------------------------------------
@@ -358,6 +363,7 @@ SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Wed Jun  9 13:09:03 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
@@ -381,6 +387,10 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 | Date         : Wed Jun  9 12:34:06 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+=======
+| Date         : Sat Jun  5 22:48:50 2021
+| Host         : DESKTOP-EIN9C5U running 64-bit major release  (build 9200)
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 | Command      : upgrade_ip
 | Device       : xc7z020clg484-1
 ------------------------------------------------------------------------------------
@@ -400,6 +410,7 @@ SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< HEAD
 | Date         : Wed Jun  9 12:34:04 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
@@ -421,6 +432,8 @@ SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:us
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+=======
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 | Date         : Sat Jun  5 19:39:44 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

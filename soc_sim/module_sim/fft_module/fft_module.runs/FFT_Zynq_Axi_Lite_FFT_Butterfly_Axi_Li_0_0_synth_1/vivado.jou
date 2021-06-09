@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  5 23:02:08 2021
+# Process ID: 11344
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1
+# Command line: vivado.exe -log FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.tcl
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.vds
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/soc_sim/module_sim/fft_module/fft_module.runs/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.tcl -notrace

@@ -223,7 +223,11 @@
 	      slv_reg0 <= 0;
 //	      slv_reg1 <= 0;
 	      slv_reg2 <= 0;
+<<<<<<< HEAD
 //	      slv_reg3 <= 0;
+=======
+	      //slv_reg3 <= 0;
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 	    end 
 	  else begin
 	    if (slv_reg_wren)
@@ -255,13 +259,21 @@
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 3
+<<<<<<< HEAD
 //	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+=======
+	                //slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 	              end  
 	          default : begin
 	                      slv_reg0 <= slv_reg0;
 //	                      slv_reg1 <= slv_reg1;
 	                      slv_reg2 <= slv_reg2;
+<<<<<<< HEAD
 //	                      slv_reg3 <= slv_reg3;
+=======
+	                      //slv_reg3 <= slv_reg3;
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
 	                    end
 	        endcase
 	      end
@@ -402,9 +414,15 @@
     wire ARESET;
     logic [15:0] Data_Input [NUMBER_OF_WORDS-1:0];
     wire Valid_Out;
+<<<<<<< HEAD
     wire [C_S_AXI_DATA_WIDTH-1:0] Data_Out [NUMBER_OF_WORDS-1:0];
     logic [C_S_AXI_DATA_WIDTH-1:0] Data_Output [NUMBER_OF_WORDS-1:0];
     
+=======
+    logic ready_for_send = 0;
+    wire [C_S_AXI_DATA_WIDTH-1:0] Data_Out [0:NUMBER_OF_WORDS-1];
+    logic [C_S_AXI_DATA_WIDTH-1:0] Data_Output [0:NUMBER_OF_WORDS-1];
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
     assign ARESET = ~S_AXI_ARESETN | slv_reg2[0];
     
     always_ff @(posedge S_AXI_ACLK) begin
@@ -425,6 +443,17 @@
                 end
             endcase
         end
+     	if (Valid_Out) begin 
+     		ready_for_send <= 1;
+     	end else begin 
+     		if (slv_reg_rden) begin
+     			ready_for_send <= 0;
+     		end
+     	end
+        slv_reg3 <= ready_for_send;
+        if (Count_Tx == 16) begin 
+        	Count_Tx <= 0;
+        end
     end
     
     always_comb begin
@@ -440,7 +469,11 @@
     end
     
     always_ff @(posedge S_AXI_ACLK) begin
+<<<<<<< HEAD
         if(slv_reg_wren_buff) begin
+=======
+        if(slv_reg_wren) begin
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
             case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
                 2'h0: begin
                     Data_Input[Count_Rx] <= slv_reg0[15:0];
@@ -450,6 +483,9 @@
                     Data_Input <= Data_Input;
                 end
             endcase
+        end
+        if (Count_Rx == 16) begin 
+           Count_Rx <= 0;
         end
     end
     

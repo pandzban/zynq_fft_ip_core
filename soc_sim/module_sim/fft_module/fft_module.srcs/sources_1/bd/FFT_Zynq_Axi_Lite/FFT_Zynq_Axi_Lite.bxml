@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="FFT_Zynq_Axi_Lite" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< HEAD
     <Generation Name="SYNTHESIS" State="RESET" Timestamp="1623248485"/>
     <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1623248485"/>
     <Generation Name="SIMULATION" State="RESET" Timestamp="1623248485"/>
     <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1623248485"/>
+=======
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1622926771"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1622926771"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1622926771"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1622926771"/>
+>>>>>>> b964d010866706ff67bde9ea1930c97a97cd9502
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0\FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0.xci" Type="IP">
         <Instance HierarchyPath="FFT_Butterfly_Axi_Li_0"/>
@@ -24,6 +31,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\FFT_Zynq_Axi_Lite_ps7_0_axi_periph_0\FFT_Zynq_Axi_Lite_ps7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
