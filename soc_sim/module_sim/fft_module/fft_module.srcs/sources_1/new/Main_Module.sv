@@ -34,21 +34,26 @@ module Main_Module #(
     genvar i;
     logic Valid_Adress_Change;
     complex_t Reverse_Data [DEFAULT_INPUTS-1:0];
+    wire start_first_stage;
     
     Reverse_Input_Data_Adress Adress_Change(
         .Data_Input,
         .clk,
         .reset,
         .Valid_Out(Valid_Adress_Change),
-        .Data_A(Reverse_Data)
+        .Data_A(Reverse_Data),
+        .start_nxt(start_first_stage)
     );
     
     complex_t Data_FFT_STAGE [Num_Of_Stages-1:0][DEFAULT_INPUTS-1:0];
     logic Valid_FFT_STAGE [Num_Of_Stages-1:0];
+    logic FFT_start [Num_Of_Stages-1:0];
     
     Simplified_fft_stage First_Stage(
         .clk,
         .reset,
+        .start(start_first_stage),
+        .start_nxt(FFT_start[0]),
         .Valid_In(Valid_Adress_Change),
         .Data_Input(Reverse_Data),
         .Data_Output(Data_FFT_STAGE[0]),
@@ -59,6 +64,8 @@ module Main_Module #(
         FFT_STAGE #(.Number_Of_Stage(i)) FFT_INSTANCE(
             .clk,
             .reset,
+            .start(FFT_start[i-1]),
+            .start_nxt(FFT_start[i]),
             .Valid_In(Valid_FFT_STAGE[i-1]),
             .Valid_Out(Valid_FFT_STAGE[i]),
             .Data_Input(Data_FFT_STAGE[i-1]),

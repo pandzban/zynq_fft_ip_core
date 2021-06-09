@@ -25,7 +25,8 @@ module Reverse_Input_Data_Adress(
     input logic clk,
     input reset,
     output logic Valid_Out,
-    output complex_t Data_A [DEFAULT_INPUTS-1:0]
+    output complex_t Data_A [DEFAULT_INPUTS-1:0],
+    output logic start_nxt
     );
     parameter MUL_LATENCY = 5;
     
@@ -42,6 +43,8 @@ module Reverse_Input_Data_Adress(
         if(reset) begin
             Addr_Counter <= 0;
             Valid_Out <= 0;
+            Data_Output_Buff <= {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+            start_nxt <= 1;
         end else begin
             Valid_Out <= 0;
             Addr_Counter <= Addr_Counter + 1;
@@ -50,6 +53,7 @@ module Reverse_Input_Data_Adress(
             if(Addr_Counter == DEFAULT_INPUTS) begin
                 Addr_Counter <= 0;
                 Valid_Out <= 1;
+                start_nxt <= 0;
             end
         end
     end

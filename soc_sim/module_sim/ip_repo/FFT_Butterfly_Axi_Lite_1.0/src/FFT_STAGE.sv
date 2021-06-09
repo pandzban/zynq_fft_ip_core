@@ -28,7 +28,9 @@ module FFT_STAGE#(
     input Valid_In,
     input complex_t Data_Input [DEFAULT_INPUTS-1:0],
     output complex_t Data_Output [DEFAULT_INPUTS-1:0],
-    output logic Valid_Out
+    output logic Valid_Out,
+    output logic start_nxt,
+    input logic start
     );
     parameter MUL_LATENCY = 5;
     
@@ -38,7 +40,7 @@ module FFT_STAGE#(
     complex_t Data_Output_Buffer [DEFAULT_INPUTS-1:0];
     logic RST_ADRESS;
     
-    assign RST_ADRESS = Valid_In | reset;
+    assign RST_ADRESS = Valid_In | reset | start;
       
     //Combinational logic to enable reset
     always_ff @(posedge Valid_In) begin
@@ -46,12 +48,19 @@ module FFT_STAGE#(
     end
     
     always_ff @(posedge clk) begin
-        Data_Output <= Data_Output_Buffer;
+        if(RST_ADRESS) begin
+            Data_Output <= {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        end else begin
+            Data_Output <= Data_Output_Buffer;
+        end
     end
     
     logic [4:0] Valid_Ctr;
     
     always_ff @(posedge clk) begin
+        if(reset) begin
+            start_nxt <= 1;
+        end
         if(RST_ADRESS) begin
             Valid_Out <= 0;
             Valid_Ctr <= 0;
@@ -59,6 +68,7 @@ module FFT_STAGE#(
             Valid_Ctr <= Valid_Ctr + 1;
             Valid_Out <= 0;
             if(Valid_Ctr == DEFAULT_INPUTS/2 + MUL_LATENCY) begin
+                start_nxt <= 0;
                 Valid_Out <= 1;
                 Valid_Ctr <= 0;
             end

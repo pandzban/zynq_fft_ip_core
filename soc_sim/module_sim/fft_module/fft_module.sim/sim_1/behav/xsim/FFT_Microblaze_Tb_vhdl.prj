@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_microblaze_0_0/sim/FFT_Microblaze_microblaze_0_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_dlmb_v10_0/sim/FFT_Microblaze_dlmb_v10_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_ilmb_v10_0/sim/FFT_Microblaze_ilmb_v10_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_dlmb_bram_if_cntlr_0/sim/FFT_Microblaze_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_ilmb_bram_if_cntlr_0/sim/FFT_Microblaze_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_mdm_1_0/sim/FFT_Microblaze_mdm_1_0.vhd" \
+"../../../../fft_module.ip_user_files/bd/FFT_Microblaze/ip/FFT_Microblaze_rst_clk_wiz_1_100M_0/sim/FFT_Microblaze_rst_clk_wiz_1_100M_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun  9 12:26:14 2021
+# Process ID: 4156
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10580 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.tmp\fft_butterfly_axi_lite_v1_0_project\FFT_Butterfly_Axi_Lite_v1_0_project.xpr
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project/vivado.log
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.tmp/fft_butterfly_axi_lite_v1_0_project/FFT_Butterfly_Axi_Lite_v1_0_project.xpr
+update_compile_order -fileset sources_1

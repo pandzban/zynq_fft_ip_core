@@ -1,6 +1,426 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:21:25 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:21:23 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:15:27 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:15:25 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:02:33 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 16:02:31 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 15:56:36 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 15:56:34 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 15:45:54 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 15:45:51 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 14:27:18 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_fft_butterlfy_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of FFT_Zynq_fft_butterlfy_ip_0_1 (xilinx.com:user:fft_butterlfy_ip:1.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 14:27:17 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 14:27:15 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 13:20:56 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 13:20:55 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 13:09:08 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_fft_butterlfy_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of FFT_Zynq_fft_butterlfy_ip_0_1 (xilinx.com:user:fft_butterlfy_ip:1.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 13:09:05 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 13:09:03 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 12:34:06 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun  9 12:34:04 2021
+| Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0 (xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 | Date         : Sat Jun  5 19:39:44 2021
 | Host         : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

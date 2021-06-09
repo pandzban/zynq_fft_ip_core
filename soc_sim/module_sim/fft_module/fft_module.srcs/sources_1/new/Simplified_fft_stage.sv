@@ -26,7 +26,9 @@ module Simplified_fft_stage(
     input logic Valid_In,
     input complex_t Data_Input [DEFAULT_INPUTS-1:0],
     output complex_t Data_Output [DEFAULT_INPUTS-1:0],
-    output logic Valid_Out
+    output logic Valid_Out,
+    output logic start_nxt,
+    input logic start
     );
     parameter MUL_LATENCY = 5;
     
@@ -35,7 +37,7 @@ module Simplified_fft_stage(
     complex_t Data_Output_Buffer [DEFAULT_INPUTS-1:0];
     logic RST_ADRESS;
     
-    assign RST_ADRESS = Valid_In | reset;
+    assign RST_ADRESS = Valid_In | reset | start;
     
     //Combinational logic to enable reset
     //Check if OK 
@@ -44,12 +46,19 @@ module Simplified_fft_stage(
     end
     
     always_ff @(posedge clk) begin
-        Data_Output <= Data_Output_Buffer;
+        if(RST_ADRESS) begin
+            Data_Output <= {32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000};
+        end else begin
+            Data_Output <= Data_Output_Buffer;
+        end
     end
     
     logic [4:0] Valid_Ctr;
     
     always_ff @(posedge clk) begin
+        if(reset) begin
+            start_nxt <= 1;
+        end
         if(RST_ADRESS) begin
             Valid_Out <= 0;
             Valid_Ctr <= 0;
@@ -57,6 +66,7 @@ module Simplified_fft_stage(
             Valid_Ctr <= Valid_Ctr + 1;
             Valid_Out <= 0;
             if(Valid_Ctr == DEFAULT_INPUTS/2 + MUL_LATENCY) begin
+                start_nxt <= 0;
                 Valid_Out <= 1;
                 Valid_Ctr <= 0;
             end

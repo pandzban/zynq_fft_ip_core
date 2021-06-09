@@ -223,7 +223,7 @@
 	      slv_reg0 <= 0;
 //	      slv_reg1 <= 0;
 	      slv_reg2 <= 0;
-	      slv_reg3 <= 0;
+//	      slv_reg3 <= 0;
 	    end 
 	  else begin
 	    if (slv_reg_wren)
@@ -255,13 +255,13 @@
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 3
-	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+//	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
 	          default : begin
 	                      slv_reg0 <= slv_reg0;
 //	                      slv_reg1 <= slv_reg1;
 	                      slv_reg2 <= slv_reg2;
-	                      slv_reg3 <= slv_reg3;
+//	                      slv_reg3 <= slv_reg3;
 	                    end
 	        endcase
 	      end
@@ -402,8 +402,8 @@
     wire ARESET;
     logic [15:0] Data_Input [NUMBER_OF_WORDS-1:0];
     wire Valid_Out;
-    wire [C_S_AXI_DATA_WIDTH-1:0] Data_Out [0:NUMBER_OF_WORDS-1];
-    logic [C_S_AXI_DATA_WIDTH-1:0] Data_Output [0:NUMBER_OF_WORDS-1];
+    wire [C_S_AXI_DATA_WIDTH-1:0] Data_Out [NUMBER_OF_WORDS-1:0];
+    logic [C_S_AXI_DATA_WIDTH-1:0] Data_Output [NUMBER_OF_WORDS-1:0];
     
     assign ARESET = ~S_AXI_ARESETN | slv_reg2[0];
     
@@ -417,15 +417,30 @@
     
     always_ff @(posedge S_AXI_ACLK) begin
         if(slv_reg_rden) begin
-            slv_reg1 <= Data_Output[Count_Tx];
-            Count_Tx <= Count_Tx + 1;
+            case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
+                2'h1: begin
+                    Count_Tx <= Count_Tx + 1;
+                end
+                default: begin
+                end
+            endcase
         end
     end
     
+    always_comb begin
+        slv_reg3[31:1] <= 0;
+        slv_reg3[0] <= Valid_Out;
+        slv_reg1 <= Data_Output[Count_Tx];
+    end
+    
     reg [$clog2(NUMBER_OF_WORDS):0] Count_Rx = 0;
+    reg slv_reg_wren_buff;
+    always_ff @(posedge S_AXI_ACLK) begin
+        slv_reg_wren_buff <= slv_reg_wren;
+    end
     
     always_ff @(posedge S_AXI_ACLK) begin
-        if(slv_reg_rden) begin
+        if(slv_reg_wren_buff) begin
             case ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
                 2'h0: begin
                     Data_Input[Count_Rx] <= slv_reg0[15:0];
