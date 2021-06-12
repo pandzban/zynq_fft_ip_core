@@ -1,4 +1,4 @@
-17:40:26 **** Build of project FFT_Butterfly_bsp ****
+17:54:16 **** Build of project fft_butt_app_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -115,27 +115,391 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-17:40:55 **** Build of configuration Debug for project FFT_Butterfly ****
+17:54:37 **** Build of configuration Debug for project fft_butt_app ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/main.cc'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FFT_Butterfly_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
 'Finished building: ../src/main.cc'
 ' '
-'Building target: FFT_Butterfly.elf'
+'Building target: fft_butt_app.elf'
 'Invoking: ARM v7 g++ linker'
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FFT_Butterfly_bsp/ps7_cortexa9_0/lib -o "FFT_Butterfly.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-'Finished building target: FFT_Butterfly.elf'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size FFT_Butterfly.elf  |tee "FFT_Butterfly.elf.size"
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19024	   1144	  22576	  42744	   a6f8	FFT_Butterfly.elf
-'Finished building: FFT_Butterfly.elf.size'
+  34212	   2184	  22632	  59028	   e694	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
 ' '
-17:40:58 **** Auto Build of configuration Debug for project FFT_Butterfly ****
+17:54:39 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:54:43 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:55:18 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:58:00 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:58:37 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:00:38 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:00:48 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:02:50 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:05:01 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:05:04 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:06:52 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:06:56 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:07:00 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:08:14 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:08:17 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:08:19 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:09:33 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:09:37 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:10:27 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:10:30 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:11:21 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:11:24 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:11:49 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:12:31 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:12:47 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:14:31 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:14:35 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:14:57 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:16:16 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34280	   2184	  22632	  59096	   e6d8	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:16:25 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34200	   2184	  22632	  59016	   e688	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:16:27 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:16:45 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:17:52 **** Auto Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_app.elf  |tee "fft_butt_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34200	   2184	  22632	  59016	   e688	fft_butt_app.elf
+'Finished building: fft_butt_app.elf.size'
+' '
+18:17:54 **** Incremental Build of configuration Debug for project fft_butt_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:18:12 **** Incremental Build of configuration Debug for project fft_butt_app ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

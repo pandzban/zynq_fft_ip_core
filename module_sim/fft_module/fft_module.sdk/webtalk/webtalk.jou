@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sat Jun 12 18:19:27 2021
+# Process ID: 12564
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sdk/webtalk/webtalk.log
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
