@@ -1,0 +1,900 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 13752
+License: Customer
+
+Current time: 	Sat Jun 12 16:52:44 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 80 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Vivado_2018_3/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	E:/Vivado_2018_3/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Vrael
+User home directory: C:/Users/Vrael
+User working directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: E:/Vivado_2018_3/Vivado
+HDI_APPROOT: E:/Vivado_2018_3/Vivado/2018.3
+RDI_DATADIR: E:/Vivado_2018_3/Vivado/2018.3/data
+RDI_BINDIR: E:/Vivado_2018_3/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Vrael/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Vrael/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Vrael/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	E:/Vivado_2018_3/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
+Vivado journal file location: 	C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.jou
+Engine tmp dir: 	C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/.Xil/Vivado-13752-DESKTOP-DJCF65G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Vivado_2018_3/Vivado/2018.3
+XILINX_SDK: E:/Vivado_2018_3/SDK/2018.3
+XILINX_VIVADO: E:/Vivado_2018_3/Vivado/2018.3
+XILINX_VIVADO_HLS: E:/Vivado_2018_3/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 615 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 45 MB. Current time: 6/12/21, 4:52:46 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105468kb) [00:00:15]
+// [Engine Memory]: 686 MB (+567441kb) [00:00:15]
+// [Engine Memory]: 738 MB (+18635kb) [00:00:17]
+// [GUI Memory]: 118 MB (+10000kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  3559 ms.
+// Tcl Message: open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 776 MB (+1888kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  1652 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 793.109 ; gain = 206.820 
+// Project name: fft_module; location: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module; part: xc7z020clg484-1
+// [Engine Memory]: 1,244 MB (+449423kb) [00:00:21]
+dismissDialog("Open Project"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 137 MB (+13771kb) [00:00:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 12); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 12); // B (D, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 7011ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7035 ms.
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 73 MB. Current time: 6/12/21, 4:54:16 PM CEST
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cp)
+// Tcl Message: file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk 
+// Tcl Message: file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sat Jun 12 16:54:28 2021] Launched impl_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (cp): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cp)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceOtoP.Project_AUTOMATIC_UPDATE_AND_COMPILE_ORDER, "Automatic Update and Compile Order"); // T (cp, Popup.HeavyWeightWindow)
+// Tcl Message: set_property source_mgmt_mode All [current_project] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // af (al, Popup.HeavyWeightWindow)
+// Elapsed time: 156 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'FFT_Zynq_Axi_Lite' - hence not re-generating. 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// [GUI Memory]: 145 MB (+1065kb) [00:06:02]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 18 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+// Elapsed time: 1057 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HTimer (MainWindowUtils Timer) is taking 3089ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3090 ms.
+// Elapsed time: 63 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// HOptionPane Warning: 'No user accessible processors found for ELF file association. (Associate ELF Files)'
+selectButton("PAResourceEtoH.ElfFileAssociation_NO_USER_ACCESSIBLE_PROCESSORS_FOUND_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top FFT_Microblaze_wrapper [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// 'b' command handler elapsed time: 4 seconds
+selectButton("PAResourceEtoH.ElfFileAssociation_THERE_FILES_THAT_NEED_GENERATION_Cancel", "Cancel"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 2, true); // B (D, cp) - Node
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Cancel"); // a (aI)
+dismissDialog("Generate Output Products"); // aI (cp)
+// [GUI Memory]: 152 MB (+251kb) [00:26:27]
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectComboBox(PAResourceItoN.NewExportHardwareDialog_EXPORT_TO, "Choose Location...", 1); // e (Q, X)
+// Elapsed time: 25 seconds
+dismissFolderChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (X)
+// 'm' command handler elapsed time: 31 seconds
+dismissDialog("Export Hardware"); // X (cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aI (cp): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1284 ms.
+// [GUI Memory]: 160 MB (+268kb) [00:28:50]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 171 MB (+3641kb) [00:28:50]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] 
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: delete_ip_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1437.738 ; gain = 0.000 
+// 'bn' command handler elapsed time: 13 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+// Elapsed time: 14 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1662] The design 'FFT_Microblaze.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.v VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/sim/FFT_Microblaze.v VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M . 
+// Tcl Message: Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze.hwh Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze_bd.tcl Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1437.738 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_microblaze_0_0, cache-ID = e23047b6be50ad6a; cache size = 59.023 MB. 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_bram_if_cntlr_0, cache-ID = bc441aa7bbf7e53d; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_bram_if_cntlr_0, cache-ID = cfb09ce022a8cdab; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_lmb_bram_0, cache-ID = 68bcba14f7d2016c; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_mdm_1_0, cache-ID = 9646dccf43e3ba8a; cache size = 59.023 MB. 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_clk_wiz_1_0, cache-ID = bfede98bc1352fd1; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_rst_clk_wiz_1_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 41 seconds
+// Elapsed time: 40 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Microblaze_wrapper (FFT_Microblaze_wrapper.v), FFT_Microblaze_i : FFT_Microblaze (FFT_Microblaze.bd)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sat Jun 12 17:22:48 2021] Launched synth_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log [Sat Jun 12 17:22:48 2021] Launched impl_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,274 MB. GUI used memory: 87 MB. Current time: 6/12/21, 5:24:17 PM CEST
+// Elapsed time: 97 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 14); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, FFT_Microblaze_App.elf]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, FFT_Microblaze_App.elf]", 15, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sat Jun 12 17:24:44 2021] Launched synth_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log [Sat Jun 12 17:24:44 2021] Launched impl_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// Elapsed time: 217 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v)]", 5, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top FFT_Zynq_Axi_Lite_wrapper [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 339 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 14); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 14); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, Popup.HeavyWeightWindow)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 86 MB. Current time: 6/12/21, 5:34:32 PM CEST
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aI (cp): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -sync -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// 'bn' command handler elapsed time: 3 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FFT_Zynq_Axi_Lite_wrapper (FFT_Zynq_Axi_Lite_wrapper.v), FFT_Zynq_Axi_Lite_i : FFT_Zynq_Axi_Lite (FFT_Zynq_Axi_Lite.bd)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'FFT_Zynq_Axi_Lite.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.v VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/sim/FFT_Zynq_Axi_Lite.v VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v 
+// [Engine Memory]: 1,329 MB (+24478kb) [00:42:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,329 MB. GUI used memory: 84 MB. Current time: 6/12/21, 5:34:57 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 . 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 84 MB. Current time: 6/12/21, 5:35:17 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite.hwh Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite_bd.tcl Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1437.738 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_processing_system7_0_0] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_processing_system7_0_0, cache-ID = 79ba3a4b03c573a4; cache size = 59.023 MB. 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_auto_pc_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 59.023 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 51 seconds
+// Elapsed time: 50 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// HOptionPane Warning: 'No user accessible processors found for ELF file association. (Associate ELF Files)'
+// 'b' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+selectButton("PAResourceEtoH.ElfFileAssociation_NO_USER_ACCESSIBLE_PROCESSORS_FOUND_OK", "OK"); // JButton (C, I)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// HOptionPane Warning: 'No user accessible processors found for ELF file association. (Associate ELF Files)'
+selectButton("PAResourceEtoH.ElfFileAssociation_NO_USER_ACCESSIBLE_PROCESSORS_FOUND_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sat Jun 12 17:36:15 2021] Launched synth_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log [Sat Jun 12 17:36:15 2021] Launched impl_1... Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 185 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cp)
+// Tcl Message: file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk 
+// Tcl Message: file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 

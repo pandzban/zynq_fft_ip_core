@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Wed Jun  9 11:47:02 2021
 // Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_clk_wiz_1_0/FFT_Microblaze_clk_wiz_1_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top FFT_Microblaze_clk_wiz_1_0 -prefix
+//               FFT_Microblaze_clk_wiz_1_0_ FFT_Microblaze_clk_wiz_1_0_sim_netlist.v
 // Design      : FFT_Microblaze_clk_wiz_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,7 +39,6 @@ module FFT_Microblaze_clk_wiz_1_0
         .reset(reset));
 endmodule
 
-(* ORIG_REF_NAME = "FFT_Microblaze_clk_wiz_1_0_clk_wiz" *) 
 module FFT_Microblaze_clk_wiz_1_0_FFT_Microblaze_clk_wiz_1_0_clk_wiz
    (clk_out1,
     reset,

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Jun  9 11:46:31 2021
 -- Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_dlmb_bram_if_cntlr_0/FFT_Microblaze_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top FFT_Microblaze_dlmb_bram_if_cntlr_0 -prefix
+--               FFT_Microblaze_dlmb_bram_if_cntlr_0_ FFT_Microblaze_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
 -- Design      : FFT_Microblaze_dlmb_bram_if_cntlr_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -142,8 +142,6 @@ entity FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 2;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of FFT_Microblaze_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr is

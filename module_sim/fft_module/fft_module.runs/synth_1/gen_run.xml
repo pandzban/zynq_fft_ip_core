@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623244020">
-  <File Type="PA-TCL" Name="FFT_Microblaze_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="FFT_Microblaze_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="FFT_Microblaze_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="FFT_Microblaze_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="FFT_Microblaze_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="FFT_Microblaze_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="FFT_Microblaze_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FFT_Microblaze_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="FFT_Microblaze_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623512175">
+  <File Type="PA-TCL" Name="FFT_Zynq_Axi_Lite_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FFT_Zynq_Axi_Lite_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FFT_Zynq_Axi_Lite_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FFT_Zynq_Axi_Lite_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FFT_Zynq_Axi_Lite_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fft_package.sv">
@@ -19,21 +19,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -41,7 +41,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v">
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -195,17 +195,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSDKDIR/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf">
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
       <FileInfo>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="ScopedToRef" Val="FFT_Microblaze"/>
-        <Attr Name="ScopedToCell" Val="microblaze_0"/>
-        <Attr Name="IsVisible" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="FFT_Microblaze_wrapper"/>
+      <Option Name="TopModule" Val="FFT_Zynq_Axi_Lite_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -225,15 +229,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0"/>
 </GenRun>

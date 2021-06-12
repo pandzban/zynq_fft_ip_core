@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Wed Jun  9 11:47:25 2021
 // Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_lmb_bram_0/FFT_Microblaze_lmb_bram_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top FFT_Microblaze_lmb_bram_0 -prefix
+//               FFT_Microblaze_lmb_bram_0_ FFT_Microblaze_lmb_bram_0_sim_netlist.v
 // Design      : FFT_Microblaze_lmb_bram_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -224,7 +224,6 @@ module FFT_Microblaze_lmb_bram_0
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_generic_cstr
    (douta,
     doutb,
@@ -318,7 +317,6 @@ module FFT_Microblaze_lmb_bram_0_blk_mem_gen_generic_cstr
         .web(web[3:2]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_prim_width
    (douta,
     doutb,
@@ -632,7 +630,6 @@ module FFT_Microblaze_lmb_bram_0_blk_mem_gen_prim_width__parameterized0
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_prim_wrapper
    (douta,
     doutb,
@@ -1226,7 +1223,6 @@ module FFT_Microblaze_lmb_bram_0_blk_mem_gen_prim_wrapper__parameterized0
         .O(ram_rstram_b));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_top
    (douta,
     doutb,
@@ -1322,7 +1318,7 @@ endmodule
 (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) (* C_WRITE_DEPTH_A = "2048" *) 
 (* C_WRITE_DEPTH_B = "2048" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) (* C_XDEVICEFAMILY = "zynq" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_v8_4_2
    (clka,
     rsta,
@@ -1608,7 +1604,6 @@ module FFT_Microblaze_lmb_bram_0_blk_mem_gen_v8_4_2
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2_synth" *) 
 module FFT_Microblaze_lmb_bram_0_blk_mem_gen_v8_4_2_synth
    (douta,
     doutb,

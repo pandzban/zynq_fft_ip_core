@@ -1,7 +1,0 @@
-Running: xsim.dir/FFT_Microblaze_Tb_behav/xsimk.exe -simmode gui -wdb FFT_Microblaze_Tb_behav.wdb -simrunnum 0 -socket 52861
-Design successfully loaded
-Design Loading Memory Usage: 12180 KB (Peak: 12180 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 18244 KB (Peak: 18244 KB)
-Simulation CPU Usage: 1436 ms

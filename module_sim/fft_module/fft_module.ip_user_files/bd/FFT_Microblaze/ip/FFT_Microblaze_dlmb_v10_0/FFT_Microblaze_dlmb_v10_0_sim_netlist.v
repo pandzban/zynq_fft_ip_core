@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Wed Jun  9 11:46:30 2021
 // Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_dlmb_v10_0/FFT_Microblaze_dlmb_v10_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top FFT_Microblaze_dlmb_v10_0 -prefix
+//               FFT_Microblaze_dlmb_v10_0_ FFT_Microblaze_dlmb_v10_0_sim_netlist.v
 // Design      : FFT_Microblaze_dlmb_v10_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -125,7 +125,7 @@ module FFT_Microblaze_dlmb_v10_0
 endmodule
 
 (* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* ORIG_REF_NAME = "lmb_v10" *) 
+(* C_LMB_NUM_SLAVES = "1" *) 
 module FFT_Microblaze_dlmb_v10_0_lmb_v10
    (LMB_Clk,
     SYS_Rst,

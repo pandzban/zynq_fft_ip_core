@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Jun  9 11:47:13 2021
+// Date        : Wed Jun  9 11:47:11 2021
 // Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_microblaze_0_0/FFT_Microblaze_microblaze_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top FFT_Microblaze_microblaze_0_0 -prefix
+//               FFT_Microblaze_microblaze_0_0_ FFT_Microblaze_microblaze_0_0_stub.v
 // Design      : FFT_Microblaze_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Jun  9 11:46:43 2021
+// Date        : Wed Jun  9 11:46:42 2021
 // Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_mdm_1_0/FFT_Microblaze_mdm_1_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top FFT_Microblaze_mdm_1_0 -prefix
+//               FFT_Microblaze_mdm_1_0_ FFT_Microblaze_mdm_1_0_sim_netlist.v
 // Design      : FFT_Microblaze_mdm_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -2482,7 +2482,6 @@ module FFT_Microblaze_mdm_1_0
         .bscan_ext_update(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "JTAG_CONTROL" *) 
 module FFT_Microblaze_mdm_1_0_JTAG_CONTROL
    (Q,
     AR,
@@ -3669,7 +3668,6 @@ module FFT_Microblaze_mdm_1_0_JTAG_CONTROL
         .Q(\tdi_shifter_reg_n_0_[7] ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BSCANE2" *) 
 module FFT_Microblaze_mdm_1_0_MB_BSCANE2
    (\Use_BSCAN.PORT_Selector_reg[0] ,
     DRCK,
@@ -3829,7 +3827,6 @@ module FFT_Microblaze_mdm_1_0_MB_BSCANE2
         .O(\shift_Count_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BUFG" *) 
 module FFT_Microblaze_mdm_1_0_MB_BUFG
    (Ext_JTAG_DRCK,
     DRCK);
@@ -3845,7 +3842,6 @@ module FFT_Microblaze_mdm_1_0_MB_BUFG
         .O(Ext_JTAG_DRCK));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDC_1" *) 
 module FFT_Microblaze_mdm_1_0_MB_FDC_1
    (D_1,
     Dbg_Reg_En_0,
@@ -4439,7 +4435,6 @@ module FFT_Microblaze_mdm_1_0_MB_FDC_1
         .O(\tdi_shifter_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDRE_1" *) 
 module FFT_Microblaze_mdm_1_0_MB_FDRE_1
    (sync,
     Dbg_Shift_0,
@@ -4496,7 +4491,6 @@ module FFT_Microblaze_mdm_1_0_MB_FDRE_1
         .R(D_1));
 endmodule
 
-(* ORIG_REF_NAME = "MB_SRL16E" *) 
 module FFT_Microblaze_mdm_1_0_MB_SRL16E
    (tdo,
     Q,
@@ -4711,7 +4705,7 @@ endmodule
 (* C_TRACE_CLK_FREQ_HZ = "200000000" *) (* C_TRACE_CLK_OUT_PHASE = "90" *) (* C_TRACE_DATA_WIDTH = "32" *) 
 (* C_TRACE_ID = "110" *) (* C_TRACE_OUTPUT = "0" *) (* C_TRACE_PROTOCOL = "1" *) 
 (* C_USE_BSCAN = "0" *) (* C_USE_CONFIG_RESET = "0" *) (* C_USE_CROSS_TRIGGER = "0" *) 
-(* C_USE_UART = "0" *) (* ORIG_REF_NAME = "MDM" *) 
+(* C_USE_UART = "0" *) 
 module FFT_Microblaze_mdm_1_0_MDM
    (Config_Reset,
     Scan_Reset_Sel,
@@ -13472,7 +13466,6 @@ module FFT_Microblaze_mdm_1_0_MDM
        (.P(\<const1> ));
 endmodule
 
-(* ORIG_REF_NAME = "MDM_Core" *) 
 module FFT_Microblaze_mdm_1_0_MDM_Core
    (Q,
     Dbg_Disable_0,

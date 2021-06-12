@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Jun  9 11:46:30 2021
 -- Host        : DESKTOP-DJCF65G running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_dlmb_v10_0/FFT_Microblaze_dlmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top FFT_Microblaze_dlmb_v10_0 -prefix
+--               FFT_Microblaze_dlmb_v10_0_ FFT_Microblaze_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : FFT_Microblaze_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -50,8 +50,6 @@ entity FFT_Microblaze_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of FFT_Microblaze_dlmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of FFT_Microblaze_dlmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of FFT_Microblaze_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end FFT_Microblaze_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of FFT_Microblaze_dlmb_v10_0_lmb_v10 is

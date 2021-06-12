@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="Auto Detect" key="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0-device"/>
-	<item value="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
-	<item value="Local" key="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0-target"/>
-	<item value="false" key="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0-partial_bit"/>
-	<item value="FFT_Zynq_Axi_Lite_wrapper.bit" key="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0-bitFile"/>
-	<item value="" key="FFT_Zynq_Axi_Lite_wrapper_hw_platform_0-bmmFile"/>
-</section>
