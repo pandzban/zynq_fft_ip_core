@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623512175">
-  <File Type="PA-TCL" Name="FFT_Zynq_Axi_Lite_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="FFT_Zynq_Axi_Lite_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="FFT_Zynq_Axi_Lite_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="FFT_Zynq_Axi_Lite_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="FFT_Zynq_Axi_Lite_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="FFT_Zynq_Axi_Lite_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="FFT_Zynq_Axi_Lite_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623598738">
+  <File Type="PA-TCL" Name="FFT_Butterfly_Zynq_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FFT_Butterfly_Zynq_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FFT_Butterfly_Zynq_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FFT_Butterfly_Zynq_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="FFT_Butterfly_Zynq_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FFT_Butterfly_Zynq_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FFT_Butterfly_Zynq_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FFT_Butterfly_Zynq_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FFT_Butterfly_Zynq_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fft_package.sv">
@@ -19,31 +19,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd">
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/blk_mem_gen_0_2/blk_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1619517137"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -51,7 +30,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/FFT_STAGE.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -59,7 +37,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Reverse_Input_Data_Adress.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -67,7 +44,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Simplified_fft_stage.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rearrange_zero_padd.sv">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -75,7 +58,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/rtl_blocks/s_mult_rtl.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../rtl_blocks/s_mult_rtl.sv"/>
         <Attr Name="ImportTime" Val="1620203356"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -83,35 +65,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Main_Module.sv">
+    <File Path="$PSRCDIR/sources_1/new/single_fft_block.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq/FFT_Zynq.bd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v">
-      <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../SDUP/Lab2/cordic_acc/cordic_acc.tmp/cordic_ip_v1_0/blk_mem_gen_0_2/blk_mem_gen_0.xci"/>
-        <Attr Name="ImportTime" Val="1619517137"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -128,22 +83,6 @@
     <File Path="$PSRCDIR/sources_1/new/butterfly_beh.sv">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/rearrange_zero_padd.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/single_fft_block.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -183,18 +122,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -207,9 +134,78 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSDKDIR/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf"/>
+        <Attr Name="ImportTime" Val="1623515826"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="FFT_Butterfly_Microblaze"/>
+        <Attr Name="ScopedToCell" Val="microblaze_0"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Main_Module.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Zynq/hdl/FFT_Butterfly_Zynq_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="FFT_Zynq_Axi_Lite_wrapper"/>
+      <Option Name="TopModule" Val="FFT_Butterfly_Zynq_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -228,7 +224,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Zynq_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Phase_Re_Factor_ROM_Memory"/>
+  <BlockFileSet Type="BlockSrcs" Name="Phase_Im_Factor_ROM_Memory"/>
+  <BlockFileSet Type="BlockSrcs" Name="FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FFT_Butterfly_Microblaze_lmb_bram_0"/>
 </GenRun>

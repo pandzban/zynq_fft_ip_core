@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module FFT_Microblaze_Tb;
 reg clk_n, clk_p;
 reg reset, reset_n;
@@ -41,7 +40,7 @@ always begin
     clk_p = ~clk_p;
 end
 
-FFT_Microblaze_wrapper FFT_Microblaze( clk_n, clk_p, reset, reset_n);
+FFT_Butterfly_Microblaze_wrapper FFT_Microblaze( clk_n, clk_p, reset, reset_n);
     
 
 

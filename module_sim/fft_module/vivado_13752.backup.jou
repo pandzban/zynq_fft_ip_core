@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun 12 16:52:26 2021
+# Process ID: 13752
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16788 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property source_mgmt_mode All [current_project]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Microblaze_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Zynq_Axi_Lite_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Microblaze_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Zynq_Axi_Lite_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd}
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Microblaze_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+create_bd_design "FFT_Microblaze"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 FFT_Butterfly_Axi_Li_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/FFT_Butterfly_Axi_Li_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins FFT_Butterfly_Axi_Li_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_1/CLK_IN1_D]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz_1/reset]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+endgroup
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -top
+add_files -norecurse C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+generate_target all [get_files  {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd}]
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_fft_butterlfy_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+launch_runs -jobs 6 FFT_Zynq_fft_butterlfy_ip_0_1_synth_1
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe] -no_script -reset -force -quiet
+remove_files  {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe}
+write_hwdef -force  -file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+write_hwdef -force  -file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd
+file delete -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+create_bd_design "FFT_Butterfly_Microblaze"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 FFT_Butterfly_Axi_Li_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/FFT_Butterfly_Axi_Li_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins FFT_Butterfly_Axi_Li_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_1/CLK_IN1_D]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz_1/reset]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+endgroup
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd] -top
+add_files -norecurse C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FFT_Butterfly_Microblaze_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]

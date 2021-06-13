@@ -1,0 +1,1404 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 13 16:54:50 2021
+# Process ID: 17068
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1
+# Command line: vivado.exe -log FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.tcl
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.vds
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+Command: synth_design -top FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12324 
+WARNING: [Synth 8-2507] parameter declaration becomes local in FFT_STAGE with formal parameter declaration list [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:35]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 405.969 ; gain = 111.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/synth/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'FFT_Butterfly_Axi_Lite_v1_0' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0.sv:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_Butterfly_Axi_Lite_v1_0_S00_AXI' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:4]
+	Parameter NUMBER_OF_WORDS bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:231]
+INFO: [Synth 8-226] default block is never used [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:372]
+INFO: [Synth 8-6157] synthesizing module 'Main_Module' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Main_Module.sv:23]
+	Parameter Num_Of_Stages bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 1 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Phase_Im_Factor_ROM_Memory' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/synth/Phase_Im_Factor_ROM_Memory.vhd:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: Phase_Im_Factor_ROM_Memory.mif - type: string 
+	Parameter C_INIT_FILE bound to: Phase_Im_Factor_ROM_Memory.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 15 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 15 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 15 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 15 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7096 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/synth/Phase_Im_Factor_ROM_Memory.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'Phase_Im_Factor_ROM_Memory' (9#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/synth/Phase_Im_Factor_ROM_Memory.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'Phase_Re_Factor_ROM_Memory' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/synth/Phase_Re_Factor_ROM_Memory.vhd:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: Phase_Re_Factor_ROM_Memory.mif - type: string 
+	Parameter C_INIT_FILE bound to: Phase_Re_Factor_ROM_Memory.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 15 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 15 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 15 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 15 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7096 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/synth/Phase_Re_Factor_ROM_Memory.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'Phase_Re_Factor_ROM_Memory' (10#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/synth/Phase_Re_Factor_ROM_Memory.vhd:67]
+INFO: [Synth 8-6157] synthesizing module 'fft_block_rtl' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:271]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'comp_mult_rtl' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:206]
+INFO: [Synth 8-6157] synthesizing module 's_mult_rtl' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'change_sign_rtl' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'change_sign_rtl' (11#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 's_mult_rtl' (12#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'comp_mult_rtl' (13#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:206]
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3848] Net Valid in module/entity fft_block_rtl does not have driver. [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:281]
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_rtl' (14#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:271]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Send_to_Output_reg[5] was removed.  [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:119]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE' (15#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized0' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 2 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Send_to_Output_reg[5] was removed.  [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:119]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized0' (15#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FFT_STAGE__parameterized1' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+	Parameter Number_Of_Stage bound to: 3 - type: integer 
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Send_to_Output_reg[5] was removed.  [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:119]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_STAGE__parameterized1' (15#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Reverse_Input_Data_Adress' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Reverse_Input_Data_Adress.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_rearr_comb' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:384]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_rearr_comb' (16#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:384]
+WARNING: [Synth 8-689] width (5) of port connection 'addr_in' does not match port width (4) of module 'addr_rearr_comb' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Reverse_Input_Data_Adress.sv:62]
+WARNING: [Synth 8-5858] RAM Data_A_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_Buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Reverse_Input_Data_Adress' (17#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Reverse_Input_Data_Adress.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Simplified_fft_stage' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:23]
+	Parameter MUL_LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_block_simplified_rtl' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:335]
+	Parameter BUFF_SIZE bound to: 4 - type: integer 
+WARNING: [Synth 8-5858] RAM first_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM second_input_buff_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'fft_block_simplified_rtl' (18#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:335]
+WARNING: [Synth 8-5858] RAM Data_Input_Buffer_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element Number_of_fft_block_reg was removed.  [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:85]
+WARNING: [Synth 8-6014] Unused sequential element Send_to_Output_reg[5] was removed.  [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:107]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_A_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:118]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Re]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:119]
+WARNING: [Synth 8-87] always_comb on 'Data_B_reg[Im]' did not result in combinational logic [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:119]
+INFO: [Synth 8-6155] done synthesizing module 'Simplified_fft_stage' (19#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:23]
+WARNING: [Synth 8-5858] RAM Data_Output_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'Main_Module' (20#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Main_Module.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Butterfly_Axi_Lite_v1_0_S00_AXI' (21#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Butterfly_Axi_Lite_v1_0' (22#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/hdl/FFT_Butterfly_Axi_Lite_v1_0.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0' (23#1) [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/synth/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.sv:57]
+WARNING: [Synth 8-3331] design fft_block_rtl has unconnected port Valid
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[15]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[14]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[13]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[12]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEA[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[15]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[14]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[13]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[12]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[11]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[10]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[9]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[8]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 742.008 ; gain = 447.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 742.008 ; gain = 447.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 742.008 ; gain = 447.387
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 862.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 862.629 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 864.539 ; gain = 1.910
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 864.539 ; gain = 569.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 864.539 ; gain = 569.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[1].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[2].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[3].FFT_INSTANCE /Re_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[1].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[2].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/\genblk1[3].FFT_INSTANCE /Im_Memory. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 864.539 ; gain = 569.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_Buff_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[1][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[15][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[14][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[13][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[12][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[11][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[10][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[9][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[8][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Output_reg[7][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[6][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[5][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[4][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[3][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[2][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[1][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Output_reg[0][Re]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Valid_Out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "phase_factor_adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Data_Input_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Input_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "Count_Tx" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Count_Rx" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/Simplified_fft_stage.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_A_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:130]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Re]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_B_reg[Im]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/FFT_STAGE.sv:131]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 864.539 ; gain = 569.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 541   
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 97    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 149   
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 186   
+	   3 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Reverse_Input_Data_Adress 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 64    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+Module fft_block_simplified_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 20    
+Module Simplified_fft_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 70    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 30    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 37    
+Module change_sign_rtl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module s_mult_rtl 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module comp_mult_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+Module fft_block_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module FFT_STAGE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 29    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+	   3 Input      1 Bit        Muxes := 1     
+Module FFT_STAGE__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 25    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 1     
+Module FFT_STAGE__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 71    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 17    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 1     
+Module Main_Module 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 32    
+Module FFT_Butterfly_Axi_Lite_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 16    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[1][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[11][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[10][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[9][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[8][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[7][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[6][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[5][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[4][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[3][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[2][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-5545] ROM "Adress" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[15][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "send_to_mult" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[14][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[13][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Data_Output_reg[12][Im]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_a/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/change_sign_inst_b/result_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:46]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_b_reg' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/sign_b_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/sign_a_reg' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/sign_a_reg' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:111]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:113]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_reg_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_reg_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:114]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/a_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+INFO: [Synth 8-4471] merging register 'FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/b_fact_reg[5:-10]' into 'FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg[5:-10]' [c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/45ee/src/s_mult_rtl.sv:106]
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Re_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/res_full.
+DSP Report: Generating DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full, operation Mode is: A2*B2.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/b_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: register FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/a_fact_reg is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+DSP Report: operator FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full is absorbed into DSP FFT_Block/complex_multiply_inst/a_Re_b_Re_cmult/res_full.
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-10]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-9]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-8]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-7]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-6]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[12][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[11][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[10][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[9][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[8][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[7][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[6][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[5][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[4][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[3][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[2][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][-5]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[1][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][-4]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[0][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][-4]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[15][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][-4]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[14][Im][5]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][-4]' (FDRE) to 'inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/Adress_Change/Data_Output_Buff_reg[13][Im][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[0][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[15][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[14][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[13][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[12][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[11][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[10][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[9][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[8][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[7][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[6][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[5][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[4][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[3][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[2][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_Output_Buff_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/i_0/\Adress_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /Adress_Change/\Data_A_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Input_Buffer_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_B_reg[Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\FFT_Block/second_input_buff_reg[1][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Adress_Delay_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[0][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[14][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[12][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[10][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[8][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[6][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[4][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[2][Im][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\Data_Input_Buffer_reg[2][Im][5] )
+WARNING: [Synth 8-3332] Sequential element (Data_B_reg[Im][5]) is unused and will be removed from module Simplified_fft_stage.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\FFT_Block/first_out_reg[Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[0][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[14][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[12][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[10][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[8][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[6][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[4][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /First_Stage/\Data_Output_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\Data_Input_Buffer_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\Data_B_reg[Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/a_reg_reg[-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[1][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[2][Im][-10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\FFT_Block/first_input_buff_reg[3][Im][-10] )
+WARNING: [Synth 8-3332] Sequential element (Data_B_reg[Im][-10]) is unused and will be removed from module FFT_STAGE.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main /\genblk1[1].FFT_INSTANCE /\FFT_Block/complex_multiply_inst/a_Im_b_Im_cmult/change_sign_inst_a/result_reg[-10] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:07 . Memory (MB): peak = 864.539 ; gain = 569.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|s_mult_rtl  | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 890.227 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 899.543 ; gain = 604.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:17 ; elapsed = 00:02:21 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:22 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:22 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:19 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                                       | RTL Name                                                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/First_Stage/Adress_Delay_reg[5][15]                              | 6      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/First_Stage/Adress_Delay_reg[5][3]                               | 5      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/First_Stage/Send_to_Output_reg[4]                                | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/First_Stage/FFT_Block/second_input_buff_reg[3][Re][5]            | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/First_Stage/FFT_Block/first_input_buff_reg[3][Re][5]             | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/genblk1[1].FFT_INSTANCE/Adress_Delay_reg[5][15]                  | 6      | 36    | NO           | NO                 | YES               | 36     | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/genblk1[1].FFT_INSTANCE/Adress_Delay_reg[5][3]                   | 5      | 15    | NO           | NO                 | YES               | 15     | 0       | 
+|FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0 | inst/FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst/Main/genblk1[1].FFT_INSTANCE/FFT_Block/first_input_buff_reg[3][Im][5] | 3      | 81    | NO           | NO                 | YES               | 81     | 0       | 
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   193|
+|2     |DSP48E1    |    12|
+|3     |LUT1       |   197|
+|4     |LUT2       |   568|
+|5     |LUT3       |  1213|
+|6     |LUT4       |   198|
+|7     |LUT5       |   310|
+|8     |LUT6       |   881|
+|9     |MUXF7      |   258|
+|10    |MUXF8      |    80|
+|11    |RAMB18E1   |     3|
+|12    |RAMB18E1_1 |     3|
+|13    |SRL16E     |   180|
+|14    |FDRE       |  6782|
+|15    |FDSE       |     8|
+|16    |LD         |   194|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------+-------------------------------------------------+------+
+|      |Instance                                               |Module                                           |Cells |
++------+-------------------------------------------------------+-------------------------------------------------+------+
+|1     |top                                                    |                                                 | 11080|
+|2     |  inst                                                 |FFT_Butterfly_Axi_Lite_v1_0                      | 11080|
+|3     |    FFT_Butterfly_Axi_Lite_v1_0_S00_AXI_inst           |FFT_Butterfly_Axi_Lite_v1_0_S00_AXI              | 11080|
+|4     |      Main                                             |Main_Module                                      |  9887|
+|5     |        Adress_Change                                  |Reverse_Input_Data_Adress                        |   657|
+|6     |        First_Stage                                    |Simplified_fft_stage                             |   974|
+|7     |          FFT_Block                                    |fft_block_simplified_rtl                         |   235|
+|8     |        \genblk1[1].FFT_INSTANCE                       |FFT_STAGE                                        |  2457|
+|9     |          Im_Memory                                    |Phase_Im_Factor_ROM_Memory__1                    |     1|
+|10    |            U0                                         |blk_mem_gen_v8_4_2__1                            |     1|
+|11    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth_53                      |     1|
+|12    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top_54                               |     1|
+|13    |                  \valid.cstr                          |blk_mem_gen_generic_cstr_55                      |     1|
+|14    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width_56                        |     1|
+|15    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init_57                 |     1|
+|16    |          Re_Memory                                    |Phase_Re_Factor_ROM_Memory__1                    |     1|
+|17    |            U0                                         |blk_mem_gen_v8_4_2__parameterized1__1            |     1|
+|18    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth__parameterized0_48      |     1|
+|19    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0_49               |     1|
+|20    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0_50      |     1|
+|21    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0_51        |     1|
+|22    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0_52 |     1|
+|23    |          FFT_Block                                    |fft_block_rtl_34                                 |  1261|
+|24    |            complex_multiply_inst                      |comp_mult_rtl_35                                 |   682|
+|25    |              a_Im_b_Im_cmult                          |s_mult_rtl_36                                    |   188|
+|26    |                change_sign_inst_a                     |change_sign_rtl_45                               |    34|
+|27    |                change_sign_inst_b                     |change_sign_rtl_46                               |    36|
+|28    |                change_sign_inst_res                   |change_sign_rtl_47                               |    35|
+|29    |              a_Im_b_Re_cmult                          |s_mult_rtl_37                                    |    54|
+|30    |                change_sign_inst_res                   |change_sign_rtl_44                               |    35|
+|31    |              a_Re_b_Im_cmult                          |s_mult_rtl_38                                    |    85|
+|32    |                change_sign_inst_res                   |change_sign_rtl_43                               |    51|
+|33    |              a_Re_b_Re_cmult                          |s_mult_rtl_39                                    |   251|
+|34    |                change_sign_inst_a                     |change_sign_rtl_40                               |    36|
+|35    |                change_sign_inst_b                     |change_sign_rtl_41                               |    36|
+|36    |                change_sign_inst_res                   |change_sign_rtl_42                               |    51|
+|37    |        \genblk1[2].FFT_INSTANCE                       |FFT_STAGE__parameterized0                        |  2708|
+|38    |          Im_Memory                                    |Phase_Im_Factor_ROM_Memory__2                    |     1|
+|39    |            U0                                         |blk_mem_gen_v8_4_2__2                            |     1|
+|40    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth_29                      |     1|
+|41    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top_30                               |     1|
+|42    |                  \valid.cstr                          |blk_mem_gen_generic_cstr_31                      |     1|
+|43    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width_32                        |     1|
+|44    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init_33                 |     1|
+|45    |          Re_Memory                                    |Phase_Re_Factor_ROM_Memory__2                    |     1|
+|46    |            U0                                         |blk_mem_gen_v8_4_2__parameterized1__2            |     1|
+|47    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth__parameterized0_24      |     1|
+|48    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0_25               |     1|
+|49    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0_26      |     1|
+|50    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0_27        |     1|
+|51    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0_28 |     1|
+|52    |          FFT_Block                                    |fft_block_rtl_10                                 |  1275|
+|53    |            complex_multiply_inst                      |comp_mult_rtl_11                                 |   715|
+|54    |              a_Im_b_Im_cmult                          |s_mult_rtl_12                                    |   221|
+|55    |                change_sign_inst_a                     |change_sign_rtl_21                               |    36|
+|56    |                change_sign_inst_b                     |change_sign_rtl_22                               |    37|
+|57    |                change_sign_inst_res                   |change_sign_rtl_23                               |    35|
+|58    |              a_Im_b_Re_cmult                          |s_mult_rtl_13                                    |    54|
+|59    |                change_sign_inst_res                   |change_sign_rtl_20                               |    35|
+|60    |              a_Re_b_Im_cmult                          |s_mult_rtl_14                                    |    85|
+|61    |                change_sign_inst_res                   |change_sign_rtl_19                               |    51|
+|62    |              a_Re_b_Re_cmult                          |s_mult_rtl_15                                    |   251|
+|63    |                change_sign_inst_a                     |change_sign_rtl_16                               |    36|
+|64    |                change_sign_inst_b                     |change_sign_rtl_17                               |    36|
+|65    |                change_sign_inst_res                   |change_sign_rtl_18                               |    51|
+|66    |        \genblk1[3].FFT_INSTANCE                       |FFT_STAGE__parameterized1                        |  2579|
+|67    |          Im_Memory                                    |Phase_Im_Factor_ROM_Memory                       |     1|
+|68    |            U0                                         |blk_mem_gen_v8_4_2                               |     1|
+|69    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth                         |     1|
+|70    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                  |     1|
+|71    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                         |     1|
+|72    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                           |     1|
+|73    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                    |     1|
+|74    |          Re_Memory                                    |Phase_Re_Factor_ROM_Memory                       |     1|
+|75    |            U0                                         |blk_mem_gen_v8_4_2__parameterized1               |     1|
+|76    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth__parameterized0         |     1|
+|77    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                  |     1|
+|78    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0         |     1|
+|79    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0           |     1|
+|80    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0    |     1|
+|81    |          FFT_Block                                    |fft_block_rtl                                    |  1090|
+|82    |            complex_multiply_inst                      |comp_mult_rtl                                    |   658|
+|83    |              a_Im_b_Im_cmult                          |s_mult_rtl                                       |   192|
+|84    |                change_sign_inst_a                     |change_sign_rtl_7                                |    36|
+|85    |                change_sign_inst_b                     |change_sign_rtl_8                                |    36|
+|86    |                change_sign_inst_res                   |change_sign_rtl_9                                |    35|
+|87    |              a_Im_b_Re_cmult                          |s_mult_rtl_0                                     |    54|
+|88    |                change_sign_inst_res                   |change_sign_rtl_6                                |    35|
+|89    |              a_Re_b_Im_cmult                          |s_mult_rtl_1                                     |    85|
+|90    |                change_sign_inst_res                   |change_sign_rtl_5                                |    51|
+|91    |              a_Re_b_Re_cmult                          |s_mult_rtl_2                                     |   223|
+|92    |                change_sign_inst_a                     |change_sign_rtl                                  |    36|
+|93    |                change_sign_inst_b                     |change_sign_rtl_3                                |    36|
+|94    |                change_sign_inst_res                   |change_sign_rtl_4                                |    51|
++------+-------------------------------------------------------+-------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 376 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:02:15 . Memory (MB): peak = 937.258 ; gain = 520.105
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 937.258 ; gain = 642.637
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 743 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 937.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 194 instances were transformed.
+  LD => LDCE: 194 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+465 Infos, 160 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 937.258 ; gain = 650.098
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 937.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0, cache-ID = ff938cc00f0150d9
+INFO: [Coretcl 2-1174] Renamed 93 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 937.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_synth_1/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_utilization_synth.rpt -pb FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 13 16:57:27 2021...

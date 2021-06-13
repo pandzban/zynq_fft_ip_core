@@ -1,0 +1,36 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port reset_rtl -pg 1 -y 60 -defaultsOSRD
+preplace port diff_clock_rtl -pg 1 -y 30 -defaultsOSRD
+preplace port reset_rtl_0 -pg 1 -y -50 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 3 -y 50 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y 460 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 50 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 40 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 2 -y 220 -defaultsOSRD
+preplace inst FFT_Butterfly_Axi_Li_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 0 3 30 -30 540 300 970
+preplace netloc microblaze_0_M_AXI_DP 1 1 2 560J -50 950J
+preplace netloc microblaze_0_ilmb_1 1 1 1 520
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 0 4 20 -60 NJ -60 980J 170 1260
+preplace netloc diff_clock_rtl_1 1 0 1 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 590 310 940J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 3 60 550 NJ 550 960
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 3 50 540 NJ 540 950
+preplace netloc clk_wiz_1_locked 1 1 1 570
+preplace netloc reset_rtl_0_1 1 0 2 NJ -50 550J
+preplace netloc microblaze_0_dlmb_1 1 1 1 530
+preplace netloc microblaze_0_debug 1 0 2 40 530 530
+preplace netloc mdm_1_debug_sys_rst 1 1 1 580
+preplace netloc reset_rtl_1 1 0 1 10J
+levelinfo -pg 1 -10 290 770 1120 1280 -top -70 -bot 560
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"3",
+   "da_mb_cnt":"1"
+}

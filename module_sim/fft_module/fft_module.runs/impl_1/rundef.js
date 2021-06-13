@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log FFT_Zynq_Axi_Lite_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FFT_Zynq_Axi_Lite_wrapper.tcl -notrace" );
+         "-log FFT_Butterfly_Zynq_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FFT_Butterfly_Zynq_wrapper.tcl -notrace" );
 
 
 

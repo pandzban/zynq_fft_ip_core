@@ -1,0 +1,6 @@
+18:37:12 **** Incremental Build of configuration Debug for project FFT_Butterfly_Microblaze_App ****
+make all 
+make: Nothing to be done for 'all'.
+
+18:37:12 Build Finished (took 162ms)
+

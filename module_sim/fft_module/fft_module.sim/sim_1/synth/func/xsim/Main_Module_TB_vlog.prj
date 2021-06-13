@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/85a3" \
+"Main_Module_TB_func_synth.v" \
+
+sv xil_defaultlib  --include "../../../../../fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ipshared/85a3" \
+"../../../../../fft_module.srcs/sim_1/new/Main_Module_TB.sv" \
+
+# Do not sort compile order
+nosort

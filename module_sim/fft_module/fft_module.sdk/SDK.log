@@ -1,6 +1,12 @@
-17:39:37 INFO  : Registering command handlers for SDK TCF services
-17:39:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.sdk\temp_xsdb_launch_script.tcl
-17:39:40 INFO  : XSCT server has started successfully.
-17:39:40 INFO  : Successfully done setting XSCT server connection channel  
-17:39:40 INFO  : Successfully done setting SDK workspace  
-17:39:40 INFO  : Processing command line option -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf.
+18:35:12 INFO  : Registering command handlers for SDK TCF services
+18:35:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.sdk\temp_xsdb_launch_script.tcl
+18:35:15 INFO  : XSCT server has started successfully.
+18:35:15 INFO  : Successfully done setting XSCT server connection channel  
+18:35:15 INFO  : Successfully done setting SDK workspace  
+18:35:15 INFO  : Processing command line option -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_wrapper.hdf.
+17:52:12 INFO  : Registering command handlers for SDK TCF services
+17:52:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.sdk\temp_xsdb_launch_script.tcl
+17:52:16 INFO  : XSCT server has started successfully.
+17:52:18 INFO  : Successfully done setting XSCT server connection channel  
+17:52:18 INFO  : Successfully done setting SDK workspace  
+17:52:18 INFO  : Processing command line option -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Zynq_wrapper.hdf.

@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FFT_Zynq_Axi_Lite_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Zynq_Axi_Lite_wrapper.tcl
+EAStep vivado -log FFT_Butterfly_Zynq_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Butterfly_Zynq_wrapper.tcl

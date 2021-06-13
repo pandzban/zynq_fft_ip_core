@@ -21,6 +21,9 @@
 import fft_package::*;
 
 module Main_Module_TB;
+parameter DEFAULT_INPUTS = 16;
+parameter M = 6;
+parameter F = 10;
 parameter NUM_OF_VECTORS = 5; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO MEMORY AND CHOOSE FROM
     logic [15:0] Data_Input_Vectors [NUM_OF_VECTORS-1:0][DEFAULT_INPUTS-1:0];
     logic [15:0] Data_Vector_Inputs [NUM_OF_VECTORS*15+NUM_OF_VECTORS-1:0];
@@ -80,9 +83,9 @@ parameter NUM_OF_VECTORS = 5; //CHOOSE HOW MANY VECTOR DO YOU WANT TO LOAD TO ME
 	end
 	
 	Main_Module Main(
+	   .Data_Input(Input_FFT),
 	   .clk,
 	   .reset,
-	   .Data_Input(Input_FFT),
 	   .Data_Output(Output_FFT),
 	   .Valid_Data(valid_out),
 	   .Valid_Input(valid_in)

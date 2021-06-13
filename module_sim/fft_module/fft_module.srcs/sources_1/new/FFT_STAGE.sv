@@ -43,15 +43,14 @@ module FFT_STAGE#(
     assign RST_ADRESS = Valid_In | reset | start;
       
     //Combinational logic to enable reset
-    always_ff @(posedge Valid_In) begin
-        Data_Input_Buffer <= Data_Input;
-    end
+    reg Valid_In_Buff[1:0];
+    
     
     always_ff @(posedge clk) begin
-        if(RST_ADRESS) begin
-            Data_Output <= {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-        end else begin
-            Data_Output <= Data_Output_Buffer;
+        Valid_In_Buff[0] <= Valid_In;
+        Valid_In_Buff[1] <= Valid_In_Buff[0];
+        if(Valid_In_Buff[1] == 0 & Valid_In_Buff[0]) begin
+            Data_Input_Buffer <= Data_Input;
         end
     end
     
@@ -102,6 +101,7 @@ module FFT_STAGE#(
 //                send_to_mult <= 0;
             end else if(Adress >= DEFAULT_INPUTS) begin
                 send_to_mult <= 0;
+                Adress <= Adress;
             end else begin
                 phase_factor_adress <= phase_factor_adress + 1;
                 Adress <= Adress + 1;
@@ -112,12 +112,15 @@ module FFT_STAGE#(
 
     //These buffers are to synchronize Data for FFT_Block with Data from ROMs due to the fact
     //that reading from ROM require one additional clock cycle and additionaly we need them to properly map Data from FFT_Block to Output Buffer
+    logic Send_to_Output [MUL_LATENCY:0];
     logic [DEFAULT_INPUTS-1:0] Adress_Delay [MUL_LATENCY:0];
     integer i;
     always_ff @(posedge clk) begin
+        Send_to_Output[0] <= send_to_mult;
         Adress_Delay[0] <= Adress;
         for(i = 1;i <= MUL_LATENCY;i++) begin
             Adress_Delay[i] <= Adress_Delay[i-1];
+            Send_to_Output[i] <= Send_to_Output[i-1];
         end
     end
     
@@ -126,10 +129,21 @@ module FFT_STAGE#(
         if(send_to_mult) begin
             Data_A <= Data_Input_Buffer[Adress_Delay[0]];
             Data_B <= Data_Input_Buffer[Adress_Delay[0] + (1 << Number_Of_Stage)];
+        end else begin
+            Data_A <= Data_A;
+            Data_B <= Data_B;
         end
-        Data_Output_Buffer[Adress_Delay[MUL_LATENCY]] <= Data_C;
-        Data_Output_Buffer[Adress_Delay[MUL_LATENCY] + (1 << Number_Of_Stage)] <= Data_D;
     end
+    
+    always_comb begin
+        if(Send_to_Output[MUL_LATENCY-1]) begin
+            Data_Output_Buffer[Adress_Delay[MUL_LATENCY]] <= Data_C;
+            Data_Output_Buffer[Adress_Delay[MUL_LATENCY] + (1 << Number_Of_Stage)] <= Data_D;
+        end else begin
+            Data_Output_Buffer <= Data_Output_Buffer;
+        end
+    end    
+    
     //ROM_IM Memory
     Phase_Im_Factor_ROM_Memory Im_Memory(
 	   .clka(clk),
@@ -153,5 +167,14 @@ module FFT_STAGE#(
 		.second_out(Data_D)
 	);
 	
+    always_ff @(posedge clk) begin
+        if(Send_to_Output[MUL_LATENCY-1]) begin
+            Data_Output[Adress_Delay[MUL_LATENCY]] <= Data_C;
+            Data_Output[Adress_Delay[MUL_LATENCY] + (1 << Number_Of_Stage)] <= Data_D;
+        end else begin
+            Data_Output <= Data_Output;
+        end
+    end
+    
      
 endmodule

@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun 12 16:52:26 2021
+# Process ID: 13752
+# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16788 C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.xpr
+# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/vivado.log
+# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 793.109 ; gain = 206.820
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 12 16:54:28 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+set_property source_mgmt_mode All [current_project]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'FFT_Zynq_Axi_Lite' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property top FFT_Microblaze_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+delete_ip_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1437.738 ; gain = 0.000
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+INFO: [BD 41-1662] The design 'FFT_Microblaze.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/sim/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1437.738 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_microblaze_0_0, cache-ID = e23047b6be50ad6a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_bram_if_cntlr_0, cache-ID = bc441aa7bbf7e53d; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_bram_if_cntlr_0, cache-ID = cfb09ce022a8cdab; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_lmb_bram_0, cache-ID = 68bcba14f7d2016c; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_mdm_1_0, cache-ID = 9646dccf43e3ba8a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_clk_wiz_1_0, cache-ID = bfede98bc1352fd1; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_rst_clk_wiz_1_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 12 17:22:48 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Sat Jun 12 17:22:48 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_App/Debug/FFT_Microblaze_App.elf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 12 17:24:44 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Sat Jun 12 17:24:44 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+set_property top FFT_Zynq_Axi_Lite_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+INFO: [BD 41-1662] The design 'FFT_Zynq_Axi_Lite.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/sim/FFT_Zynq_Axi_Lite.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_auto_pc_0/FFT_Zynq_Axi_Lite_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hw_handoff/FFT_Zynq_Axi_Lite_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/synth/FFT_Zynq_Axi_Lite.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1437.738 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_processing_system7_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_processing_system7_0_0, cache-ID = 79ba3a4b03c573a4; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_rst_ps7_0_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_Axi_Lite_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_Axi_Lite_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 59.023 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 12 17:36:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+[Sat Jun 12 17:36:15 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/FFT_Zynq_Axi_Lite_wrapper.sysdef C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property top FFT_Microblaze_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+INFO: [BD 41-1662] The design 'FFT_Microblaze.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/sim/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1438.352 ; gain = 0.613
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_microblaze_0_0, cache-ID = e23047b6be50ad6a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_bram_if_cntlr_0, cache-ID = bc441aa7bbf7e53d; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_bram_if_cntlr_0, cache-ID = cfb09ce022a8cdab; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_lmb_bram_0, cache-ID = 68bcba14f7d2016c; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_mdm_1_0, cache-ID = 9646dccf43e3ba8a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_clk_wiz_1_0, cache-ID = bfede98bc1352fd1; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_rst_clk_wiz_1_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Jun 12 18:10:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Jun 12 18:11:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/impl_1/runme.log
+set_property top FFT_Zynq_Axi_Lite_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd}
+Adding cell -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 - FFT_Butterfly_Axi_Li_0
+Successfully read diagram <FFT_Microblaze> from BD file <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2302.297 ; gain = 109.801
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Zynq_Axi_Lite_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property top FFT_Microblaze_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+create_bd_design "FFT_Microblaze"
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Microblaze\FFT_Microblaze.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 FFT_Butterfly_Axi_Li_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/FFT_Butterfly_Axi_Li_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins FFT_Butterfly_Axi_Li_0/S00_AXI]
+</FFT_Butterfly_Axi_Li_0/S00_AXI/S00_AXI_reg> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_1/CLK_IN1_D]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 diff_clock_rtl
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /diff_clock_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /diff_clock_rtl /clk_wiz_1/CLK_IN1_D
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_1/CLK_IN1_D. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz_1/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz_1/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_1/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /rst_clk_wiz_1_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /rst_clk_wiz_1_100M/ext_reset_in. Users may need to specify the location constraint manually.
+endgroup
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -top
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Microblaze\FFT_Microblaze.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ui/bd_ca95789.ui> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/sim/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+add_files -norecurse C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+generate_target all [get_files  {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd}]
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_CNTRL. Setting parameter on /axi_dma_0/M_AXIS_CNTRL failed
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Zynq\FFT_Zynq.bd> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/sim/FFT_Zynq.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/fft_package.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../ipshared/84eb/src/Main_Module.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "../../fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv" already exists in file group "xilinx_verilogsynthesis", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_butterlfy_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/ip/FFT_Zynq_auto_pc_0/FFT_Zynq_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hw_handoff/FFT_Zynq_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/synth/FFT_Zynq.hwdef
+INFO: [BD 41-1662] The design 'FFT_Microblaze.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ui/bd_ca95789.ui> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/sim/FFT_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_Butterfly_Axi_Li_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+Exporting to file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze.hwh
+Generated Block Design Tcl file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hw_handoff/FFT_Microblaze_bd.tcl
+Generated Hardware Definition File C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/synth/FFT_Microblaze.hwdef
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 2304.953 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_fft_butterlfy_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all FFT_Zynq_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Zynq_auto_pc_0, cache-ID = 22f0a1f786bc0cb6; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0, cache-ID = 0412b330f2ebb2b4; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_microblaze_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_microblaze_0_0, cache-ID = e23047b6be50ad6a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_v10_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_v10_0, cache-ID = ee744668ecde63ad; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_dlmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_dlmb_bram_if_cntlr_0, cache-ID = bc441aa7bbf7e53d; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_ilmb_bram_if_cntlr_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_ilmb_bram_if_cntlr_0, cache-ID = cfb09ce022a8cdab; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_lmb_bram_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_lmb_bram_0, cache-ID = 68bcba14f7d2016c; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_mdm_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_mdm_1_0, cache-ID = 9646dccf43e3ba8a; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_clk_wiz_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_clk_wiz_1_0, cache-ID = bfede98bc1352fd1; cache size = 59.023 MB.
+catch { config_ip_cache -export [get_ips -all FFT_Microblaze_rst_clk_wiz_1_100M_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP FFT_Microblaze_rst_clk_wiz_1_100M_0, cache-ID = 88610bbbed9890f8; cache size = 59.023 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+launch_runs -jobs 6 FFT_Zynq_fft_butterlfy_ip_0_1_synth_1
+[Sat Jun 12 18:19:49 2021] Launched FFT_Zynq_fft_butterlfy_ip_0_1_synth_1...
+Run output will be captured here: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/FFT_Zynq_fft_butterlfy_ip_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe] -no_script -reset -force -quiet
+remove_files  {C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/ip/FFT_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe}
+write_hwdef -force  -file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+zip_exception: Failed to open zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf. This may indicate that the file is corrupt, that there is insufficient free disk space available to uncompress it, or that you do not have permission to create fileszip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writinggenerate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Phase_Re_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Phase_Re_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Phase_Re_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Phase_Re_Factor_ROM_Memory'...
+generate_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Phase_Im_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Phase_Im_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Phase_Im_Factor_ROM_Memory'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Phase_Im_Factor_ROM_Memory'...
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci] -directory C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files -ipstatic_source_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/modelsim} {questa=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/questa} {riviera=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/riviera} {activehdl=C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/FFT_Zynq_Axi_Lite.bd
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/hdl/FFT_Zynq_Axi_Lite_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/FFT_Zynq.bd
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/hdl/FFT_Zynq_wrapper.v
+file mkdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk
+write_hwdef -force  -file C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+zip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writingzip_exception: zip archive C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf is already open for writinglaunch_sdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk -hwspec C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Microblaze_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_target all [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/FFT_Microblaze.bd
+file delete -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze
+export_ip_user_files -of_objects  [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Microblaze/hdl/FFT_Microblaze_wrapper.v
+create_bd_design "FFT_Butterfly_Microblaze"
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Butterfly_Microblaze\FFT_Butterfly_Microblaze.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT_Butterfly_Axi_Lite:1.0 FFT_Butterfly_Axi_Li_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_1/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_1_100M/ext_reset_in'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/FFT_Butterfly_Axi_Li_0/S00_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins FFT_Butterfly_Axi_Li_0/S00_AXI]
+</FFT_Butterfly_Axi_Li_0/S00_AXI/S00_AXI_reg> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_1/CLK_IN1_D]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 diff_clock_rtl
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /diff_clock_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /diff_clock_rtl /clk_wiz_1/CLK_IN1_D
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_1/CLK_IN1_D. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz_1/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz_1/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_1/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /rst_clk_wiz_1_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /rst_clk_wiz_1_100M/ext_reset_in. Users may need to specify the location constraint manually.
+endgroup
+make_wrapper -files [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd] -top
+Wrote  : <C:\Users\Vrael\Desktop\FFT_Project\module_sim\fft_module\fft_module.srcs\sources_1\bd\FFT_Butterfly_Microblaze\FFT_Butterfly_Microblaze.bd> 
+Wrote  : <C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ui/bd_ccedf0b5.ui> 
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/synth/FFT_Butterfly_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/sim/FFT_Butterfly_Microblaze.v
+VHDL Output written to : C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v
+add_files -norecurse C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v
+set_property top FFT_Butterfly_Microblaze_wrapper [current_fileset]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 12 18:32:39 2021...

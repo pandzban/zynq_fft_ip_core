@@ -1,0 +1,7 @@
+Running: xsim.dir/FFT_Butterfly_Microblaze_wrapper_func_synth/xsimk.exe -simmode gui -wdb FFT_Butterfly_Microblaze_wrapper_func_synth.wdb -simrunnum 0 -socket 55474
+Design successfully loaded
+Design Loading Memory Usage: 84928 KB (Peak: 84928 KB)
+Design Loading CPU Usage: 218 ms
+Simulation completed
+Simulation Memory Usage: 101140 KB (Peak: 101140 KB)
+Simulation CPU Usage: 312 ms

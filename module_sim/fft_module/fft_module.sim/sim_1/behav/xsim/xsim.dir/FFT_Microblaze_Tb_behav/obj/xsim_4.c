@@ -101,16 +101,16 @@ namespace XILINX_DPI {
 	void dpiInitialize()
 	{
 		DPIAllocateSVCallerInfo(4) ;
-		DPISetCallerName(0, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/bd/FFT_Microblaze/ipshared/7694/src/fft_package.sv") ;
+		DPISetCallerName(0, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv") ;
 		DPISetCallerLine(0, 132) ;
 		DPISetCallerOffset(0, 0) ;
-		DPISetCallerName(1, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/bd/FFT_Microblaze/ipshared/7694/src/fft_package.sv") ;
+		DPISetCallerName(1, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv") ;
 		DPISetCallerLine(1, 132) ;
 		DPISetCallerOffset(1, 0) ;
-		DPISetCallerName(2, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/bd/FFT_Microblaze/ipshared/7694/src/fft_package.sv") ;
+		DPISetCallerName(2, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv") ;
 		DPISetCallerLine(2, 133) ;
 		DPISetCallerOffset(2, 0) ;
-		DPISetCallerName(3, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/bd/FFT_Microblaze/ipshared/7694/src/fft_package.sv") ;
+		DPISetCallerName(3, "C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv") ;
 		DPISetCallerLine(3, 134) ;
 		DPISetCallerOffset(3, 0) ;
 		DPIAllocateDPIScopes(2) ;

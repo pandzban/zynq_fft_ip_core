@@ -40,16 +40,15 @@ module Simplified_fft_stage(
     assign RST_ADRESS = Valid_In | reset | start;
     
     //Combinational logic to enable reset
-    //Check if OK 
-    always_ff @(posedge Valid_In) begin
-        Data_Input_Buffer <= Data_Input;
-    end
+    //Check if OK
+    reg Valid_In_Buff[1:0];
+    
     
     always_ff @(posedge clk) begin
-        if(RST_ADRESS) begin
-            Data_Output <= {32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000};
-        end else begin
-            Data_Output <= Data_Output_Buffer;
+        Valid_In_Buff[0] <= Valid_In;
+        Valid_In_Buff[1] <= Valid_In_Buff[0];
+        if(Valid_In_Buff[1] == 0 & Valid_In_Buff[0]) begin
+            Data_Input_Buffer <= Data_Input;
         end
     end
     
@@ -88,24 +87,28 @@ module Simplified_fft_stage(
             send_to_mult <= 0;
         end else begin
             Number_of_fft_block <= Number_of_fft_block + 1;
-            Adress <= Adress + 2;
 //            if(Number_of_fft_block == (DEFAULT_INPUTS >> 1) - 1) begin
 //                Number_of_fft_block <= 0;
 //            end
             if(Adress >= DEFAULT_INPUTS) begin
                 send_to_mult <= 0;
+                Adress <= Adress;
             end else begin
+                Adress <= Adress + 2;
                 send_to_mult <= 1;
             end
         end
     end
     
+    logic Send_to_Output [MUL_LATENCY:0];
     logic [DEFAULT_INPUTS-1:0] Adress_Delay [MUL_LATENCY:0];
     integer i;
     always_ff @(posedge clk) begin
+        Send_to_Output[0] <= send_to_mult;
         Adress_Delay[0] <= Adress;
         for(i = 1;i <= MUL_LATENCY;i++) begin
             Adress_Delay[i] <= Adress_Delay[i-1];
+            Send_to_Output[i] <= Send_to_Output[i-1];
         end
     end
     
@@ -114,13 +117,24 @@ module Simplified_fft_stage(
         if(send_to_mult) begin
             Data_A <= Data_Input_Buffer[Adress_Delay[0]];
             Data_B <= Data_Input_Buffer[Adress_Delay[0] + 1];
-        end else begin
-            Data_A <= 0;
-            Data_B <= 0;
-        end
-        Data_Output_Buffer[Adress_Delay[MUL_LATENCY]] <= Data_C;
-        Data_Output_Buffer[Adress_Delay[MUL_LATENCY] + 1] <= Data_D;
+        end else if(send_to_mult == 0) begin
+            Data_A <= Data_A;
+            Data_B <= Data_B;
+        end//else begin
+//            Data_A <= 0;
+//            Data_B <= 0;
+//        end
     end
+    
+//    always_comb begin
+//        if(Send_to_Output[MUL_LATENCY - 1]) begin
+//            Data_Output_Buffer[Adress_Delay[MUL_LATENCY]] <= Data_C;
+//            Data_Output_Buffer[Adress_Delay[MUL_LATENCY] + 1] <= Data_D;
+//        end else if(Send_to_Output[MUL_LATENCY - 1] == 0) begin
+//            Data_Output_Buffer <= Data_Output_Buffer;
+//        end
+//    end
+    
     
     fft_block_simplified_rtl FFT_Block(
         .clk,
@@ -130,5 +144,17 @@ module Simplified_fft_stage(
 		.first_out(Data_C),
 		.second_out(Data_D)
 	);
+    
+    always_ff @(posedge clk) begin
+        if (Send_to_Output[MUL_LATENCY - 1]) begin
+//        if(RST_ADRESS) begin
+//            Data_Output <= {32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000,32'h00000000};
+//        end else begin
+            Data_Output[Adress_Delay[MUL_LATENCY]] <= Data_C;
+            Data_Output[Adress_Delay[MUL_LATENCY] + 1] <= Data_D;
+        end else begin
+            Data_Output <= Data_Output;
+        end
+    end
     
 endmodule
