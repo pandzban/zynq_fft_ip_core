@@ -21,11 +21,9 @@ int main()
 	int32_t div = pow(2, 10);
 	int16_t Data_Input[16] = {1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0};
 	int32_t Data_Output[16];
-	print("Input: ");
 	for (int i = 0; i <= 15; i++){
 		val = Data_Input[i];
 		xil_printf("%d", val);
-		print(" ");
 	}
 	print("\n\r");
 	FFT_BUTTERFLY_AXI_LITE_mWriteReg(FFT_BUTTERFLY_AXI_LITE_S00_AXI_BASE_ADRESS,FFT_BUTTERFLY_AXI_LITE_S00_AXI_SLV_REG2_OFFSET,1);
@@ -38,7 +36,6 @@ int main()
 		Data_Output[i] = FFT_BUTTERFLY_AXI_LITE_mReadReg(FFT_BUTTERFLY_AXI_LITE_S00_AXI_BASE_ADRESS, FFT_BUTTERFLY_AXI_LITE_S00_AXI_SLV_REG1_OFFSET);
 	}
 	print("Resut: \n\r");
-	print("Re, Im, abs: \n\r");
 	for (int i = 0; i <= 15; i++){
 		val = Data_Output[i];
 		val2 = (val & 0x0000FFFF);

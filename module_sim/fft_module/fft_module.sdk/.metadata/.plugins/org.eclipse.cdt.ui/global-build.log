@@ -636,3 +636,256 @@ arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
   39181	   2185	  22632	  63998	   f9fe	fft_butt_zynq_app.elf
 'Finished building: fft_butt_zynq_app.elf.size'
 ' '
+15:29:28 **** Incremental Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:30:19 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39173	   2185	  22632	  63990	   f9f6	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:30:21 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39173	   2185	  22632	  63990	   f9f6	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:30:35 **** Incremental Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:30:58 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39181	   2185	  22632	  63998	   f9fe	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:31:00 **** Incremental Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:31:18 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39181	   2185	  22632	  63998	   f9fe	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:31:48 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39189	   2185	  22632	  64006	   fa06	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:31:59 **** Incremental Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:32:39 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:42:2: error: expected ';' before 'for'
+  for (int i = 0; i <= 15; i++){
+  ^~~
+../src/main.cc:42:18: error: 'i' was not declared in this scope
+  for (int i = 0; i <= 15; i++){
+                  ^
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:19:15: warning: unused variable 'val2' [-Wunused-variable]
+  int32_t val, val2;
+               ^~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+15:32:42 **** Auto Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:18:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+../src/main.cc:20:8: warning: unused variable 'valf' [-Wunused-variable]
+  float valf, val2f;
+        ^~~~
+../src/main.cc:20:14: warning: unused variable 'val2f' [-Wunused-variable]
+  float valf, val2f;
+              ^~~~~
+../src/main.cc:21:10: warning: unused variable 'div' [-Wunused-variable]
+  int32_t div = pow(2, 10);
+          ^~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_butt_zynq_app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fft_butt_zynq_app_bsp/ps7_cortexa9_0/lib -o "fft_butt_zynq_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_butt_zynq_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fft_butt_zynq_app.elf  |tee "fft_butt_zynq_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39205	   2185	  22632	  64022	   fa16	fft_butt_zynq_app.elf
+'Finished building: fft_butt_zynq_app.elf.size'
+' '
+15:32:44 **** Incremental Build of configuration Debug for project fft_butt_zynq_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

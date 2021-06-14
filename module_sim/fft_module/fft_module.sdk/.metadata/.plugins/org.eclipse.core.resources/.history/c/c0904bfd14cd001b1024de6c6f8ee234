@@ -38,7 +38,6 @@ int main()
 		Data_Output[i] = FFT_BUTTERFLY_AXI_LITE_mReadReg(FFT_BUTTERFLY_AXI_LITE_S00_AXI_BASE_ADRESS, FFT_BUTTERFLY_AXI_LITE_S00_AXI_SLV_REG1_OFFSET);
 	}
 	print("Resut: \n\r");
-	print("Re, Im, abs: \n\r");
 	for (int i = 0; i <= 15; i++){
 		val = Data_Output[i];
 		val2 = (val & 0x0000FFFF);
