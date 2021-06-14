@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="FFT_Butterfly_Zynq_wrapper_hw_platform_1-bmmFile"/>
+	<item value="FFT_Butterfly_Zynq_wrapper_hw_platform_1" key="programfpga.hwplatform"/>
+	<item value="Local" key="FFT_Butterfly_Zynq_wrapper_hw_platform_1-target"/>
+	<item value="false" key="FFT_Butterfly_Zynq_wrapper_hw_platform_1-partial_bit"/>
+	<item value="Auto Detect" key="FFT_Butterfly_Zynq_wrapper_hw_platform_1-device"/>
+	<item value="FFT_Butterfly_Zynq_wrapper.bit" key="FFT_Butterfly_Zynq_wrapper_hw_platform_1-bitFile"/>
+</section>

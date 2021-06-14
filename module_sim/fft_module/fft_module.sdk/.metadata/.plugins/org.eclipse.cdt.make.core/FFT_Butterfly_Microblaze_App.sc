@@ -2,6 +2,9 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.1604757071;xilinx.gnu.mb.exe.debug.1604757071.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include"/>
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include-fixed"/>
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/include"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include-fixed"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/include"/>
@@ -572,6 +575,9 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.1604757071;xilinx.gnu.mb.exe.debug.1604757071.;xilinx.gnu.mb.c.toolchain.compiler.debug.1268225878;xilinx.gnu.compiler.input.1546411619">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include"/>
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include-fixed"/>
+<includePath path="d:\xilinx2\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/include"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/include-fixed"/>
 <includePath path="e:\vivado_2018_3\sdk\2018.3\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/include"/>

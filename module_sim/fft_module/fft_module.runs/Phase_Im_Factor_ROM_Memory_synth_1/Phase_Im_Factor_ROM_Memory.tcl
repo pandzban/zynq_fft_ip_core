@@ -25,23 +25,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/wt [current_project]
-set_property parent.project_path C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr [current_project]
+set_property webtalk.parent_dir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/wt [current_project]
+set_property parent.project_path D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_ip_1.0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/ip [current_project]
+set_property ip_output_repo d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
+read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -55,7 +55,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1 -new_name Phase_Im_Factor_ROM_Memory -ip [get_ips Phase_Im_Factor_ROM_Memory]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1 -new_name Phase_Im_Factor_ROM_Memory -ip [get_ips Phase_Im_Factor_ROM_Memory]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -96,32 +96,32 @@ write_checkpoint -force -noxdef Phase_Im_Factor_ROM_Memory.dcp
 create_report "Phase_Im_Factor_ROM_Memory_synth_1_synth_report_utilization_0" "report_utilization -file Phase_Im_Factor_ROM_Memory_utilization_synth.rpt -pb Phase_Im_Factor_ROM_Memory_utilization_synth.pb"
 
 if { [catch {
-  file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp
+  file copy -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v
+  write_verilog -force -mode synth_stub D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl
+  write_vhdl -force -mode synth_stub D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v
+  write_verilog -force -mode funcsim D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -131,47 +131,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp
+  file copy -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_stub.v C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v
+  file rename -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_stub.v D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_stub.vhdl C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl
+  file rename -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_stub.vhdl D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_sim_netlist.v C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v
+  file rename -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_sim_netlist.v D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl
+  file rename -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory]} {
+if {[file isdir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory]} {
   catch { 
-    file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory
+    file copy -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.v D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory
   }
 }
 
-if {[file isdir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory]} {
+if {[file isdir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory]} {
   catch { 
-    file copy -force C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory
+    file copy -force D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_stub.vhdl D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.ip_user_files/ip/Phase_Im_Factor_ROM_Memory
   }
 }
 file delete __synthesis_is_running__

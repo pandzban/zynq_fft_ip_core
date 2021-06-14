@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Vivado_2018_3/SDK/2018.3/bin;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/lib/nt64:E:/Vivado_2018_3/Vivado/2018.3/bin
+  PATH=D:/Xilinx2/SDK/2018.3/bin;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Xilinx2/Vivado/2018.3/bin
 else
-  PATH=E:/Vivado_2018_3/SDK/2018.3/bin;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/lib/nt64:E:/Vivado_2018_3/Vivado/2018.3/bin:$PATH
+  PATH=D:/Xilinx2/SDK/2018.3/bin;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Xilinx2/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1'
+HD_PWD='D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

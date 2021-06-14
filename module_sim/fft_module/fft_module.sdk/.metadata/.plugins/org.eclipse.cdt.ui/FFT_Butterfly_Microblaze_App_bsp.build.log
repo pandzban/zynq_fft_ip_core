@@ -1,4 +1,4 @@
-18:35:56 **** Build of project FFT_Butterfly_Microblaze_App_bsp ****
+11:37:55 **** Auto Build of project FFT_Butterfly_Microblaze_App_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -11,7 +11,6 @@ make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILE
 "Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
 "Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
 make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling cpu"
@@ -41,5 +40,5 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
          ^~~~~~~
 'Finished building libraries'
 
-18:36:02 Build Finished (took 6s.306ms)
+11:38:03 Build Finished (took 7s.224ms)
 

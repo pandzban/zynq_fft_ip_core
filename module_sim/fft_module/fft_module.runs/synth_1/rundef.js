@@ -8,9 +8,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "E:/Vivado_2018_3/SDK/2018.3/bin;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/lib/nt64;E:/Vivado_2018_3/Vivado/2018.3/bin;";
+  PathVal = "D:/Xilinx2/SDK/2018.3/bin;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/lib/nt64;D:/Xilinx2/Vivado/2018.3/bin;";
 } else {
-  PathVal = "E:/Vivado_2018_3/SDK/2018.3/bin;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/Vivado_2018_3/Vivado/2018.3/ids_lite/ISE/lib/nt64;E:/Vivado_2018_3/Vivado/2018.3/bin;" + PathVal;
+  PathVal = "D:/Xilinx2/SDK/2018.3/bin;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx2/Vivado/2018.3/ids_lite/ISE/lib/nt64;D:/Xilinx2/Vivado/2018.3/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;

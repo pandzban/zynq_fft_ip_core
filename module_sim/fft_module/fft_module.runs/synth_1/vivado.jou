@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun 13 17:39:02 2021
-# Process ID: 18276
-# Current directory: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1
+# Start of session at: Mon Jun 14 11:30:42 2021
+# Process ID: 11820
+# Current directory: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1
 # Command line: vivado.exe -log FFT_Butterfly_Zynq_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Butterfly_Zynq_wrapper.tcl
-# Log file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/FFT_Butterfly_Zynq_wrapper.vds
-# Journal file: C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1\vivado.jou
+# Log file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1/FFT_Butterfly_Zynq_wrapper.vds
+# Journal file: D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source FFT_Butterfly_Zynq_wrapper.tcl -notrace

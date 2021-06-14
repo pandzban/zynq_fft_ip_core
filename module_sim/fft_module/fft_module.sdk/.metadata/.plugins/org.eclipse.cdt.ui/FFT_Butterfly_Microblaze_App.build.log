@@ -1,6 +1,28 @@
-18:37:12 **** Incremental Build of configuration Debug for project FFT_Butterfly_Microblaze_App ****
+11:47:40 **** Incremental Build of configuration Debug for project FFT_Butterfly_Microblaze_App ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../FFT_Butterfly_Microblaze_App_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:10: warning: variable 'Data_Output' set but not used [-Wunused-but-set-variable]
+  int32_t Data_Output[16];
+          ^~~~~~~~~~~
+../src/main.c:17:6: warning: unused variable 'result' [-Wunused-variable]
+  u32 result;
+      ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: FFT_Butterfly_Microblaze_App.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_Butterfly_Microblaze_App_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FFT_Butterfly_Microblaze_App.elf"  ./src/main.o   
+'Finished building target: FFT_Butterfly_Microblaze_App.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FFT_Butterfly_Microblaze_App.elf  |tee "FFT_Butterfly_Microblaze_App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2448	    268	   3108	   5824	   16c0	FFT_Butterfly_Microblaze_App.elf
+'Finished building: FFT_Butterfly_Microblaze_App.elf.size'
+' '
 
-18:37:12 Build Finished (took 162ms)
+11:47:41 Build Finished (took 1s.186ms)
 

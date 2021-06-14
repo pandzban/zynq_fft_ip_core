@@ -17,102 +17,74 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/wt [current_project]
-set_property parent.project_path C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr [current_project]
+set_property webtalk.parent_dir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/wt [current_project]
+set_property parent.project_path D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
-  c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
+  d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_ip_1.0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/ip [current_project]
+set_property ip_output_repo d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/Vrael/Desktop/FFT_Project/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf
-set_property SCOPED_TO_REF FFT_Butterfly_Microblaze [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
-set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
-add_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
-add_files c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
-add_files -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp
-set_property used_in_implementation false [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp]
-add_files -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp
-set_property used_in_implementation false [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp]
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq/fft_module/fft_module.srcs/sources_1/imports/SDUP_FFT/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/SDUP_FFT/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Zynq_Axi_Lite/ip/FFT_Zynq_Axi_Lite_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf
+set_property SCOPED_TO_REF FFT_Butterfly_Microblaze [get_files -all D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
+set_property SCOPED_TO_CELLS microblaze_0 [get_files -all D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Sin_Im_Factors_ROM_Init.coe
+add_files -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp
+set_property used_in_implementation false [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp]
+add_files -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp
+set_property used_in_implementation false [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/rearrange_zero_padd.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/single_fft_block.sv
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/FFT_STAGE.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/Reverse_Input_Data_Adress.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/Simplified_fft_stage.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/rearrange_zero_padd.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/imports/rtl_blocks/s_mult_rtl.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/single_fft_block.sv
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/Main_Module.sv
 }
-set_property is_global_include true [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv]
-read_verilog -library xil_defaultlib {
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/hdl/FFT_Butterfly_Zynq_wrapper.v
-}
-read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property is_global_include true [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/new/fft_package.sv]
+read_verilog -library xil_defaultlib D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/hdl/FFT_Butterfly_Zynq_wrapper.v
+read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_microblaze_0_0/FFT_Butterfly_Microblaze_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_microblaze_0_0/FFT_Butterfly_Microblaze_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_microblaze_0_0/FFT_Butterfly_Microblaze_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_dlmb_v10_0/FFT_Butterfly_Microblaze_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_dlmb_v10_0/FFT_Butterfly_Microblaze_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_ilmb_v10_0/FFT_Butterfly_Microblaze_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_ilmb_v10_0/FFT_Butterfly_Microblaze_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_dlmb_bram_if_cntlr_0/FFT_Butterfly_Microblaze_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_ilmb_bram_if_cntlr_0/FFT_Butterfly_Microblaze_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_lmb_bram_0/FFT_Butterfly_Microblaze_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_mdm_1_0/FFT_Butterfly_Microblaze_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_mdm_1_0/FFT_Butterfly_Microblaze_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_clk_wiz_1_0/FFT_Butterfly_Microblaze_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_clk_wiz_1_0/FFT_Butterfly_Microblaze_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_clk_wiz_1_0/FFT_Butterfly_Microblaze_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0/FFT_Butterfly_Microblaze_rst_clk_wiz_1_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze_ooc.xdc]
+add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq.bd
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_processing_system7_0_0/FFT_Butterfly_Zynq_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_auto_pc_0/FFT_Butterfly_Zynq_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq_ooc.xdc]
 
-add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq.bd
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_FFT_Butterfly_Axi_Li_0_0/src/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_processing_system7_0_0/FFT_Butterfly_Zynq_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_auto_pc_0/FFT_Butterfly_Zynq_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/ip/FFT_Butterfly_Zynq_rst_ps7_0_100M_0/FFT_Butterfly_Zynq_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq_ooc.xdc]
+read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
 
-read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory_ooc.xdc]
-
-read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
+read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
+set_property used_in_implementation false [get_files -all d:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

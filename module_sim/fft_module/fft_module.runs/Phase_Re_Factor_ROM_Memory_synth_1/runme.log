@@ -10,11 +10,11 @@
 
 source Phase_Re_Factor_ROM_Memory.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
-WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2018_3/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo_1/fft_butterlfy_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2018.3/data/ip'.
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Phase_Re_Factor_ROM_Memory, cache-ID = 10c409738f8fb984.
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 12 18:41:51 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 14 11:29:29 2021...

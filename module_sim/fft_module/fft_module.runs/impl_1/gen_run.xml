@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623598740">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1623662962">
   <File Type="BITSTR-BMM" Name="FFT_Butterfly_Zynq_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="FFT_Butterfly_Zynq_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="FFT_Butterfly_Zynq_wrapper_timing_summary_init.rpt"/>
@@ -194,20 +194,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/hdl/FFT_Butterfly_Microblaze_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/FFT_Butterfly_Microblaze/ip/FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0/src/Phase_Re_Factor_ROM_Memory/Phase_Cos_Re_Factors_ROM_Init.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -294,6 +280,4 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Phase_Re_Factor_ROM_Memory"/>
   <BlockFileSet Type="BlockSrcs" Name="Phase_Im_Factor_ROM_Memory"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Butterfly_Microblaze_FFT_Butterfly_Axi_Li_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="FFT_Butterfly_Microblaze_lmb_bram_0"/>
 </GenRun>

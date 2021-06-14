@@ -60,8 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -71,34 +69,30 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.xpr [current_project]
+  set_property webtalk.parent_dir D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/wt [current_project]
+  set_property parent.project_path D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
-  C:/Users/Vrael/Desktop/FFT_Project/module_sim/ip_repo/fft_ip_1.0
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/FFT_Butterfly_Axi_Lite_1.0
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_butterfly_Axi_Lite_1.0
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo_1/fft_butterlfy_ip_1.0
+  D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/ip_repo/fft_ip_1.0
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.cache/ip [current_project]
+  set_property ip_output_repo D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/synth_1/FFT_Butterfly_Zynq_wrapper.dcp
+  add_files -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/synth_1/FFT_Butterfly_Zynq_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Microblaze/FFT_Butterfly_Microblaze.bd
-  add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq.bd
-  read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci
-  read_ip -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
+  read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  add_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/sources_1/bd/FFT_Butterfly_Zynq/FFT_Butterfly_Zynq.bd
+  read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Re_Factor_ROM_Memory/ip/Phase_Re_Factor_ROM_Memory/Phase_Re_Factor_ROM_Memory.xci
+  read_ip -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.srcs/Phase_Im_Factor_ROM_Memory/ip/Phase_Im_Factor_ROM_Memory/Phase_Im_Factor_ROM_Memory.xci
   set_param project.isImplRun false
-  add_files -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp
-  set_property netlist_only true [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp]
-  add_files -quiet C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp
-  set_property netlist_only true [get_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp]
-  add_files C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf
-  set_property SCOPED_TO_REF FFT_Butterfly_Microblaze [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
-  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/Vrael/Desktop/FFT_Project/module_sim/fft_module/fft_module.srcs/sources_1/imports/FFT_Project/module_sim/fft_module/fft_module.sdk/FFT_Butterfly_Microblaze_App/Debug/FFT_Butterfly_Microblaze_App.elf]
+  add_files -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp
+  set_property netlist_only true [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Re_Factor_ROM_Memory_synth_1/Phase_Re_Factor_ROM_Memory.dcp]
+  add_files -quiet D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp
+  set_property netlist_only true [get_files D:/addam/Git/SDUP/zynq_fft_ip_core/module_sim/fft_module/fft_module.runs/Phase_Im_Factor_ROM_Memory_synth_1/Phase_Im_Factor_ROM_Memory.dcp]
   set_param project.isImplRun true
   link_design -top FFT_Butterfly_Zynq_wrapper -part xc7z020clg484-1
   set_param project.isImplRun false
@@ -183,7 +177,6 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force FFT_Butterfly_Zynq_wrapper.mmi }
-  catch { write_bmm -force FFT_Butterfly_Zynq_wrapper_bd.bmm }
   write_bitstream -force FFT_Butterfly_Zynq_wrapper.bit 
   catch { write_sysdef -hwdef FFT_Butterfly_Zynq_wrapper.hwdef -bitfile FFT_Butterfly_Zynq_wrapper.bit -meminfo FFT_Butterfly_Zynq_wrapper.mmi -file FFT_Butterfly_Zynq_wrapper.sysdef }
   catch {write_debug_probes -quiet -force FFT_Butterfly_Zynq_wrapper}
